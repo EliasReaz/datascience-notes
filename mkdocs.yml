@@ -1,0 +1,34 @@
+site_name: Data Science Essential Notes
+
+plugins:
+  - search
+  - awesome-pages
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.search.highlight
+    - navigation.search.suggest
+    - navigation.search.share
+
+nav:
+  - Home: index.md
+  - Python:
+      - Find unique numbers - Two-pointer search: python/find_unique_element.md
+      - Count coin combinations to reach target amount: python/coin_combinations.md
+  - SQL:
+      - Total number of monthly customer and average monthly sales: SQL/groupby_monthly_customer.md
+  - Statistical Inferences:
+      - What p-value means: statistical_inferences/Explanation_pvalue.md
+  - Handy git commands:
+      - git commands: git_commands/handy_git_commands.md
+  - Common Business Metrics: 
+      - Metrics Glossary: Common_business_metrics/common_business_metrics.md
+  - A/B Testing Notes: 
+      - AB testing Concepts: AB_testing/AB_testing.md
