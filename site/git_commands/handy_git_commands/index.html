@@ -1,0 +1,1944 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../statistical_inferences/Explanation_pvalue/">
+      
+      
+        <link rel="next" href="../../Common_business_metrics/common_business_metrics/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>git commands - Data Science Essential Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#handy-git-command-reference-with-examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Data Science Essential Notes" class="md-header__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Data Science Essential Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              git commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../python/find_unique_element/" class="md-tabs__link">
+          
+  
+  
+  Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../SQL/groupby_monthly_customer/" class="md-tabs__link">
+          
+  
+  
+  SQL
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../statistical_inferences/Explanation_pvalue/" class="md-tabs__link">
+          
+  
+  
+  Statistical Inferences
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Handy git commands
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Common_business_metrics/common_business_metrics/" class="md-tabs__link">
+          
+  
+  
+  Common Business Metrics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../AB_testing/AB_testing/" class="md-tabs__link">
+          
+  
+  
+  A/B Testing Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Data Science Essential Notes" class="md-nav__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Data Science Essential Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/find_unique_element/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Find unique numbers - Two-pointer search
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/coin_combinations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Count coin combinations to reach target amount
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SQL
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            SQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/groupby_monthly_customer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Total number of monthly customer and average monthly sales
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Statistical Inferences
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Statistical Inferences
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../statistical_inferences/Explanation_pvalue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What p-value means
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Handy git commands
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Handy git commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    git commands
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    git commands
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 1. Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-start-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 2. Start a Repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁 2. Start a Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-git-repo-in-your-project-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Create a new Git repo in your project folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-an-existing-repo-download-code-from-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Clone an existing repo (download code from GitHub)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-save-your-work-commit-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 3. Save Your Work (Commit Flow)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 3. Save Your Work (Commit Flow)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-whats-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Check what’s changed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-a-file-for-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Stage a file for saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Stage everything
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-your-changes-with-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Save your changes with a message:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-work-on-a-new-feature-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌿 4. Work on a New Feature (Branching)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌿 4. Work on a New Feature (Branching)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-all-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See all branches:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Create a new branch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-the-new-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Switch to the new branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-combine-changes-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 5. Combine Changes (Merge)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 5. Combine Changes (Merge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-back-to-main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Go back to main branch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-changes-from-your-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Merge changes from your feature branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-connect-to-remote-eg-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 6. Connect to Remote (e.g., GitHub)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 6. Connect to Remote (e.g., GitHub)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-github-as-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Add GitHub as remote:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-your-code-online" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Push your code online:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-remote-add-vs-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      git remote add vs. git push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-latest-changes-from-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Get latest changes from remote
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-view-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 7. View History
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📜 7. View History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-list-of-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See list of commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Simple view
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-changes-in-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Compare changes in files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-undo-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧽 8. Undo Mistakes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧽 8. Undo Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#undo-changes-in-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Undo changes in a file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstage-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Unstage a file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revert-a-commit-safe-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Revert a commit (safe undo)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-git-stash-temporarily-save-your-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼 9. git stash: Temporarily Save Your Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💼 9. git stash: Temporarily Save Your Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-git-stash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use git stash?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-stash-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Example stash Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#see-saved-stashes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See saved stashes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reapply-stash" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Reapply stash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tag-a-version-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔖 10. Tag a Version (Release)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔖 10. Tag a Version (Release)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Add a tag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-tag-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Push tag to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Bonus Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Common Business Metrics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Common Business Metrics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Common_business_metrics/common_business_metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metrics Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    A/B Testing Notes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            A/B Testing Notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AB_testing/AB_testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AB testing Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 1. Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-start-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 2. Start a Repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📁 2. Start a Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-git-repo-in-your-project-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Create a new Git repo in your project folder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-an-existing-repo-download-code-from-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Clone an existing repo (download code from GitHub)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-save-your-work-commit-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 3. Save Your Work (Commit Flow)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 3. Save Your Work (Commit Flow)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-whats-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Check what’s changed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-a-file-for-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Stage a file for saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Stage everything
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-your-changes-with-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Save your changes with a message:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-work-on-a-new-feature-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌿 4. Work on a New Feature (Branching)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌿 4. Work on a New Feature (Branching)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-all-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See all branches:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Create a new branch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-the-new-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Switch to the new branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-combine-changes-merge" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 5. Combine Changes (Merge)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 5. Combine Changes (Merge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#go-back-to-main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Go back to main branch:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-changes-from-your-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Merge changes from your feature branch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-connect-to-remote-eg-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌍 6. Connect to Remote (e.g., GitHub)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌍 6. Connect to Remote (e.g., GitHub)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-github-as-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Add GitHub as remote:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-your-code-online" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Push your code online:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-remote-add-vs-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      git remote add vs. git push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-latest-changes-from-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Get latest changes from remote
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-view-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 7. View History
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📜 7. View History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-list-of-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See list of commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Simple view
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-changes-in-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Compare changes in files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-undo-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧽 8. Undo Mistakes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧽 8. Undo Mistakes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#undo-changes-in-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Undo changes in a file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstage-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Unstage a file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revert-a-commit-safe-undo" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Revert a commit (safe undo)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-git-stash-temporarily-save-your-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼 9. git stash: Temporarily Save Your Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💼 9. git stash: Temporarily Save Your Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-use-git-stash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use git stash?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-stash-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Example stash Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#see-saved-stashes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ See saved stashes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reapply-stash" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Reapply stash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-tag-a-version-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔖 10. Tag a Version (Release)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔖 10. Tag a Version (Release)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Add a tag
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#push-tag-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➤ Push tag to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ Bonus Tips
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="handy-git-command-reference-with-examples">🧠 Handy Git Command Reference (with Examples)</h1>
+<p>A simple guide to common Git commands with clear explanations.</p>
+<h2 id="1-setup">🔧 1. Setup</h2>
+<p>Before using Git, set your name and email (only once per machine):</p>
+<pre><code class="language-bash">git config --global user.name &quot;John Doe&quot;
+git config --global user.email &quot;john@example.com&quot;
+</code></pre>
+<h2 id="2-start-a-repository">📁 2. Start a Repository</h2>
+<h3 id="create-a-new-git-repo-in-your-project-folder">➤ Create a new Git repo in your project folder</h3>
+<pre><code class="language-bash">git init
+</code></pre>
+<blockquote>
+<p>Think of this as telling Git: “Hey, I want to start tracking changes here!”</p>
+</blockquote>
+<h3 id="clone-an-existing-repo-download-code-from-github">➤ Clone an existing repo (download code from GitHub)</h3>
+<pre><code class="language-bash">git clone https://github.com/user/project.git
+</code></pre>
+<h2 id="3-save-your-work-commit-flow">💾 3. Save Your Work (Commit Flow)</h2>
+<h3 id="check-whats-changed">➤ Check what’s changed</h3>
+<pre><code class="language-bash">git status
+</code></pre>
+<h3 id="stage-a-file-for-saving">➤ Stage a file for saving</h3>
+<pre><code class="language-bash">git add index.html
+</code></pre>
+<blockquote>
+<p>“I want to include this file in the next save.”</p>
+</blockquote>
+<h3 id="stage-everything">➤ Stage everything</h3>
+<pre><code class="language-bash">git add .
+</code></pre>
+<h3 id="save-your-changes-with-a-message">➤ Save your changes with a message:</h3>
+<pre><code class="language-bash">git commit -m &quot;Add homepage layout&quot;
+</code></pre>
+<blockquote>
+<p>Like hitting “Save” in your editor, but with a label explaining what you changed.</p>
+</blockquote>
+<hr />
+<h2 id="4-work-on-a-new-feature-branching">🌿 4. Work on a New Feature (Branching)</h2>
+<h3 id="see-all-branches">➤ See all branches:</h3>
+<pre><code class="language-bash">git branch
+</code></pre>
+<h3 id="create-a-new-branch">➤ Create a new branch:</h3>
+<pre><code class="language-bash">git branch new-feature
+</code></pre>
+<h3 id="switch-to-the-new-branch">➤ Switch to the new branch</h3>
+<pre><code class="language-bash">git checkout new-feature
+</code></pre>
+<p>Or both in one step:</p>
+<pre><code class="language-bash">git checkout -b new-feature
+</code></pre>
+<blockquote>
+<p>"Let me work on something new without touching the main version."</p>
+</blockquote>
+<hr />
+<h2 id="5-combine-changes-merge">🔁 5. Combine Changes (Merge)</h2>
+<h3 id="go-back-to-main-branch">➤ Go back to main branch:</h3>
+<pre><code class="language-bash">git checkout main
+</code></pre>
+<h3 id="merge-changes-from-your-feature-branch">➤ Merge changes from your feature branch</h3>
+<pre><code class="language-bash">git merge new-feature
+</code></pre>
+<hr />
+<h2 id="6-connect-to-remote-eg-github">🌍 6. Connect to Remote (e.g., GitHub)</h2>
+<h3 id="add-github-as-remote">➤ Add GitHub as remote:</h3>
+<pre><code class="language-bash">git remote add origin https://github.com/user/project.git
+</code></pre>
+<h3 id="push-your-code-online">➤ Push your code online:</h3>
+<pre><code class="language-bash">git push -u origin main
+</code></pre>
+<h3 id="git-remote-add-vs-git-push">git remote add vs. git push</h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+<th>When you use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git remote add</code></td>
+<td>Sets up the connection to a remote (like GitHub)</td>
+<td>One time per project</td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>Uploads your code to GitHub</td>
+<td>Every time you want to update the repo</td>
+</tr>
+<tr>
+<td>----</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Upload your local work to GitHub.</p>
+</blockquote>
+<h3 id="get-latest-changes-from-remote">➤ Get latest changes from remote</h3>
+<pre><code class="language-bash">git pull
+</code></pre>
+<hr />
+<h2 id="7-view-history">📜 7. View History</h2>
+<h3 id="see-list-of-commits">➤ See list of commits</h3>
+<pre><code class="language-bash">git log
+</code></pre>
+<h3 id="simple-view">➤ Simple view</h3>
+<pre><code class="language-bash">git log --oneline
+</code></pre>
+<h3 id="compare-changes-in-files">➤ Compare changes in files</h3>
+<pre><code class="language-bash">git diff
+</code></pre>
+<hr />
+<h2 id="8-undo-mistakes">🧽 8. Undo Mistakes</h2>
+<h3 id="undo-changes-in-a-file">➤ Undo changes in a file</h3>
+<pre><code class="language-bash">git restore index.html
+</code></pre>
+<h3 id="unstage-a-file">➤ Unstage a file</h3>
+<pre><code class="language-bash">git reset HEAD index.html
+</code></pre>
+<h3 id="revert-a-commit-safe-undo">➤ Revert a commit (safe undo)</h3>
+<pre><code class="language-bash">git revert &lt;commit-id&gt;
+</code></pre>
+<hr />
+<h2 id="9-git-stash-temporarily-save-your-change">💼 9. <code>git stash</code>: Temporarily Save Your Change</h2>
+<p><code>git stash</code> is used to temporarily save your <strong>uncommitted changes</strong> (both staged and unstaged) without committing them. It clears your working directory so you can safely switch branches or perform other tasks, and later bring back your changes.</p>
+<h4 id="why-use-git-stash">Why Use <code>git stash</code>?</h4>
+<p>Imagine you're in the middle of editing files, and suddenly need to:</p>
+<ul>
+<li>Switch branches</li>
+<li>Pull the latest code</li>
+<li>Fix a critical bug</li>
+</ul>
+<p>But Git won't let you proceed because of your uncommitted changes.<br />
+Use <code>git stash</code> to <strong>set aside your work</strong>, do the other task, and come back later.</p>
+<h4 id="example-stash-workflow">🧪 Example <code>stash</code> Workflow</h4>
+<pre><code class="language-bash"># You're working on changes
+git stash           # Save and clear working directory
+
+git switch other-branch   # Now Git allows switching
+
+# Do some work in another branch...
+
+git switch original-branch
+git stash pop       # Bring back your saved changes
+
+</code></pre>
+<h3 id="see-saved-stashes">➤ See saved stashes</h3>
+<pre><code class="language-bash">git stash list
+</code></pre>
+<h3 id="reapply-stash">➤ Reapply stash</h3>
+<pre><code class="language-bash">git stash pop
+</code></pre>
+<h2 id="10-tag-a-version-release">🔖 10. Tag a Version (Release)</h2>
+<h3 id="add-a-tag">➤ Add a tag</h3>
+<pre><code class="language-bash">git tag v1.0
+</code></pre>
+<h3 id="push-tag-to-github">➤ Push tag to GitHub</h3>
+<pre><code class="language-bash">git push origin v1.0
+</code></pre>
+<h2 id="bonus-tips">✨ Bonus Tips</h2>
+<pre><code class="language-bash">git shortlog -sn          # List contributors
+git clean -fd             # Delete untracked files
+git show &lt;commit&gt;         # Details about a commit
+</code></pre>
+<blockquote>
+<p>✅ <strong>Remember</strong>: Git is like a time machine for your code. Use it often, commit small changes, and write clear messages!</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.search.highlight", "navigation.search.suggest", "navigation.search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
