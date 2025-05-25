@@ -24,6 +24,7 @@ nav:
       - Count coin combinations to reach target amount: python/coin_combinations.md
   - SQL:
       - Total number of monthly customer and average monthly sales: SQL/groupby_monthly_customer.md
+      - Concat name counts and names: SQL/first_name.md
   - Statistical Inferences:
       - What p-value means: statistical_inferences/Explanation_pvalue.md
   - Handy git commands:

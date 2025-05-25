@@ -19,7 +19,7 @@ FROM students
 WHERE first_name ILIKE 'a%';
 ```
 
-### Explanation:
+### Explanation for MySQL
 
 - `ILIKE 'a%'`: case-insensitive match for names starting with 'a' or 'A'
 - `STRING_AGG(...)`: concatenates the names with a comma and a space
@@ -37,6 +37,7 @@ WHERE LOWER(first_name) LIKE 'a%';
 ```
 
 ### Explanation:
+
 - `LOWER(first_name) LIKE 'a%'`: ensures case-insensitive matching
 - `GROUP_CONCAT(...)`: joins names with a comma and a space
 - `CONCAT(...)`: formats the final output
@@ -66,4 +67,4 @@ The output will be
 
 |name_count|names|
 |---|---|
-|3|Alan, adam, Annie| 
+|3|Alan, adam, Annie|
