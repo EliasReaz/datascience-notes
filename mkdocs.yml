@@ -25,6 +25,8 @@ nav:
   - SQL:
       - Total number of monthly customer and average monthly sales: SQL/groupby_monthly_customer.md
       - Concat name counts and names: SQL/first_name.md
+      - Highest paid job title: SQL/best_paid_title.md
+      - Total log-in duration: SQL/total_duration.md
   - Statistical Inferences:
       - What p-value means: statistical_inferences/Explanation_pvalue.md
   - Handy git commands:
