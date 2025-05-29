@@ -6,11 +6,12 @@ Start exploring by clicking on the tabs above!
 
 ## Explore the Sections
 
-- **Python**: Code patterns and algorithms in Python.
+- **Python**: Some code patterns and algorithms in Python.
 - **SQL**: Query examples for real-world use cases.
-- **Statistical Inferences**: Key concepts like p-values, power, and hypothesis testing.
-- **Common Business Metrics**: Definitions and examples of essential metrics like conversion rate, churn, LTV, and more.
+- **Statistical Inferences**: Key concepts like _p-values_, _power_, and _hypothesis testing_.
+- **Common Business Metrics**: Definitions and examples of essential metrics like _conversion rate_, _churn_, _Lifetime Value (LTV)_, and more.
 - **A/B Testing**: Notes and templates to help you design, run, and interpret A/B tests.
 - **Git Commands**: Handy Git commands for daily use.
+- **MLOps Basics**: Starter kit on Docker, FastAPI, and Flask
 
 ---

@@ -35,3 +35,9 @@ nav:
       - Metrics Glossary: Common_business_metrics/common_business_metrics.md
   - A/B Testing Notes: 
       - AB testing Concepts: AB_testing/AB_testing.md
+  - Pandas Notes: 
+      - pivot-table-stack-unstack: pandas_manipulation/pandas_pivot_reshape.md
+      - groupby and aggregation: pandas_manipulation/top_3genre_avg_rating.md
+      - aggregation functions agg, transform, apply: pandas_manipulation/types_of_aggregation.md
+  - MLOps Basics:
+      - Docker FastAPI Flask: MLOps/devops_notes.md   
