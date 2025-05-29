@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../top_3genre_avg_rating/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../../MLOps/devops_notes/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Data Science Essential Notes</title>
+        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Data Science Essential Notes" class="md-header__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+    <a href="../.." title="Data Science Essential Notes" class="md-header__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              aggregation functions agg, transform, apply
             
           </span>
         </div>
@@ -160,7 +169,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -181,7 +190,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/python/find_unique_element/" class="md-tabs__link">
+        <a href="../../python/find_unique_element/" class="md-tabs__link">
           
   
   
@@ -201,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/SQL/groupby_monthly_customer/" class="md-tabs__link">
+        <a href="../../SQL/groupby_monthly_customer/" class="md-tabs__link">
           
   
   
@@ -221,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/statistical_inferences/Explanation_pvalue/" class="md-tabs__link">
+        <a href="../../statistical_inferences/Explanation_pvalue/" class="md-tabs__link">
           
   
   
@@ -241,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/git_commands/handy_git_commands/" class="md-tabs__link">
+        <a href="../../git_commands/handy_git_commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +270,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Common_business_metrics/common_business_metrics/" class="md-tabs__link">
+        <a href="../../Common_business_metrics/common_business_metrics/" class="md-tabs__link">
           
   
   
@@ -281,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/AB_testing/AB_testing/" class="md-tabs__link">
+        <a href="../../AB_testing/AB_testing/" class="md-tabs__link">
           
   
   
@@ -297,11 +306,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -321,7 +332,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/MLOps/devops_notes/" class="md-tabs__link">
+        <a href="../../MLOps/devops_notes/" class="md-tabs__link">
           
   
   
@@ -355,7 +366,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Data Science Essential Notes" class="md-nav__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+    <a href="../.." title="Data Science Essential Notes" class="md-nav__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -373,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -440,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python/find_unique_element/" class="md-nav__link">
+      <a href="../../python/find_unique_element/" class="md-nav__link">
         
   
   
@@ -463,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python/coin_combinations/" class="md-nav__link">
+      <a href="../../python/coin_combinations/" class="md-nav__link">
         
   
   
@@ -538,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/groupby_monthly_customer/" class="md-nav__link">
+      <a href="../../SQL/groupby_monthly_customer/" class="md-nav__link">
         
   
   
@@ -561,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/first_name/" class="md-nav__link">
+      <a href="../../SQL/first_name/" class="md-nav__link">
         
   
   
@@ -584,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/best_paid_title/" class="md-nav__link">
+      <a href="../../SQL/best_paid_title/" class="md-nav__link">
         
   
   
@@ -607,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/total_duration/" class="md-nav__link">
+      <a href="../../SQL/total_duration/" class="md-nav__link">
         
   
   
@@ -682,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/statistical_inferences/Explanation_pvalue/" class="md-nav__link">
+      <a href="../../statistical_inferences/Explanation_pvalue/" class="md-nav__link">
         
   
   
@@ -757,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/git_commands/handy_git_commands/" class="md-nav__link">
+      <a href="../../git_commands/handy_git_commands/" class="md-nav__link">
         
   
   
@@ -832,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Common_business_metrics/common_business_metrics/" class="md-nav__link">
+      <a href="../../Common_business_metrics/common_business_metrics/" class="md-nav__link">
         
   
   
@@ -907,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/AB_testing/AB_testing/" class="md-nav__link">
+      <a href="../../AB_testing/AB_testing/" class="md-nav__link">
         
   
   
@@ -934,28 +945,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -968,7 +982,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -982,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -1005,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -1025,10 +1039,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/pandas_manipulation/types_of_aggregation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    aggregation functions agg, transform, apply
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1039,6 +1075,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      📥 Sample DataFrame
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ agg() - Aggregate with built-in and custom functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ groupby().agg() - Group-wise aggregation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ apply() - Apply any function across DataFrame or group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ transform() - Returns same shape as input, good for feature engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Difference between agg(), apply(), and transform()
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1103,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/MLOps/devops_notes/" class="md-nav__link">
+      <a href="../../MLOps/devops_notes/" class="md-nav__link">
         
   
   
@@ -1143,6 +1253,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      📥 Sample DataFrame
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ agg() - Aggregate with built-in and custom functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ groupby().agg() - Group-wise aggregation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ apply() - Apply any function across DataFrame or group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ transform() - Returns same shape as input, good for feature engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Difference between agg(), apply(), and transform()
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1154,8 +1328,368 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
+<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
+<hr />
+<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>value1</th>
+<th>value2</th>
+<th>value3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>10</td>
+<td>100</td>
+<td>5</td>
+</tr>
+<tr>
+<td>A</td>
+<td>15</td>
+<td>150</td>
+<td>3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>10</td>
+<td>50</td>
+<td>6</td>
+</tr>
+<tr>
+<td>B</td>
+<td>20</td>
+<td>60</td>
+<td>2</td>
+</tr>
+<tr>
+<td>C</td>
+<td>15</td>
+<td>200</td>
+<td>7</td>
+</tr>
+<tr>
+<td>C</td>
+<td>30</td>
+<td>250</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
+<pre><code class="language-python">df.agg({
+    'value1': ['min', 'max', 'mean'],
+    'value2': ['mean', 'std'],
+    'value3': lambda x: (x &gt; 4).sum()
+})
+</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>value1</th>
+<th>value2</th>
+<th>value3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min</td>
+<td>10</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td>30</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mean</td>
+<td>16.67</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mean</td>
+<td></td>
+<td>105.83</td>
+<td></td>
+</tr>
+<tr>
+<td><lambda></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p><em>Explanation:</em></p>
+<ul>
+<li>Multiple built-in functions per column.</li>
+<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+</ul>
+<hr />
+<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
+<pre><code class="language-python">df.groupby('group').agg({
+    'value1': ['mean', 'sum'],
+    'value3': lambda x: (x &gt; 5).sum()
+})
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>value1 mean</th>
+<th>value1 sum</th>
+<th>value3 (count &gt;5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>12.5</td>
+<td>25</td>
+<td>0</td>
+</tr>
+<tr>
+<td>B</td>
+<td>15.0</td>
+<td>30</td>
+<td>1</td>
+</tr>
+<tr>
+<td>C</td>
+<td>22.5</td>
+<td>45</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><em>Explanation:</em>
+Aggregation by group with mixed functions.</p>
+<hr />
+<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
+<pre><code class="language-python">def range_func(x):
+    return x.max() - x.min()
+
+# Apply to entire DataFrame numeric columns
+df[['value1', 'value2']].apply(range_func)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>value1</th>
+<th>value2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>20</td>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
+df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>value1</th>
+<th>value2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>5</td>
+<td>50</td>
+</tr>
+<tr>
+<td>B</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>C</td>
+<td>15</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<p><em>Explanation:</em></p>
+<ul>
+<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
+<li>More flexible but sometimes slower than <code>agg()</code>.</li>
+</ul>
+<hr />
+<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
+<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
+df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
+df
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>group</th>
+<th>value1</th>
+<th>value2</th>
+<th>value3</th>
+<th>value1_norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>10</td>
+<td>100</td>
+<td>5</td>
+<td>-2.5</td>
+</tr>
+<tr>
+<td>A</td>
+<td>15</td>
+<td>150</td>
+<td>3</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>B</td>
+<td>10</td>
+<td>50</td>
+<td>6</td>
+<td>-5.0</td>
+</tr>
+<tr>
+<td>B</td>
+<td>20</td>
+<td>60</td>
+<td>2</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>C</td>
+<td>15</td>
+<td>200</td>
+<td>7</td>
+<td>-7.5</td>
+</tr>
+<tr>
+<td>C</td>
+<td>30</td>
+<td>250</td>
+<td>8</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+<p><em>Explanation:</em></p>
+<ul>
+<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
+<li>Useful for adding normalized or scaled features.</li>
+</ul>
+<hr />
+<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Input Type</th>
+<th>Output Shape</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>agg()</code></td>
+<td>Series or DataFrame</td>
+<td>Aggregated scalar(s) or DataFrame</td>
+<td>Summary statistics or aggregation</td>
+</tr>
+<tr>
+<td><code>apply()</code></td>
+<td>Series or DataFrame</td>
+<td>Can be scalar, Series, or DataFrame</td>
+<td>Flexible function application, complex ops</td>
+</tr>
+<tr>
+<td><code>transform()</code></td>
+<td>Series or DataFrame</td>
+<td>Same shape as input</td>
+<td>Element-wise transformations preserving index</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="summary">Summary</h1>
+<ul>
+<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
+<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
+<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
+</ul>
+<hr />
+<h1 id="bonus-renaming-columns-after-aggregation">Bonus: Renaming columns after aggregation</h1>
+<pre><code class="language-python">result = df.agg({
+    'value1': 'mean',
+    'value2': 'sum'
+})
+
+result.rename({
+    'value1': 'Avg Value1',
+    'value2': 'Total Value2'
+}, inplace=True)
+
+print(result)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Avg Value1</th>
+<th>Total Value2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16.67</td>
+<td>810</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Happy coding with pandas!</em> 🚀</p>
+<pre><code>
+---
+
+If you want, I can prepare a downloadable `.md` file for you to upload?
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1197,10 +1731,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.search.highlight", "navigation.search.suggest", "navigation.search.share"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.search.highlight", "navigation.search.suggest", "navigation.search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
