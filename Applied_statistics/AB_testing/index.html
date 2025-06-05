@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../SQL/total_duration/">
+        <link rel="prev" href="../Explanation_pvalue/">
       
       
-        <link rel="next" href="../../git_commands/handy_git_commands/">
+        <link rel="next" href="../ci_median/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>What p-value means - Data Science Essential Notes</title>
+        <title>AB testing Concepts - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#explanation-of-p-value-in-statistical-inferences" class="md-skip">
+        <a href="#ab-testing" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What p-value means
+              AB testing Concepts
             
           </span>
         </div>
@@ -232,11 +232,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../Explanation_pvalue/" class="md-tabs__link">
           
   
   
-  Statistical Inferences
+  Applied Statistic
 
         </a>
       </li>
@@ -292,26 +292,6 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AB_testing/AB_testing/" class="md-tabs__link">
-          
-  
-  
-  A/B Testing Notes
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
         <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
@@ -341,6 +321,25 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ML_Pipeline/ml_pipeline/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ML Pipeline
+
+      </a>
+    </li>
   
 
       
@@ -480,6 +479,29 @@
   
   <span class="md-ellipsis">
     Count coin combinations to reach target amount
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/square_root/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integer square root
     
   </span>
   
@@ -634,6 +656,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/most_popular_product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Most popular product
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/listening_habit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listening habits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SQL/consecutive_login_days/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Consecutive log-in streak
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -674,7 +765,7 @@
   
   
   <span class="md-ellipsis">
-    Statistical Inferences
+    Applied Statistic
     
   </span>
   
@@ -685,9 +776,32 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Statistical Inferences
+            Applied Statistic
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Explanation_pvalue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What p-value means
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -710,7 +824,7 @@
   
   
   <span class="md-ellipsis">
-    What p-value means
+    AB testing Concepts
     
   </span>
   
@@ -723,7 +837,7 @@
   
   
   <span class="md-ellipsis">
-    What p-value means
+    AB testing Concepts
     
   </span>
   
@@ -746,9 +860,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-does-a-p-value-mean" class="md-nav__link">
+  <a href="#steps-to-conduct-an-ab-test" class="md-nav__link">
     <span class="md-ellipsis">
-      What does a p-value mean?
+      Steps to Conduct an A/B Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Conduct an A/B Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-formulate-hypotheses-and-set-significance-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Formulate Hypotheses and Set Significance Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-random-assignment-and-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Random Assignment and Isolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ensure-adequate-sample-size-and-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Ensure Adequate Sample Size and Power
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ensure Adequate Sample Size and Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-calculate-sample-size-simply-in-python-with-statsmodels" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to calculate sample size simply in Python with statsmodels:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-run-the-test-for-sufficient-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Run the Test for Sufficient Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-analyze-results-using-p-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Analyze Results Using p-value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-check-guardrail-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Check Guardrail Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-decide-whether-to-roll-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Decide Whether to Roll Out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
     </span>
   </a>
   
@@ -758,6 +974,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ci_median/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Confidence interval for median
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -950,7 +1189,7 @@
   
   
   <span class="md-ellipsis">
-    A/B Testing Notes
+    Pandas Notes
     
   </span>
   
@@ -960,81 +1199,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            A/B Testing Notes
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../AB_testing/AB_testing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AB testing Concepts
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Pandas Notes
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
           </label>
@@ -1109,6 +1273,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notes on melt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1138,10 +1325,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -1154,8 +1341,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             MLOps Basics
           </label>
@@ -1191,6 +1378,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ML_Pipeline/ml_pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ML Pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1218,9 +1427,111 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-does-a-p-value-mean" class="md-nav__link">
+  <a href="#steps-to-conduct-an-ab-test" class="md-nav__link">
     <span class="md-ellipsis">
-      What does a p-value mean?
+      Steps to Conduct an A/B Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps to Conduct an A/B Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-formulate-hypotheses-and-set-significance-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Formulate Hypotheses and Set Significance Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-random-assignment-and-isolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Random Assignment and Isolation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ensure-adequate-sample-size-and-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Ensure Adequate Sample Size and Power
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Ensure Adequate Sample Size and Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-calculate-sample-size-simply-in-python-with-statsmodels" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to calculate sample size simply in Python with statsmodels:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-run-the-test-for-sufficient-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Run the Test for Sufficient Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-analyze-results-using-p-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Analyze Results Using p-value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-check-guardrail-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Check Guardrail Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-decide-whether-to-roll-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Decide Whether to Roll Out
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table
     </span>
   </a>
   
@@ -1242,62 +1553,151 @@
 
 
 
-<h1 id="explanation-of-p-value-in-statistical-inferences">Explanation of p-value in statistical inferences</h1>
-<h2 id="what-does-a-p-value-mean">What does a p-value mean?</h2>
+<h1 id="ab-testing">A/B Testing</h1>
+<p>A/B testing is a statistical method used to determine whether a new variant (e.g., a website design, pricing model, or treatment) results in a measurable improvement over an existing version (the control).</p>
+<p>It helps answer questions such as:</p>
 <ul>
-<li>A p-value is the probability of obtaining test results <em>at least as extreme as</em> the observed results, under the assumption that the null hypothesis (H₀) is true.</li>
-<li>A p-value helps us figure out how surprising our results are if we assume the null hypothesis (H₀) is true.</li>
-<li>When we say "<strong>at least as extreme</strong>" we're asking: if the null hypothesis were true, what's the probability of getting results that are <strong>this unusual or even more unusual</strong> than what we actually observed?</li>
-<li>Think of it this way: your observed data gives you a certain amount of "evidence against" the null hypothesis. The p-value asks, <strong>What's the chance of getting this much evidence against the null hypothesis, or even stronger evidence, if the null hypothesis is actually true</strong>?</li>
-<li>Let's say we think a coin is fair (H₀: The coin is fair - the chance of heads is 50%). We toss it 100 times and get only 5 heads. That seems strange, right?</li>
-<li>The p-value tells us: "If the coin really is fair, what’s the chance we’d see something as extreme as 5 heads (or fewer)?"</li>
-<li>That’s a <strong>one-tailed</strong> test - looking just at one end (very few heads).</li>
-<li>A <strong>two-tailed</strong> test would ask: "What’s the chance of getting something really extreme on <strong>either</strong> end - like 5 or fewer heads <strong>or</strong> 95 or more heads?"</li>
-<li>If the p-value is really small (say, less than 0.05), that means our <em>result is pretty unusual under the assumption of fairness</em>. So we might start to <em>doubt</em> the coin is actually fair.</li>
+<li>Does the new website design increase <strong>conversion rates</strong> for an e-commerce store?</li>
+<li>Does a new drug improve <strong>recovery rates</strong> in a clinical trial?</li>
+<li>Does offering free shipping increase <strong>average order value</strong> in a retail business?</li>
+<li>Does a personalized email campaign increase <strong>click-through rates</strong> in a marketing platform?</li>
+<li>Does a redesigned onboarding flow reduce <strong>user churn</strong> for a SaaS product?</li>
+<li>Does a new pricing model improve <strong>subscription upgrades</strong> in a fintech app?</li>
 </ul>
-<blockquote>
-<p>Note 1: A small p-value doesn’t <em>prove</em> the coin is unfair - it just means what we saw would be unlikely <em>if</em> it were fair.</p>
-<p>Note 2: A small p-value does <strong>not mean H₀ is false</strong>. It means the observed data would be unlikely under H₀. It means we <strong>fail to reject</strong> H$_o$.</p>
-</blockquote>
-<pre><code class="language-pyhton">import scipy.stats as stats
+<hr />
+<h2 id="steps-to-conduct-an-ab-test">Steps to Conduct an A/B Test</h2>
+<h3 id="1-formulate-hypotheses-and-set-significance-level">1. Formulate Hypotheses and Set Significance Level</h3>
+<ul>
+<li><strong>Null Hypothesis (H₀):</strong> There is no difference between the control and variant.</li>
+<li><strong>Alternative Hypothesis (H₁):</strong> There is a statistically significant difference.</li>
+<li>Set the <strong>significance level</strong> (α), typically 0.05.</li>
+</ul>
+<h3 id="2-random-assignment-and-isolation">2. Random Assignment and Isolation</h3>
+<ul>
+<li>Randomly assign users into:</li>
+<li><strong>Group A (Control):</strong> Existing version</li>
+<li><strong>Group B (Treatment/Variant):</strong> New version</li>
+<li>
+<p>Ensure both groups are balanced in key features (e.g., device type, geography, traffic source).</p>
+</li>
+<li>
+<p>Isolation ensures that users in one group (A or B) do not influence the behavior or outcomes of users in the other group.</p>
+</li>
+<li><strong>Why isolation matters:</strong> Without isolation, results may be biased due to <strong>spillover effects</strong>, where the treatment indirectly impacts the control group (or vice versa).</li>
+<li><strong>Example:</strong> Suppose you're testing a new referral program (Treatment B). If a user in Group B refers a user in Group A, the latter might behave like a Treatment user, contaminating the control group and invalidating the results.</li>
+<li><strong>Best practice:</strong> Assign at the user level (not session level), and avoid shared environments (e.g., shared devices or accounts) when possible.</li>
+<li>Ensure users in both groups are using the <strong>same operating system</strong> (e.g., only iOS or only Android) to eliminate platform-related variability.</li>
+</ul>
+<h3 id="3-ensure-adequate-sample-size-and-power">3. Ensure Adequate Sample Size and Power</h3>
+<ul>
+<li>Before running an A/B test, make sure you have <strong>enough users</strong> (sample size) to detect a meaningful difference.</li>
+<li><strong>Effect size (lift):</strong> This is the minimum improvement you want to be able to detect — for example, a 5% increase in conversion rate.</li>
+<li><strong>Baseline conversion rate:</strong> The current conversion rate without any changes (Control group).</li>
+<li><strong>Power:</strong> The chance of correctly detecting a real effect (usually set at 80% or higher). If power is too low, you might miss real improvements.</li>
+<li><strong>Why it matters:</strong> If your sample size is too small, the test may not detect true differences — leading to false negatives.</li>
+</ul>
+<h4 id="how-to-calculate-sample-size-simply-in-python-with-statsmodels">How to calculate sample size simply in Python with <code>statsmodels</code>:</h4>
+<pre><code class="language-python">from statsmodels.stats.power import NormalIndPower
+from statsmodels.stats.proportion import proportion_effectsize
 
-# Set the parameters
-n = 100          # Number of coin tosses
-p = 0.5          # Probability of heads under the null hypothesis (fair coin)
-k = 5            # Observed number of heads (very low!)
+# Baseline conversion rate (control)
+p1 = 0.10  # e.g., 10%
+# Expected conversion rate after change (treatment)
+p2 = 0.12  # e.g., 12%, which is a 2% absolute lift
 
-# ================================================
-# One-tailed p-value:
-# We want the probability of getting k or fewer heads if the coin is fair.
-# That's why we use CDF (Cumulative Distribution Function) — it adds up
-# the probability of 0, 1, 2, ..., up to k heads.
-# If we used PDF, it would only give the probability of *exactly* 5 heads.
-# ================================================
-p_value_one_tail = stats.binom.cdf(k, n, p)
-print(&quot;One-tailed p-value (5 or fewer heads):&quot;, p_value_one_tail)
+# Calculate effect size (Cohen's h)
+effect_size = proportion_effectsize(p2, p1)
 
-# ================================================
-# Two-tailed p-value:
-# We want to find how extreme the result is on *both* sides of the expected value (which is 50 heads).
-# Getting only 5 heads is 45 less than expected → delta = 45
-# So, we also look at the *other* extreme: 50 + 45 = 95 heads or more
-# CDF gives cumulative up to a value, so for 95 or more, we subtract CDF(94) from 1.
-# ================================================
+# Set power and significance level (alpha)
+power = 0.8        # 80% chance to detect effect
+alpha = 0.05       # 5% chance of false positive (Type I error)
 
-expected = n * p                   # Expected number of heads = 50
-delta = abs(k - expected)         # How far away our result (5) is from expected (50)
+# Initialize power analysis object
+analysis = NormalIndPower()
 
-# Left tail: probability of getting &lt;= 5 heads (already calculated, but let's redo for clarity)
-p_low = stats.binom.cdf(expected - delta, n, p)  # same as stats.binom.cdf(5, 100, 0.5)
+# Calculate required sample size per group
+sample_size = analysis.solve_power(effect_size=effect_size, power=power, alpha=alpha, ratio=1)
 
-# Right tail: probability of getting &gt;= 95 heads
-# Since CDF gives probability of &lt;= x, we subtract from 1 to get &gt;= 95
-p_high = 1 - stats.binom.cdf(expected + delta - 1, n, p)  # 1 - CDF(94)
-
-# Add both tails to get the total two-tailed p-value
-p_value_two_tail = p_low + p_high
-print(&quot;Two-tailed p-value (5 or fewer OR 95 or more heads):&quot;, p_value_two_tail)
+print(f&quot;Sample size needed per group: {int(sample_size)}&quot;)
 </code></pre>
+<h3 id="4-run-the-test-for-sufficient-duration">4. Run the Test for Sufficient Duration</h3>
+<ul>
+<li>The test should run long enough to:</li>
+<li>Cover natural behavior cycles (weekends, holidays)</li>
+<li>Avoid early stopping or "peeking"</li>
+</ul>
+<h3 id="5-analyze-results-using-p-value">5. Analyze Results Using p-value</h3>
+<ul>
+<li>Calculate the <strong>p-value</strong>.</li>
+<li>If <strong>p &lt; α</strong>, reject the null hypothesis and conclude the effect is statistically significant.</li>
+</ul>
+<h3 id="6-check-guardrail-metrics">6. Check Guardrail Metrics</h3>
+<ul>
+<li>Monitor secondary metrics such as:</li>
+<li>Bounce rate</li>
+<li>Customer complaints</li>
+<li>Load times</li>
+<li>Ensure there are no unintended negative impacts.</li>
+</ul>
+<h3 id="7-decide-whether-to-roll-out">7. Decide Whether to Roll Out</h3>
+<ul>
+<li>If the result is:</li>
+<li><strong>Statistically significant</strong></li>
+<li><strong>Practically meaningful</strong></li>
+<li><strong>No harm to guardrails</strong></li>
+</ul>
+<p>Then, proceed with deploying the new version.</p>
+<hr />
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li><strong>Multiple Testing:</strong> Adjust for multiple comparisons (e.g., Bonferroni correction).</li>
+<li><strong>Effect Size vs. Statistical Significance:</strong> Small p-values do not always mean large or meaningful effects.</li>
+<li><strong>Practical Significance:</strong> Consider the business impact beyond statistical metrics.</li>
+</ul>
+<hr />
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Null Hypothesis (H₀)</td>
+<td>No difference between control and variant</td>
+<td>"Conversion rate in group A = group B"</td>
+</tr>
+<tr>
+<td>Alternative Hypothesis (H₁)</td>
+<td>Statistically significant difference exists</td>
+<td>"Conversion rate in group B &gt; group A"</td>
+</tr>
+<tr>
+<td>α (Significance Level)</td>
+<td>Probability of false positive (Type I error), typically 0.05</td>
+<td>If p-value &lt; 0.05, reject H₀</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>Probability of detecting a true effect, typically 80%</td>
+<td>80% chance of detecting a 5% lift if it exists</td>
+</tr>
+<tr>
+<td>Effect Size (Lift)</td>
+<td>The measurable difference between variant and control</td>
+<td>Group A: 10% CR, Group B: 12% CR → Effect size = 2%</td>
+</tr>
+<tr>
+<td>Guardrail Metrics</td>
+<td>Secondary metrics to monitor for unintended consequences</td>
+<td>Bounce rate, time on site, refund requests, site load time</td>
+</tr>
+</tbody>
+</table>
+<hr />
 
 
 
