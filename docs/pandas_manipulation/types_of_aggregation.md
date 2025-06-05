@@ -130,7 +130,7 @@ df
 
 ---
 
-# Summary
+## Summary
 
 * Use **`agg()`** for aggregations that reduce data size (e.g., sum, mean).
 * Use **`apply()`** for custom, flexible functions that may change shape.
@@ -138,7 +138,7 @@ df
 
 ---
 
-# Bonus: Renaming columns after aggregation
+## Renaming columns after aggregation
 
 ```python
 result = df.agg({
@@ -161,10 +161,3 @@ print(result)
 ---
 
 *Happy coding with pandas!* 🚀
-
-```
-
----
-
-If you want, I can prepare a downloadable `.md` file for you to upload?
-```

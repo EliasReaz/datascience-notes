@@ -9,18 +9,22 @@
       
       
       
+        <link rel="prev" href="../pandas_pivot_reshape/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../types_of_aggregation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Data Science Essential Notes</title>
+        <title>groupby and aggregation - Data Science Essential Notes</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#top-3-actors-by-genre-average-rating" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Data Science Essential Notes" class="md-header__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+    <a href="../.." title="Data Science Essential Notes" class="md-header__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -87,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              groupby and aggregation
             
           </span>
         </div>
@@ -160,7 +169,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -181,7 +190,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/python/find_unique_element/" class="md-tabs__link">
+        <a href="../../python/find_unique_element/" class="md-tabs__link">
           
   
   
@@ -201,7 +210,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/SQL/groupby_monthly_customer/" class="md-tabs__link">
+        <a href="../../SQL/groupby_monthly_customer/" class="md-tabs__link">
           
   
   
@@ -221,7 +230,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/statistical_inferences/Explanation_pvalue/" class="md-tabs__link">
+        <a href="../../statistical_inferences/Explanation_pvalue/" class="md-tabs__link">
           
   
   
@@ -241,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/git_commands/handy_git_commands/" class="md-tabs__link">
+        <a href="../../git_commands/handy_git_commands/" class="md-tabs__link">
           
   
   
@@ -261,7 +270,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Common_business_metrics/common_business_metrics/" class="md-tabs__link">
+        <a href="../../Common_business_metrics/common_business_metrics/" class="md-tabs__link">
           
   
   
@@ -281,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/AB_testing/AB_testing/" class="md-tabs__link">
+        <a href="../../AB_testing/AB_testing/" class="md-tabs__link">
           
   
   
@@ -297,11 +306,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -321,7 +332,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/MLOps/devops_notes/" class="md-tabs__link">
+        <a href="../../MLOps/devops_notes/" class="md-tabs__link">
           
   
   
@@ -355,7 +366,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Data Science Essential Notes" class="md-nav__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
+    <a href="../.." title="Data Science Essential Notes" class="md-nav__button md-logo" aria-label="Data Science Essential Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -373,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -440,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python/find_unique_element/" class="md-nav__link">
+      <a href="../../python/find_unique_element/" class="md-nav__link">
         
   
   
@@ -463,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/python/coin_combinations/" class="md-nav__link">
+      <a href="../../python/coin_combinations/" class="md-nav__link">
         
   
   
@@ -538,7 +549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/groupby_monthly_customer/" class="md-nav__link">
+      <a href="../../SQL/groupby_monthly_customer/" class="md-nav__link">
         
   
   
@@ -561,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/first_name/" class="md-nav__link">
+      <a href="../../SQL/first_name/" class="md-nav__link">
         
   
   
@@ -584,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/best_paid_title/" class="md-nav__link">
+      <a href="../../SQL/best_paid_title/" class="md-nav__link">
         
   
   
@@ -607,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SQL/total_duration/" class="md-nav__link">
+      <a href="../../SQL/total_duration/" class="md-nav__link">
         
   
   
@@ -682,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/statistical_inferences/Explanation_pvalue/" class="md-nav__link">
+      <a href="../../statistical_inferences/Explanation_pvalue/" class="md-nav__link">
         
   
   
@@ -757,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/git_commands/handy_git_commands/" class="md-nav__link">
+      <a href="../../git_commands/handy_git_commands/" class="md-nav__link">
         
   
   
@@ -832,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Common_business_metrics/common_business_metrics/" class="md-nav__link">
+      <a href="../../Common_business_metrics/common_business_metrics/" class="md-nav__link">
         
   
   
@@ -907,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/AB_testing/AB_testing/" class="md-nav__link">
+      <a href="../../AB_testing/AB_testing/" class="md-nav__link">
         
   
   
@@ -934,28 +945,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
             
   
   
@@ -968,7 +982,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -982,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -1002,10 +1016,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    groupby and aggregation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1016,6 +1052,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-data-top_actors_rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎬 Sample Data: top_actors_rating
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1028,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pandas_manipulation/types_of_aggregation/" class="md-nav__link">
+      <a href="../types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -1103,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/MLOps/devops_notes/" class="md-nav__link">
+      <a href="../../MLOps/devops_notes/" class="md-nav__link">
         
   
   
@@ -1143,6 +1208,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-data-top_actors_rating" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎬 Sample Data: top_actors_rating
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1154,8 +1238,136 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="top-3-actors-by-genre-average-rating">Top 3 Actors by Genre Average Rating</h1>
+<p>Identify the top 3 actors with the highest average movie ratings within their most frequent (i.e., top) genre. For each actor, return their name, top genre, and average rating in that genre.</p>
+<p>Conditions:
+* If an actor has multiple top genres (same number of appearances), choose the one with the highest average rating.
+* If multiple actors share the same average rating (i.e., a tie in rank), include all tied actors, even if this results in more than 3 total actors. Do not skip rank: if all tied actors share the same rank, the next rank follows sequentially.</p>
+<p>DataFrame: top_actors_rating
+actor_name: object
+genre: object
+movie_rating: float64
+movie_title: object
+release_date: datetime64[ns]
+production_company: object</p>
+<table>
+<thead>
+<tr>
+<th>actor_name</th>
+<th>genre</th>
+<th>movie_rating</th>
+<th>movie_title</th>
+<th>release_date</th>
+<th>production_company</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ryan Gosling</td>
+<td>drama</td>
+<td>9</td>
+<td>Urban Hunt</td>
+<td>2017-07-03</td>
+<td>Google</td>
+</tr>
+<tr>
+<td>Ryan Gosling</td>
+<td>sci-fi</td>
+<td>8.9</td>
+<td>Veil of Secrets</td>
+<td>2015-12-23</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>Chris Evans</td>
+<td>drama</td>
+<td>6.1</td>
+<td>Crimson Chase</td>
+<td>2017-08-10</td>
+<td>Apple</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="sample-data-top_actors_rating">🎬 Sample Data: <code>top_actors_rating</code></h3>
+<table>
+<thead>
+<tr>
+<th>actor_name</th>
+<th>genre</th>
+<th>movie_rating</th>
+<th>movie_title</th>
+<th>release_date</th>
+<th>production_company</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tom Hanks</td>
+<td>Drama</td>
+<td>8.5</td>
+<td>Movie A</td>
+<td>2000-01-01</td>
+<td>Studio 1</td>
+</tr>
+<tr>
+<td>Tom Hanks</td>
+<td>Comedy</td>
+<td>7.0</td>
+<td>Movie B</td>
+<td>2002-01-01</td>
+<td>Studio 1</td>
+</tr>
+<tr>
+<td>Emma Stone</td>
+<td>Comedy</td>
+<td>9.0</td>
+<td>Movie C</td>
+<td>2010-01-01</td>
+<td>Studio 2</td>
+</tr>
+<tr>
+<td>Emma Stone</td>
+<td>Romance</td>
+<td>8.8</td>
+<td>Movie D</td>
+<td>2011-01-01</td>
+<td>Studio 2</td>
+</tr>
+<tr>
+<td>Denzel Washington</td>
+<td>Thriller</td>
+<td>8.8</td>
+<td>Movie E</td>
+<td>2005-01-01</td>
+<td>Studio 3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<pre><code class="language-python">import pandas as pd
+
+# group by actor and genre. because if an actor has multiple genre, we take one with highest average rating
+
+groupby_actor_genre = top_actors_ratings.groupby(['actor_name', 'genre']).agg(count_genre=('genre':'count'), avg_rating=('movie_rating':'mean')).reset_index()
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1197,10 +1409,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.search.highlight", "navigation.search.suggest", "navigation.search.share"], "search": "/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.expand", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.search.highlight", "navigation.search.suggest", "navigation.search.share"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
