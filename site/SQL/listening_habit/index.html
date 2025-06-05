@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../first_name/">
+        <link rel="prev" href="../most_popular_product/">
       
       
-        <link rel="next" href="../total_duration/">
+        <link rel="next" href="../consecutive_login_days/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Highest paid job title - Data Science Essential Notes</title>
+        <title>Listening habits - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#best-paid-job-titles" class="md-skip">
+        <a href="#sql-challenge-analyze-spotify-like-listening-habits" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Highest paid job title
+              Listening habits
             
           </span>
         </div>
@@ -617,19 +617,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../best_paid_title/" class="md-nav__link">
         
   
   
@@ -640,7 +631,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -696,10 +686,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../listening_habit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Listening habits
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -710,6 +722,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Task
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-listening_habits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗃️ Table: listening_habits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Expected Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ SQL Answer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1277,6 +1354,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Question
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Task
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-listening_habits" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗃️ Table: listening_habits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Expected Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sql-answer" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ SQL Answer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1291,79 +1421,71 @@
 
 
 
-<h1 id="best-paid-job-titles">Best Paid Job Titles</h1>
-<p>SELECT the job titles of the highest-paid employees.Your output should list the job title or titles with the highest salary, considering the possibility of multiple titles sharing the same salary.</p>
-<p>worker table:</p>
+<h1 id="sql-challenge-analyze-spotify-like-listening-habits">🎧 SQL Challenge: Analyze Spotify-like Listening Habits</h1>
+<h2 id="question">📘 Question</h2>
+<p>You're assigned to analyze a <strong>Spotify-like dataset</strong> that records user listening habits.</p>
+<hr />
+<h2 id="task">📝 Task</h2>
+<p>For <strong>each user</strong>, compute:</p>
+<ul>
+<li>✅ The total listening time (in <strong>minutes</strong>), rounded to the <strong>nearest whole number</strong></li>
+<li>✅ The number of <strong>unique songs</strong> they've listened to</li>
+</ul>
+<hr />
+<h2 id="table-listening_habits">🗃️ Table: <code>listening_habits</code></h2>
 <table>
 <thead>
 <tr>
-<th>Field</th>
+<th>Column Name</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>worker_id</td>
-<td>Identifier of worker</td>
+<td><code>user_id</code></td>
+<td>Identifier of user</td>
 </tr>
 <tr>
-<td>first_name</td>
-<td>First name of worker</td>
+<td><code>song_id</code></td>
+<td>Identifier of song</td>
 </tr>
 <tr>
-<td>last_name</td>
-<td>Last name of worker</td>
-</tr>
-<tr>
-<td>salary</td>
-<td>Salary of worker</td>
-</tr>
-<tr>
-<td>joining_date</td>
-<td>Date of joining</td>
-</tr>
-<tr>
-<td>department</td>
-<td>Department name</td>
+<td><code>listen_duration</code></td>
+<td>Listening time (in seconds)</td>
 </tr>
 </tbody>
 </table>
-<p>title table:</p>
+<hr />
+<h2 id="expected-output">📌 Expected Output</h2>
 <table>
 <thead>
 <tr>
-<th>Field</th>
-<th>Description</th>
+<th>user_id</th>
+<th>total_listen_duration</th>
+<th>unique_song_count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>title_id</td>
-<td>ID of the title</td>
+<td>101</td>
+<td>8</td>
+<td>2</td>
 </tr>
 <tr>
-<td>worker_ref_id</td>
-<td>Identifier of worker</td>
-</tr>
-<tr>
-<td>worker_title</td>
-<td>Name of the position</td>
-</tr>
-<tr>
-<td>affected_from</td>
-<td>Date of modification</td>
+<td>102</td>
+<td>5</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>
-<pre><code class="language-sql">with tbl_join_worker_title AS
-(SELECT W.WORKER_ID, W.SALARY, T.WORKER_TITLE,
-DENSE_RANK() OVER(ORDER BY W.SALARY desc) AS RNK
-FROM WORKER AS W 
-INNER JOIN TITLE T ON W.WORKER_ID = T.WORKER_REF_ID
-)
-SELECT WORKER_TITLE AS BEST_PAID_TITLE
-FROM tbl_join_worker_title 
-WHERE RNK=1 
+<hr />
+<h2 id="sql-answer">✅ SQL Answer</h2>
+<pre><code class="language-sql">SELECT 
+  user_id, 
+  ROUND(SUM(listen_duration) / 60.0) AS total_listen_duration, 
+  COUNT(DISTINCT song_id) AS unique_song_count
+FROM listening_habits
+GROUP BY user_id;
 </code></pre>
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../first_name/">
+        <link rel="prev" href="../listening_habit/">
       
       
-        <link rel="next" href="../total_duration/">
+        <link rel="next" href="../../Applied_statistics/Explanation_pvalue/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Highest paid job title - Data Science Essential Notes</title>
+        <title>Consecutive log-in streak - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#best-paid-job-titles" class="md-skip">
+        <a href="#sample-data-for-3-users" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Highest paid job title
+              Consecutive log-in streak
             
           </span>
         </div>
@@ -617,19 +617,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../best_paid_title/" class="md-nav__link">
         
   
   
@@ -640,7 +631,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -719,10 +709,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../consecutive_login_days/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Consecutive log-in streak
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -733,6 +743,147 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-data-for-3-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 Sample Data for 3 Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-add-previous-login-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1️⃣: Add Previous Login Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1️⃣: Add Previous Login Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-simplified" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output (simplified)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-mark-streak-breaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2️⃣: Mark Streak Breaks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2️⃣: Mark Streak Breaks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-assign-streak-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3️⃣: Assign Streak ID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3️⃣: Assign Streak ID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-filter-10-day-streaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4️⃣: Filter 10+ Day Streaks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4️⃣: Filter 10+ Day Streaks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Final Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-1002-is-not-in-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Why 1002 is not in result:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1274,8 +1425,137 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-data-for-3-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      👥 Sample Data for 3 Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-add-previous-login-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1️⃣: Add Previous Login Date
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1️⃣: Add Previous Login Date">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-simplified" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output (simplified)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-mark-streak-breaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2️⃣: Mark Streak Breaks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2️⃣: Mark Streak Breaks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-assign-streak-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3️⃣: Assign Streak ID
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3️⃣: Assign Streak ID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Output
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-filter-10-day-streaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4️⃣: Filter 10+ Day Streaks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4️⃣: Filter 10+ Day Streaks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Final Output
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-1002-is-not-in-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Why 1002 is not in result:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1291,80 +1571,464 @@
 
 
 
-<h1 id="best-paid-job-titles">Best Paid Job Titles</h1>
-<p>SELECT the job titles of the highest-paid employees.Your output should list the job title or titles with the highest salary, considering the possibility of multiple titles sharing the same salary.</p>
-<p>worker table:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>worker_id</td>
-<td>Identifier of worker</td>
-</tr>
-<tr>
-<td>first_name</td>
-<td>First name of worker</td>
-</tr>
-<tr>
-<td>last_name</td>
-<td>Last name of worker</td>
-</tr>
-<tr>
-<td>salary</td>
-<td>Salary of worker</td>
-</tr>
-<tr>
-<td>joining_date</td>
-<td>Date of joining</td>
-</tr>
-<tr>
-<td>department</td>
-<td>Department name</td>
-</tr>
-</tbody>
-</table>
-<p>title table:</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>title_id</td>
-<td>ID of the title</td>
-</tr>
-<tr>
-<td>worker_ref_id</td>
-<td>Identifier of worker</td>
-</tr>
-<tr>
-<td>worker_title</td>
-<td>Name of the position</td>
-</tr>
-<tr>
-<td>affected_from</td>
-<td>Date of modification</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="language-sql">with tbl_join_worker_title AS
-(SELECT W.WORKER_ID, W.SALARY, T.WORKER_TITLE,
-DENSE_RANK() OVER(ORDER BY W.SALARY desc) AS RNK
-FROM WORKER AS W 
-INNER JOIN TITLE T ON W.WORKER_ID = T.WORKER_REF_ID
+  <h1>Consecutive log-in streak</h1>
+
+<p>Absolutely! Let’s expand the markdown with a detailed example involving <strong>3 users</strong>: <code>1032</code>, <code>1050</code>, and <code>1002</code>. This will help you clearly see how the <code>streak_marker</code>, <code>streak_id</code>, and final output work.</p>
+<p>Here’s the updated and elaborated markdown example:</p>
+<hr />
+<pre><code class="language-markdown"># SQL Walkthrough: Finding Users with 10+ Consecutive Login Days
+
+This walkthrough explains how to identify users who have logged in for **at least 10 consecutive days**, using SQL Common Table Expressions (CTEs). We show the process **step-by-step**, using a sample dataset for 3 users: `1032`, `1050`, and `1002`.
+
+---
+
+## 🧾 Table Structure
+
+We start with the following table:
+
+```sql
+user_login(
+  user_id INT,
+  login_date DATE
 )
-SELECT WORKER_TITLE AS BEST_PAID_TITLE
-FROM tbl_join_worker_title 
-WHERE RNK=1 
 </code></pre>
+<hr />
+<h2 id="sample-data-for-3-users">👥 Sample Data for 3 Users</h2>
+<table>
+<thead>
+<tr>
+<th>user_id</th>
+<th>login_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1032</td>
+<td>2019-01-01</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-02</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-03</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-04</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-05</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-06</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-07</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-08</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-09</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-10</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-11</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-13</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-10</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-11</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-12</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-13</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-14</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-15</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-16</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-17</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-18</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-19</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-01</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-03</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-04</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-06</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="step-1-add-previous-login-date">Step 1️⃣: Add Previous Login Date</h2>
+<pre><code class="language-sql">WITH my_prior_login_dates AS (
+  SELECT
+    user_id,
+    login_date,
+    LAG(login_date) OVER(PARTITION BY user_id ORDER BY login_date) AS prior_login_date
+  FROM user_login
+)
+</code></pre>
+<h3 id="output-simplified">🔍 Output (simplified)</h3>
+<table>
+<thead>
+<tr>
+<th>user_id</th>
+<th>login_date</th>
+<th>prior_login_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1032</td>
+<td>2019-01-01</td>
+<td>(null)</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-02</td>
+<td>2019-01-01</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-10</td>
+<td>(null)</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-11</td>
+<td>2020-02-10</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-01</td>
+<td>(null)</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-03</td>
+<td>2021-05-01</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="step-2-mark-streak-breaks">Step 2️⃣: Mark Streak Breaks</h2>
+<pre><code class="language-sql">, my_marker AS (
+  SELECT
+    *,
+    CASE 
+      WHEN DATE_PART('day', login_date - prior_login_date) = 1 
+           OR prior_login_date IS NULL THEN 0
+      ELSE 1
+    END AS streak_marker
+  FROM my_prior_login_dates
+)
+</code></pre>
+<h3 id="output">🔍 Output</h3>
+<table>
+<thead>
+<tr>
+<th>user_id</th>
+<th>login_date</th>
+<th>prior_login_date</th>
+<th>streak_marker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1032</td>
+<td>2019-01-01</td>
+<td>(null)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-02</td>
+<td>2019-01-01</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-03</td>
+<td>2019-01-02</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-13</td>
+<td>2019-01-11</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-10</td>
+<td>(null)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-11</td>
+<td>2020-02-10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-01</td>
+<td>(null)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-03</td>
+<td>2021-05-01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-04</td>
+<td>2021-05-03</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-06</td>
+<td>2021-05-04</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="step-3-assign-streak-id">Step 3️⃣: Assign Streak ID</h2>
+<pre><code class="language-sql">, my_streaks AS (
+  SELECT
+    user_id,
+    login_date,
+    SUM(streak_marker) OVER (PARTITION BY user_id ORDER BY login_date) AS streak_id
+  FROM my_marker
+)
+</code></pre>
+<h3 id="output_1">🔍 Output</h3>
+<table>
+<thead>
+<tr>
+<th>user_id</th>
+<th>login_date</th>
+<th>streak_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1032</td>
+<td>2019-01-01</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-02</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-03</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1032</td>
+<td>2019-01-13</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-11</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-01</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-03</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-04</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>2021-05-06</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Each <code>streak_id</code> represents a separate run of consecutive login days.</li>
+</ul>
+<hr />
+<h2 id="step-4-filter-10-day-streaks">Step 4️⃣: Filter 10+ Day Streaks</h2>
+<pre><code class="language-sql">SELECT 
+  user_id, 
+  MIN(login_date) AS first_login_date, 
+  COUNT(*) AS consecutive_login_days
+FROM my_streaks
+GROUP BY user_id, streak_id
+HAVING COUNT(*) &gt;= 10;
+</code></pre>
+<h3 id="final-output">✅ Final Output</h3>
+<table>
+<thead>
+<tr>
+<th>user_id</th>
+<th>first_login_date</th>
+<th>consecutive_login_days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1032</td>
+<td>2019-01-01</td>
+<td>11</td>
+</tr>
+<tr>
+<td>1050</td>
+<td>2020-02-10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-1002-is-not-in-result">⚠️ Why 1002 is not in result:</h3>
+<p>User <code>1002</code> never had 10 consecutive login days. Their logins were non-consecutive or had short streaks:</p>
+<ul>
+<li>2021-05-01 → gap → 2021-05-03 → 2021-05-04 → gap → 2021-05-06</li>
+</ul>
+<hr />
+<h2 id="summary">✅ Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>LAG()</code></td>
+<td>Finds prior login for each user</td>
+</tr>
+<tr>
+<td><code>streak_marker</code></td>
+<td>1 if gap occurred, 0 if login is consecutive</td>
+</tr>
+<tr>
+<td><code>streak_id</code></td>
+<td>Increases when a new streak starts</td>
+</tr>
+<tr>
+<td><code>GROUP BY</code></td>
+<td>Each <code>(user_id, streak_id)</code> group is one streak</td>
+</tr>
+<tr>
+<td><code>HAVING COUNT(*) &gt;= 10</code></td>
+<td>Filters only those streaks with 10 or more days</td>
+</tr>
+</tbody>
+</table>
+<p>This method allows you to <strong>track multiple streaks per user</strong>, and analyze login behavior in a clean, scalable way.</p>
+<hr />
 
 
 

@@ -1,4 +1,4 @@
-# Here's a complete, production-ready end-to-end layout for a tabular classification ML pipeline with:
+# Production-ready end-to-end layout for a tabular classification ML pipeline
 
 ✅ Feature Engineering
 ✅ Preprocessing (Imputation + Scaling + Encoding)

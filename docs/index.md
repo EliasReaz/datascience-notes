@@ -1,17 +1,32 @@
 # Welcome to Data Science Essential Notes
 
-This site is a curated collection of practical notes, code examples, and definitions for quick reference and review across key areas in data science.
+
+Driven by a passion for making complex ideas simple, I’ve formatted useful data science notes for quick reference, revision, and real-world use.
+
+I hope you find them concise, practical, and helpful.
 
 Start exploring by clicking on the tabs above!
 
-## Explore the Sections
+## What's Inside
 
-- **Python**: Some code patterns and algorithms in Python.
-- **SQL**: Query examples for real-world use cases.
-- **Statistical Inferences**: Key concepts like _p-values_, _power_, and _hypothesis testing_.
-- **Common Business Metrics**: Definitions and examples of essential metrics like _conversion rate_, _churn_, _Lifetime Value (LTV)_, and more.
-- **A/B Testing**: Notes and templates to help you design, run, and interpret A/B tests.
-- **Git Commands**: Handy Git commands for daily use.
-- **MLOps Basics**: Starter kit on Docker, FastAPI, and Flask
+- **Python**  
+  Some useful algorithms.
 
+- **SQL**  
+  Real-world query examples covering data retrieval, join, groupby, aggregation, & window functions.
+
+- **Applied Statistics**  
+  Key concepts like p-values, statistical power, A/B testing, and bootstrapping—explained simply.
+
+- **Basic Business Metrics**  
+  Definitions and use cases of essential KPIs such as conversion rate, churn, and customer lifetime value (LTV).
+
+- **Git Commands**  
+  Frequently used Git commands for efficient version control.
+- **Pandas dataframe wrangling**
+  map(), apply(), transform(), pivot_table(), melt()
+- **MLOps Basics**  
+  Beginner-friendly notes on Docker, FastAPI, and Flask for building deployable ML solutions.
+- **ML Pipeline**
+  
 ---
