@@ -21,14 +21,14 @@ nav:
   - Home: index.md
 
   - LLM RAG:
-      - RGA workflow: RAG_workflow_cheatsheet.md
-      - FAISS library and ChromaDB: FAISS_ChromaDB.md
-      - LLM decoding strategy: llm_decoding_strategy_notes.md
-      - Retriever in RAG: RAG_Retrievers_LlamaIndex_Notes.md
-      - TF-IDF what, why: tf-idf_score_why_how.md
+      - RGA workflow: LLM_RAG_notes/RAG_workflow_cheatsheet.md
+      - FAISS library and ChromaDB: LLM_RAG_notes/FAISS_ChromaDB.md
+      - LLM decoding strategy: LLM_RAG_notes/llm_decoding_strategy_notes.md
+      - Retriever in RAG: LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes.md
+      - TF-IDF what, why: LLM_RAG_notes/tf-idf_score_why_how.md
 
   - Confusion Matrix:
-      - ROC vs PR curve: ROC_PF_curve.md
+      - ROC vs PR curve: Confusion_matrix/ROC_PR_curve.md
 
   - Applied Statistic:
       - What p-value means: Applied_statistics/Explanation_pvalue.md
