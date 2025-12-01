@@ -19,6 +19,28 @@ theme:
 
 nav:
   - Home: index.md
+
+  - LLM_RAG_notes:
+      - RGA workflow: RAG_workflow_cheatsheet.md
+      - FAISS library and ChromaDB: FAISS_ChromaDB.md
+      - LLM decoding strategy: llm_decoding_strategy_notes.md
+      - Retriever in RAG: RAG_Retrievers_LlamaIndex_Notes.md
+      - TF-IDF what, why: tf-idf_score_why_how.md
+
+  - Confusion_matrix:
+      - ROC vs PR curve: ROC_PF_curve.md
+
+  - Applied Statistic:
+      - What p-value means: Applied_statistics/Explanation_pvalue.md
+      - AB testing Concepts: Applied_statistics/AB_testing.md
+      - Confidence interval for median: Applied_statistics/ci_median.md
+
+  - Pandas Notes: 
+      - pivot-table-stack-unstack: pandas_manipulation/pandas_pivot_reshape.md
+      - groupby and aggregation: pandas_manipulation/top_3genre_avg_rating.md
+      - aggregation functions agg, transform, apply: pandas_manipulation/types_of_aggregation.md
+      - Notes on melt: pandas_manipulation/notes_on_melt.md
+
   - Python:
       - Find unique numbers - Two-pointer search: python/find_unique_element.md
       - Count coin combinations to reach target amount: python/coin_combinations.md
@@ -31,21 +53,14 @@ nav:
       - Most popular product: SQL/most_popular_product.md
       - Listening habits: SQL/listening_habit.md
       - Consecutive log-in streak: SQL/consecutive_login_days.md
-  - Applied Statistic:
-      - What p-value means: Applied_statistics/Explanation_pvalue.md
-      - AB testing Concepts: Applied_statistics/AB_testing.md
-      - Confidence interval for median: Applied_statistics/ci_median.md
+
   - Handy git commands:
       - git commands: git_commands/handy_git_commands.md
   - Common Business Metrics: 
       - Metrics Glossary: Common_business_metrics/common_business_metrics.md
  
       
-  - Pandas Notes: 
-      - pivot-table-stack-unstack: pandas_manipulation/pandas_pivot_reshape.md
-      - groupby and aggregation: pandas_manipulation/top_3genre_avg_rating.md
-      - aggregation functions agg, transform, apply: pandas_manipulation/types_of_aggregation.md
-      - Notes on melt: pandas_manipulation/notes_on_melt.md
+
   - MLOps Basics:
       - Docker FastAPI Flask: MLOps/devops_notes.md
   - ML Pipeline: ML_Pipeline/ml_pipeline.md   

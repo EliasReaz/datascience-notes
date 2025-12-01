@@ -7,6 +7,15 @@ Start exploring by clicking on the tabs above!
 
 ## What's Inside
 
+- **LLM & RAG**
+  Notes on LLM models, RAG workflow, FAISS, ChromaDB
+
+- **ROC and PR curve**
+  Difference between ROC and PR curve - what, why, when to use
+
+- **Pandas dataframe wrangling**
+  map(), apply(), transform(), pivot_table(), melt()
+
 - **Python**  
   Some useful algorithms.
 
@@ -21,8 +30,7 @@ Start exploring by clicking on the tabs above!
 
 - **Git Commands**  
   Frequently used Git commands for efficient version control.
-- **Pandas dataframe wrangling**
-  map(), apply(), transform(), pivot_table(), melt()
+
 - **MLOps Basics**  
   Beginner-friendly notes on Docker, FastAPI, and Flask for building deployable ML solutions.
 - **ML Pipeline**
