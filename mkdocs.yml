@@ -20,14 +20,14 @@ theme:
 nav:
   - Home: index.md
 
-  - LLM_RAG_notes:
+  - LLM RAG:
       - RGA workflow: RAG_workflow_cheatsheet.md
       - FAISS library and ChromaDB: FAISS_ChromaDB.md
       - LLM decoding strategy: llm_decoding_strategy_notes.md
       - Retriever in RAG: RAG_Retrievers_LlamaIndex_Notes.md
       - TF-IDF what, why: tf-idf_score_why_how.md
 
-  - Confusion_matrix:
+  - Confusion Matrix:
       - ROC vs PR curve: ROC_PF_curve.md
 
   - Applied Statistic:
