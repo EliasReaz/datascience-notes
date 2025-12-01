@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../RAG_workflow_cheatsheet/">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../llm_decoding_strategy_notes/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>FAISS library and ChromaDB - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#vector-search-reference-notes" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              FAISS library and ChromaDB
             
           </span>
         </div>
@@ -186,11 +186,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../RAG_workflow_cheatsheet/" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -442,28 +442,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -490,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -510,10 +513,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    FAISS library and ChromaDB
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -524,6 +549,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#faiss-facebook-ai-similarity-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 FAISS (Facebook AI Similarity Search)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 FAISS (Facebook AI Similarity Search)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-options-in-faiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 Index Options in FAISS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chromadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 ChromaDB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hnsw-hierarchical-navigable-small-world-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 HNSW (Hierarchical Navigable Small World Graph)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milvus" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Milvus
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚖️ Quick Comparison Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
+      <a href="../llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -559,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -582,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -805,31 +910,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +944,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +1001,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +1015,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1670,72 +1658,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#faiss-facebook-ai-similarity-search" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      🔹 FAISS (Facebook AI Similarity Search)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 FAISS (Facebook AI Similarity Search)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index-options-in-faiss" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 Index Options in FAISS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chromadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 ChromaDB
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#hnsw-hierarchical-navigable-small-world-graph" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      🔹 HNSW (Hierarchical Navigable Small World Graph)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#milvus" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      🔹 Milvus
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+  <a href="#quick-comparison-table" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
+      ⚖️ Quick Comparison Table
     </span>
   </a>
   
@@ -1757,346 +1733,169 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
-<hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h1 id="vector-search-reference-notes">📌 Vector Search Reference Notes</h1>
+<h2 id="faiss-facebook-ai-similarity-search">🔹 FAISS (Facebook AI Similarity Search)</h2>
 <ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+<li><strong>Type</strong>: Library (not a database)</li>
+<li><strong>Strengths</strong>:</li>
+<li>High-performance similarity search on single machine (CPU/GPU)</li>
+<li>Multiple indexing options (flexibility + control)</li>
+<li>Great for millions of vectors</li>
+<li><strong>Limitations</strong>:</li>
+<li>No metadata storage</li>
+<li>No built-in distributed scaling</li>
+<li>Requires coding to integrate</li>
+</ul>
+<h3 id="index-options-in-faiss">🗂 Index Options in FAISS</h3>
+<table>
+<thead>
+<tr>
+<th>Index Type</th>
+<th>How It Works</th>
+<th>Pros</th>
+<th>Cons / Trade-offs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flat Index</strong></td>
+<td>Brute force: compares query to every vector</td>
+<td>Exact, highest accuracy</td>
+<td>Very slow for large datasets</td>
+</tr>
+<tr>
+<td><strong>IVF (Inverted File Index)</strong></td>
+<td>Clusters vectors, searches only nearest clusters</td>
+<td>Much faster, scalable</td>
+<td>Approximate, may miss close neighbors</td>
+</tr>
+<tr>
+<td><strong>LSH (Locality-Sensitive Hashing)</strong></td>
+<td>Hash functions bucket similar vectors</td>
+<td>Memory-efficient, good for high-dimensional sparse data (e.g., text embeddings)</td>
+<td>Lower accuracy, not always fastest</td>
+</tr>
+<tr>
+<td><strong>HNSW (Hierarchical Navigable Small World)</strong></td>
+<td>Multi-layer graph search</td>
+<td>Fast, high recall (~90–99%), tunable</td>
+<td>Approximate, memory-heavy, less ideal for dynamic datasets</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="chromadb">🔹 ChromaDB</h2>
+<ul>
+<li><strong>Type</strong>: Full vector database</li>
+<li><strong>Strengths</strong>:</li>
+<li>Stores vectors + metadata (tags, descriptions)</li>
+<li>Easy integration with LangChain and AI prototyping</li>
+<li>Service-based, convenient setup</li>
+<li><strong>Limitations</strong>:</li>
+<li>Only supports <strong>HNSW</strong> indexing</li>
+<li>Less control compared to FAISS</li>
+<li><strong>Best for</strong>: Rapid prototyping, metadata filtering, ease of use</li>
 </ul>
 <hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
-
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="hnsw-hierarchical-navigable-small-world-graph">🔹 HNSW (Hierarchical Navigable Small World Graph)</h2>
 <ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
+<li><strong>Concept</strong>: Multi-layer graph search (highways → main roads → local streets analogy)</li>
+<li><strong>Search process</strong>:</li>
+<li>Start at sparse top layer → greedy search</li>
+<li>Move down layers until reaching dense bottom layer</li>
+<li><strong>Index building</strong>:</li>
+<li>Each point gets random height</li>
+<li>Connected to closest neighbors at each level</li>
+<li><strong>Performance</strong>:</li>
+<li>Recall: ~90–99% (approximate, not exact)</li>
+<li>Tunable parameters: connections, breadth of search</li>
+<li><strong>Trade-offs</strong>:</li>
+<li>Best for mostly-static datasets</li>
+<li>Memory-heavy if tuned for high accuracy</li>
+<li>Not ideal for frequent insertions/deletions</li>
+<li>Approximate results (not guaranteed exact)</li>
 </ul>
 <hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="milvus">🔹 Milvus</h2>
 <ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
+<li><strong>Type</strong>: Distributed vector database</li>
+<li><strong>Strengths</strong>:</li>
+<li>Production-ready scaling</li>
+<li>Hybrid search (structured + vector)</li>
+<li>Uses FAISS and HNSW under the hood</li>
+<li><strong>Best for</strong>: Large-scale, distributed, production deployments</li>
 </ul>
 <hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
+<h2 id="quick-comparison-table">⚖️ Quick Comparison Table</h2>
 <table>
 <thead>
 <tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
+<th>Feature</th>
+<th>FAISS (Library)</th>
+<th>ChromaDB (DB)</th>
+<th>HNSW (Index)</th>
+<th>Milvus (DB)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
+<td><strong>Nature</strong></td>
+<td>Toolkit/library</td>
+<td>Full database</td>
+<td>Index algo</td>
+<td>Distributed DB</td>
 </tr>
 <tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
+<td><strong>Metadata support</strong></td>
+<td>❌</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
 </tr>
 <tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
+<td><strong>Index options</strong></td>
+<td>Flat, IVF, LSH, HNSW</td>
+<td>Only HNSW</td>
+<td>N/A</td>
+<td>Multiple (via FAISS/HNSW)</td>
+</tr>
+<tr>
+<td><strong>Ease of use</strong></td>
+<td>Low (code req.)</td>
+<td>High</td>
+<td>N/A</td>
+<td>Medium (setup needed)</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Very high local</td>
+<td>Good, convenient</td>
+<td>Fast approx</td>
+<td>Scalable, production</td>
+</tr>
+<tr>
+<td><strong>Scaling</strong></td>
+<td>Single machine</td>
+<td>Limited</td>
+<td>N/A</td>
+<td>Distributed</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Control + speed</td>
+<td>Prototyping</td>
+<td>Approx search</td>
+<td>Enterprise scale</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
-</ul>
+<p>✅ <strong>Key Takeaway</strong>:<br />
+- <strong>FAISS</strong> → control + speed, multiple index choices (Flat, IVF, LSH, HNSW)<br />
+- <strong>ChromaDB</strong> → convenience + metadata, prototyping<br />
+- <strong>HNSW</strong> → fast approximate search, static datasets<br />
+- <strong>Milvus</strong> → distributed, production-ready  </p>
 <hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
-
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
-print(result)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16.67</td>
-<td>810</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
 
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../RAG_Retrievers_LlamaIndex_Notes/">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../../Confusion_matrix/ROC_PR_curve/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>TF-IDF what, why - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#tfidf-reference-note" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              TF-IDF what, why
             
           </span>
         </div>
@@ -186,11 +186,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../RAG_workflow_cheatsheet/" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -442,28 +442,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -490,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -513,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -536,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
+      <a href="../llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -559,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -579,10 +582,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    TF-IDF what, why
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -593,6 +618,128 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-tfidf-is-useful-in-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Why TF‑IDF is Useful in Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-core-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Core Definitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Interpretation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-a-5-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Case A: 5 Books
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-b-1-book-with-5-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Case B: 1 Book with 5 Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-c-news-articles" class="md-nav__link">
+    <span class="md-ellipsis">
+      📰 Case C: News Articles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-rule-of-thumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Rule of Thumb
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfidf-example-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 TF‑IDF Example Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 TF‑IDF Example Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -805,31 +952,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +986,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +1043,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +1057,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1670,74 +1700,104 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#why-tfidf-is-useful-in-search" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      🔎 Why TF‑IDF is Useful in Search
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#1-core-definitions" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      1. Core Definitions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#2-interpretation" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      2. Interpretation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+  <a href="#3-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
+      3. Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-a-5-books" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Case A: 5 Books
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-b-1-book-with-5-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Case B: 1 Book with 5 Pages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-c-news-articles" class="md-nav__link">
+    <span class="md-ellipsis">
+      📰 Case C: News Articles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-rule-of-thumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Rule of Thumb
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+  <a href="#tfidf-example-table" class="md-nav__link">
     <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
+      📊 TF‑IDF Example Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 TF‑IDF Example Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Key Takeaways
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1757,346 +1817,163 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
-<hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h1 id="tfidf-reference-note">📝 TF‑IDF Reference Note</h1>
+<p>TF‑IDF emphasizes <strong>word relevancy</strong>. In document search, it helps identify which documents are most relevant to a user’s query by highlighting words that are distinctive to specific documents rather than common across all.</p>
+<h2 id="why-tfidf-is-useful-in-search">🔎 Why TF‑IDF is Useful in Search</h2>
 <ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+<li>
+<p>Balances frequency and distinctiveness: Common words like “the” or “and” are down‑weighted, while rare but meaningful words like “climate” or “inflation” are up‑weighted.</p>
+</li>
+<li>
+<p>Improves ranking: Documents where query terms have high TF‑IDF scores are ranked higher because those terms are both frequent and distinctive in those documents.</p>
+</li>
+<li>
+<p>Contextual relevance: A word’s importance is judged relative to the entire corpus, so search results reflect not just raw frequency but discriminative power.</p>
+</li>
+</ul>
+<h2 id="1-core-definitions">1. Core Definitions</h2>
+<ul>
+<li><strong>Term Frequency (TF):</strong><br />
+  Frequency of a word within a single document. High if the word appears often in that document.</li>
+<li><strong>Document Frequency (DF):</strong><br />
+  Number of documents in the corpus that contain the word at least once.  </li>
+<li>High DF → word appears in many documents.  </li>
+<li>Low DF → word appears in few documents.</li>
+<li><strong>Inverse Document Frequency (IDF):</strong><br />
+  Measures rarity across documents:<br />
+  [
+  IDF = \log\left(\frac{N}{DF}\right)
+  ]<br />
+  where (N) = total number of documents.  </li>
+<li>Low DF → High IDF.  </li>
+<li>High DF → Low IDF.</li>
+<li><strong>TF‑IDF Score:</strong><br />
+  [
+  TF\text{-}IDF = TF \times IDF
+  ]<br />
+  Highlights words that are frequent in one document but rare across the corpus.</li>
 </ul>
 <hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
+<h2 id="2-interpretation">2. Interpretation</h2>
+<ul>
+<li><strong>High TF‑IDF Score:</strong>  </li>
+<li>Word is frequent in a specific document.  </li>
+<li>Word is rare across other documents.  </li>
+<li>Meaning → the word is <strong>distinctive or signature</strong> for that document.</li>
+<li><strong>Low TF‑IDF Score:</strong>  </li>
+<li>Word appears across many documents.  </li>
+<li>Meaning → the word is <strong>common background noise</strong> (e.g., “the”, “and”).</li>
+</ul>
+<hr />
+<h2 id="3-examples">3. Examples</h2>
+<h3 id="case-a-5-books">📚 Case A: 5 Books</h3>
+<ul>
+<li>Word “climate” appears 50 times in Book A, absent in others.  </li>
+<li>TF (Book A) = high.  </li>
+<li>DF = 1 → IDF = high.  </li>
+<li>TF‑IDF (Book A) = high.  </li>
+<li>TF‑IDF (Books B–E) = 0.</li>
+</ul>
+<h3 id="case-b-1-book-with-5-pages">📄 Case B: 1 Book with 5 Pages</h3>
+<ul>
+<li>Treat each page as a document.  </li>
+<li>If “climate” appears only on Page 1:  </li>
+<li>DF = 1 (out of 5).  </li>
+<li>IDF = high.  </li>
+<li>TF‑IDF (Page 1) = high.  </li>
+<li>TF‑IDF (Pages 2–5) = 0.</li>
+</ul>
+<h3 id="case-c-news-articles">📰 Case C: News Articles</h3>
+<ul>
+<li>Corpus = 100 articles.  </li>
+<li>Word “inflation” appears in 80 articles.  </li>
+<li>DF = 80 → IDF = low.  </li>
+<li>Even if TF is high in one article, TF‑IDF score is lower because the word is common.</li>
+</ul>
+<hr />
+<h2 id="4-rule-of-thumb">4. Rule of Thumb</h2>
+<ul>
+<li><strong>High score → specific to one document.</strong>  </li>
+<li>
+<p><strong>Low score → common across all documents.</strong></p>
+</li>
+<li>
+<p><strong>High TF‑IDF score</strong> → query word is highly relevant to that document.</p>
+</li>
+<li>
+<p><strong>Low TF‑IDF score</strong> → query word is common across many documents (e.g. the, and), less useful for distinguishing relevance.</p>
+</li>
+<li>
+<p><strong>Granularity matters:</strong>  </p>
+</li>
+<li>If you treat <em>each book as a document</em> → TF‑IDF highlights words distinctive to each book.  </li>
+<li>If you treat <em>each page as a document</em> → TF‑IDF highlights words distinctive to each page.</li>
+</ul>
+<hr />
+<h2 id="tfidf-example-table">📊 TF‑IDF Example Table</h2>
 <table>
 <thead>
 <tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
+<th>Document</th>
+<th>Term Frequency (TF) of “climate”</th>
+<th>Document Frequency (DF) across corpus</th>
+<th>Inverse Document Frequency (IDF)</th>
+<th>TF‑IDF Score</th>
+<th>Interpretation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
+<td>Book A</td>
+<td>30</td>
+<td>DF = 2 (appears in Book A &amp; Book B)</td>
+<td>log(5/2) ≈ 0.92</td>
+<td>27.6</td>
+<td>High → “climate” is distinctive for Book A</td>
+</tr>
+<tr>
+<td>Book B</td>
+<td>2</td>
+<td>DF = 2</td>
+<td>log(5/2) ≈ 0.92</td>
+<td>1.84</td>
+<td>Low → word appears but not strongly distinctive</td>
+</tr>
+<tr>
+<td>Book C</td>
 <td>0</td>
+<td>DF = 2</td>
+<td>log(5/2) ≈ 0.92</td>
+<td>0</td>
+<td>Absent → no relevance</td>
 </tr>
 <tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
+<td>Book D</td>
+<td>0</td>
+<td>DF = 2</td>
+<td>log(5/2) ≈ 0.92</td>
+<td>0</td>
+<td>Absent → no relevance</td>
 </tr>
 <tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
-
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
+<td>Book E</td>
+<td>0</td>
+<td>DF = 2</td>
+<td>log(5/2) ≈ 0.92</td>
+<td>0</td>
+<td>Absent → no relevance</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h3 id="key-takeaways">🔎 Key Takeaways</h3>
 <ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
+<li><strong>Book A:</strong> High TF × High IDF → high TF‑IDF score → “climate” is a <strong>signature word</strong> for Book A.  </li>
+<li><strong>Book B:</strong> Low TF × High IDF → low TF‑IDF score → “climate” is present but not distinctive.  </li>
+<li><strong>Books C–E:</strong> TF = 0 → TF‑IDF = 0 → “climate” is irrelevant.  </li>
 </ul>
 <hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
-</ul>
-<hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
-</ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
-
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
-print(result)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16.67</td>
-<td>810</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
+<p>✅ This table shows how the <strong>same word gets different TF‑IDF scores depending on the document</strong>. It’s high where the word is frequent and rare elsewhere, and low where the word is common or absent.</p>
 
 
 
