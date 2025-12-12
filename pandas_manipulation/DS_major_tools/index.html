@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../FAISS_ChromaDB/">
+        <link rel="prev" href="../../Applied_statistics/ci_median/">
       
       
-        <link rel="next" href="../RAG_Retrievers_LlamaIndex_Notes/">
+        <link rel="next" href="../pandas_pivot_reshape/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>LLM decoding strategy - Data Science Essential Notes</title>
+        <title>DS workflow - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflow" class="md-skip">
+        <a href="#data-science-test-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM decoding strategy
+              DS workflow
             
           </span>
         </div>
@@ -186,13 +186,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basicQA_llm_transformer/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-tabs__link">
           
   
   
@@ -248,11 +246,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../pandas_manipulation/DS_major_tools/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -383,31 +383,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -420,7 +417,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -434,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basicQA_llm_transformer/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-nav__link">
         
   
   
@@ -457,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -480,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -500,30 +497,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    LLM decoding strategy
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -534,162 +511,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -702,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -725,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -948,28 +769,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -982,7 +806,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -993,10 +817,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../pandas_manipulation/DS_major_tools/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    DS workflow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1007,6 +851,174 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-science-test-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Data Science Test Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Data Science Test Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-i-data-analysis-cleaning-exploratory-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part I: Data Analysis &amp; Cleaning (Exploratory Phase)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part I: Data Analysis &amp; Cleaning (Exploratory Phase)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-data-inspection-missing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Inspection &amp; Missing Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pandas-dfdropna-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗑️ Pandas df.dropna() Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗑️ Pandas df.dropna() Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-handling-inconsistent-text-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Handling Inconsistent Text Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-handling-inconsistent-datetime-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Handling Inconsistent Date/Time Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-numerical-analysis-outlier-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Numerical Analysis &amp; Outlier Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-categorical-analysis-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Categorical Analysis &amp; Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-relationship-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Relationship Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-ii-data-wrangling-reporting-transformation-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part II: Data Wrangling &amp; Reporting (Transformation Phase)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part II: Data Wrangling &amp; Reporting (Transformation Phase)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-filtering-subsetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Filtering &amp; Subsetting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-advanced-aggregation-for-custom-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Advanced Aggregation for Custom Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-restructuring-for-wide-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Restructuring for Wide Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-communication-strategy-the-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Communication Strategy (The Email)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1019,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -1042,7 +1054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -1065,7 +1077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
+      <a href="../types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -1088,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
+      <a href="../notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1111,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_manipulation/map_apply_transform/" class="md-nav__link">
+      <a href="../map_apply_transform/" class="md-nav__link">
         
   
   
@@ -1614,55 +1626,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#data-science-test-preparation" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ Workflow
+      📝 Data Science Test Preparation
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏗️ Workflow">
+    <nav class="md-nav" aria-label="📝 Data Science Test Preparation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
+  <a href="#part-i-data-analysis-cleaning-exploratory-phase" class="md-nav__link">
     <span class="md-ellipsis">
-      Select a Foundation Model
+      Part I: Data Analysis &amp; Cleaning (Exploratory Phase)
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Part I: Data Analysis &amp; Cleaning (Exploratory Phase)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
+  <a href="#1-data-inspection-missing-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
+      1. Data Inspection &amp; Missing Data
     </span>
   </a>
   
@@ -1672,66 +1658,108 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
+  <a href="#pandas-dfdropna-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Quick Takeaway
+      🗑️ Pandas df.dropna() Actions
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
+    <nav class="md-nav" aria-label="🗑️ Pandas df.dropna() Actions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
+  <a href="#2-handling-inconsistent-text-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Greedy Decoding
+      2. Handling Inconsistent Text Data
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
+  <a href="#3-handling-inconsistent-datetime-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Sampling with Temperature
+      3. Handling Inconsistent Date/Time Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-numerical-analysis-outlier-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Numerical Analysis &amp; Outlier Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-categorical-analysis-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Categorical Analysis &amp; Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-relationship-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Relationship Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-ii-data-wrangling-reporting-transformation-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part II: Data Wrangling &amp; Reporting (Transformation Phase)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Part II: Data Wrangling &amp; Reporting (Transformation Phase)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-filtering-subsetting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Filtering &amp; Subsetting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-advanced-aggregation-for-custom-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Advanced Aggregation for Custom Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-restructuring-for-wide-reports" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Restructuring for Wide Reports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-communication-strategy-the-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Communication Strategy (The Email)
     </span>
   </a>
   
@@ -1741,13 +1769,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1767,170 +1791,130 @@
 
 
 
-  <h1>LLM decoding strategy</h1>
+  <h1>DS workflow</h1>
 
-<h2 id="workflow">🏗️ Workflow</h2>
-<h3 id="select-a-foundation-model"><strong>Select a Foundation Model</strong></h3>
+<h2 id="data-science-test-preparation">📝 Data Science Test Preparation</h2>
+<h3 id="part-i-data-analysis-cleaning-exploratory-phase">Part I: Data Analysis &amp; Cleaning (Exploratory Phase)</h3>
+<p>This part focuses on initial data quality assessment, cleaning sparse/inconsistent data, and early discovery of usage patterns.</p>
+<h4 id="1-data-inspection-missing-data">1. Data Inspection &amp; Missing Data</h4>
 <ul>
-<li>Examples: <code>mistralai/mistral-small</code>, <code>meta-llama/Llama-3</code>, <code>gpt-j</code>, etc.</li>
-<li>Consider:</li>
-<li><strong>Size vs. latency</strong> (small models for speed, large for accuracy).</li>
-<li><strong>Domain fit</strong> (general-purpose vs. fine-tuned).</li>
-<li><strong>Hosting</strong> (IBM Watsonx, Hugging Face, Azure, local inference).</li>
+<li><strong>Function:</strong> <code>df.info()</code> to check data types and count non-null values.</li>
+<li><strong>Function:</strong> <code>df.isnull().sum()</code> to quickly count missing (null) values per column.</li>
+<li><strong>Action on Sparsity:</strong> Used <strong><code>df.dropna(axis=1, thresh=N)</code></strong> (where $N$ is the required minimum of non-null values) to drop columns that were too sparse (e.g., threshold set to 20 for 100 rows).</li>
 </ul>
-<hr />
-<h3 id="configure-model-parameters"><strong>Configure Model Parameters</strong></h3>
-<ul>
-<li>Common parameters:</li>
-<li><code>MAX_NEW_TOKENS</code>: controls output length.</li>
-<li><code>TEMPERATURE</code>: randomness/creativity.</li>
-<li><code>TOP_K</code> / <code>TOP_P</code>: sampling constraints.</li>
-<li><code>DECODING_METHOD</code>: greedy, sample, beam search.</li>
-<li>Credentials &amp; project setup (e.g., Watsonx API keys, project IDs).</li>
-</ul>
-<hr />
-<h3 id="wrap-with-langchain-or-orchestration-layer"><strong>Wrap with LangChain (or Orchestration Layer)</strong></h3>
-<ul>
-<li>Purpose: abstract the raw model into a <strong>LangChain LLM interface</strong>.</li>
-<li>Benefits:</li>
-<li>Unified API across different providers.</li>
-<li>Easy chaining with tools (retrievers, agents, memory).</li>
-<li>Plug-and-play with pipelines (QA bots, RAG, structured workflows).</li>
-<li>Example:</li>
-</ul>
-<pre><code class="language-python">from langchain_ibm import WatsonxLLM
-from ibm_watsonx_ai.foundation_models import ModelInference, GenParams
-
-model = ModelInference(
-    model_id=&quot;mistralai/mistral-small&quot;,
-    params={
-        GenParams.MAX_NEW_TOKENS: 256,
-        GenParams.TEMPERATURE: 0.5,
-    },
-    credentials={&quot;url&quot;: &quot;https://us-south.ml.cloud.ibm.com&quot;},
-    project_id=&quot;skills-network&quot;
-)
-
-llm = WatsonxLLM(model=model)
-</code></pre>
-<hr />
-<h3 id="integrate-into-workflow"><strong>Integrate into Workflow</strong></h3>
-<ul>
-<li><strong>Prompt engineering</strong>: design input prompts.</li>
-<li><strong>Chains/Agents</strong>: combine LLM with retrievers, tools, memory.</li>
-<li><strong>Evaluation</strong>: test determinism vs. creativity depending on decoding.</li>
-</ul>
-<hr />
-<h3 id="decoding-strategies-after-wrapping">🔑 Decoding Strategies (After Wrapping)</h3>
-<p><em>(same section as before, now positioned after the setup)</em></p>
+<h2 id="pandas-dfdropna-actions">🗑️ Pandas <code>df.dropna()</code> Actions</h2>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>How it Works</th>
-<th>Pros</th>
-<th>Cons</th>
-<th>Best Use Cases</th>
+<th style="text-align: left;">Drop Action</th>
+<th style="text-align: left;">Code</th>
+<th style="text-align: left;">Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Greedy</strong></td>
-<td>Always picks highest-probability token</td>
-<td>Deterministic, reproducible</td>
-<td>Bland, repetitive</td>
-<td>Structured extraction, factual QA</td>
+<td style="text-align: left;"><strong>Drop Sparse Columns</strong></td>
+<td style="text-align: left;"><code>df.dropna(axis=1, thresh=N)</code></td>
+<td style="text-align: left;"><strong>Keep</strong> a column only if it has at least <strong>N</strong> non-null values (applied across the rows).</td>
 </tr>
 <tr>
-<td><strong>Sampling</strong></td>
-<td>Randomly samples with temperature</td>
-<td>Creative, diverse</td>
-<td>Non-deterministic</td>
-<td>Brainstorming, storytelling</td>
+<td style="text-align: left;"><strong>Drop Rows (Default)</strong></td>
+<td style="text-align: left;"><code>df.dropna(axis=0)</code> or <code>how='any'</code></td>
+<td style="text-align: left;">Drop the <strong>entire row</strong> if <strong>any</strong> value in that row is null.</td>
 </tr>
 <tr>
-<td><strong>Top-k</strong></td>
-<td>Samples from top <em>k</em> tokens</td>
-<td>Balance diversity/coherence</td>
-<td>Needs tuning</td>
-<td>Creative writing</td>
+<td style="text-align: left;"><strong>Drop Empty Rows</strong></td>
+<td style="text-align: left;"><code>df.dropna(axis=0, how='all')</code></td>
+<td style="text-align: left;">Drop the <strong>entire row</strong> only if <strong>all</strong> values in that row are null.</td>
 </tr>
 <tr>
-<td><strong>Top-p</strong></td>
-<td>Samples from cumulative probability mass</td>
-<td>Adaptive diversity</td>
-<td>Needs tuning</td>
-<td>Dialogue, open-ended tasks</td>
-</tr>
-<tr>
-<td><strong>Beam Search</strong></td>
-<td>Explores multiple sequences</td>
-<td>Higher-quality</td>
-<td>Expensive, less diverse</td>
-<td>Translation, summarization</td>
+<td style="text-align: left;"><strong>Drop Rows (Specific Thresh)</strong></td>
+<td style="text-align: left;"><code>df.dropna(axis=0, thresh=N)</code></td>
+<td style="text-align: left;"><strong>Keep</strong> a row only if it has at least <strong>N</strong> non-null values (applied across the columns).</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="rule-of-thumb">📌 Rule of Thumb</h2>
+<h4 id="2-handling-inconsistent-text-data">2. Handling Inconsistent Text Data</h4>
 <ul>
-<li><strong>Foundation model choice</strong> → determines baseline capability.</li>
-<li><strong>LangChain wrapping</strong> → enables orchestration and workflow hygiene.</li>
-<li><strong>Decoding strategy</strong> → tailors output style (deterministic vs. creative).</li>
+<li><strong>Action:</strong> Standardizing text features (like <code>'country'</code>) to a uniform case.<ul>
+<li><strong>Code:</strong> <code>df['country'] = df['country'].str.lower()</code></li>
+</ul>
+</li>
+<li><strong>Action:</strong> Removing inconsistent characters (spaces, periods) using string replacement.<ul>
+<li><strong>Function:</strong> <strong><code>df.str.replace(pattern, replacement, regex=False)</code></strong></li>
+<li><strong>Key Guardrail:</strong> Always use <code>regex=False</code> when replacing literal characters (like <code>.</code> or <code></code>) to prevent accidental deletion of entire strings due to regex wildcard matching.</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-handling-inconsistent-datetime-data">3. Handling Inconsistent Date/Time Data</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>pd.to_datetime()</code></strong> is the essential function for converting object/string columns to <code>datetime64</code>.</li>
+<li><strong>Action on Mixed Formats:</strong> For columns with multiple date string formats (e.g., <code>'15-Jan-2025'</code> and <code>'01/15/2025'</code>), use the <code>infer_datetime_format=True</code> argument to allow Pandas to guess the format for each entry, ensuring successful conversion.</li>
+</ul>
+<h4 id="4-numerical-analysis-outlier-detection">4. Numerical Analysis &amp; Outlier Detection</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>df.describe()</code></strong> provides the essential summary statistics (mean, min, max, $Q_1$, $Q_2$, $Q_3$) for numerical data.</li>
+<li><strong>Outlier Method:</strong> The <strong>IQR (Interquartile Range) method</strong> is the most robust technique for skewed usage data.<ul>
+<li><strong>Key Concept:</strong> The <strong>Median ($Q_2$)</strong> is the best measure of a "typical" user session for right-skewed data because it is not inflated by extreme outliers (unlike the mean).</li>
+</ul>
+</li>
+<li><strong>Visualization:</strong> Use <strong><code>sns.boxplot(data=df['column'])</code></strong> to visually confirm IQR outliers.</li>
+</ul>
+<h4 id="5-categorical-analysis-visualization">5. Categorical Analysis &amp; Visualization</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>df['column'].value_counts()</code></strong> returns the count (frequency) of unique values.</li>
+<li><strong>Function for Percentage:</strong> Use <strong><code>df['column'].value_counts(normalize=True)</code></strong> to get the relative frequency (proportion).</li>
+<li><strong>Visualization (Frequency):</strong> Use <strong><code>df['column'].value_counts().plot(kind='bar')</code></strong> for a quick frequency bar chart.</li>
+<li><strong>Visualization (Comparison):</strong> Use the <strong><code>hue</code></strong> argument in Seaborn (<code>sns.countplot</code> or <code>sns.boxplot</code>) to compare distributions or counts across a third variable (e.g., <code>sns.boxplot(x=..., y=..., hue='Region')</code>).</li>
+</ul>
+<h4 id="6-relationship-analysis">6. Relationship Analysis</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>df.corr()</code></strong> generates the correlation matrix for all numerical pairs.</li>
+<li><strong>Visualization:</strong> <strong><code>sns.heatmap(df.corr(), annot=True)</code></strong> is used to visually represent the correlation matrix, with <code>annot=True</code> displaying the numerical correlation coefficients.</li>
+<li><strong>Key Concept:</strong> Strong correlation (multicollinearity) means features are redundant; the recommendation is to <strong>drop one</strong> or create a <strong>composite feature</strong>.</li>
 </ul>
 <hr />
-<h2 id="quick-takeaway">🎯 Quick Takeaway</h2>
-<p>Think of it as a <strong>three-layer stack</strong>:
-1. <strong>Foundation model</strong> (raw capability).<br />
-2. <strong>Wrapper (LangChain LLM)</strong> (workflow orchestration).<br />
-3. <strong>Decoding strategy</strong> (output style).  </p>
-<hr />
-<h2 id="parameter-interactions">⚙️ Parameter Interactions</h2>
+<h3 id="part-ii-data-wrangling-reporting-transformation-phase">Part II: Data Wrangling &amp; Reporting (Transformation Phase)</h3>
+<p>This part focuses on efficiently transforming data into custom, structured reports based on specific business criteria.</p>
+<h4 id="1-filtering-subsetting">1. Filtering &amp; Subsetting</h4>
 <ul>
-<li><strong>Temperature</strong></li>
-<li><code>0</code> → collapses sampling into greedy decoding.</li>
-<li><code>&gt;0</code> → introduces randomness.</li>
-<li><strong>DECODING_METHOD</strong></li>
-<li><code>"greedy"</code> → forces deterministic decoding.</li>
-<li><code>"sample"</code> → uses temperature/top-k/top-p.</li>
-<li><strong>Max Tokens</strong></li>
-<li>Controls length, independent of decoding method.</li>
+<li><strong>Technique:</strong> <strong>Boolean Indexing (Masking)</strong>.</li>
+<li><strong>Code:</strong> <code>df[ (df['condition_A']) &amp; (df['condition_B']) ]</code> using parentheses for each condition and <code>&amp;</code> (AND) or <code>|</code> (OR) operators.</li>
+</ul>
+<h4 id="2-advanced-aggregation-for-custom-reports">2. Advanced Aggregation for Custom Reports</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>df.groupby().agg()</code></strong> is used to apply multiple aggregation functions to multiple columns.</li>
+<li><strong>Code Structure:</strong> Use a <strong>dictionary</strong> within <code>agg()</code> to specify functions per column:
+    <code>python
+    df.groupby('Device').agg({
+        'session_duration': ['mean', 'median'],  # Multiple functions for one column
+        'user_id': 'nunique'                    # Different function for a second column
+    })</code></li>
+</ul>
+<h4 id="3-restructuring-for-wide-reports">3. Restructuring for Wide Reports</h4>
+<ul>
+<li><strong>Function:</strong> <strong><code>pd.pivot_table()</code></strong> is used to transform data from a long format to a wide summary table.</li>
+<li><strong>Code Structure:</strong> Requires defining the three key components:
+    <code>python
+    pd.pivot_table(
+        data=df,
+        index='Region',      # New ROWS
+        columns='Device_Type', # New COLUMN HEADERS
+        values='Duration',   # Data in the cells
+        aggfunc='mean'       # Aggregation (default is mean)
+    )</code></li>
+</ul>
+<h4 id="4-communication-strategy-the-email">4. Communication Strategy (The Email)</h4>
+<ul>
+<li><strong>Three Key Findings:</strong> Prioritize the three most critical findings for the email:<ol>
+<li><strong>Missing Data (Sparsity):</strong> Which columns are $&gt;80\%$ null? <strong>Caution:</strong> Statistics from these columns are <strong>not representative</strong>.</li>
+<li><strong>Usage Profile (Skew/Outliers):</strong> Report the <strong>Median</strong> session duration as the reliable center, noting the mean is inflated by outliers.</li>
+<li><strong>Correlation/Redundancy:</strong> Report any strong correlations (e.g., $r=0.85$) and recommend <strong>dropping one feature</strong> or creating a <strong>composite feature</strong> for future modeling.</li>
+</ol>
+</li>
 </ul>
 <hr />
-<h2 id="rule-of-thumb_1">📌 Rule of Thumb</h2>
-<ul>
-<li>Use <strong>Greedy</strong> when:</li>
-<li>You need <strong>deterministic, reproducible outputs</strong>.</li>
-<li>Tasks are <strong>factual, structured, or extractive</strong>.</li>
-<li>Use <strong>Sampling</strong> when:</li>
-<li>You want <strong>creative, varied outputs</strong>.</li>
-<li>Tasks are <strong>open-ended, conversational, or generative</strong>.</li>
-</ul>
-<hr />
-<h2 id="example-configurations">🛠️ Example Configurations</h2>
-<h3 id="greedy-decoding">Greedy Decoding</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0,
-    GenParams.DECODING_METHOD: &quot;greedy&quot;
-}
-</code></pre>
-<h3 id="sampling-with-temperature">Sampling with Temperature</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0.7,
-    GenParams.DECODING_METHOD: &quot;sample&quot;
-}
-</code></pre>
-<hr />
-<h2 id="quick-takeaway_1">🎯 Quick Takeaway</h2>
-<ul>
-<li><strong>Greedy = reproducibility</strong>  </li>
-<li><strong>Sampling = creativity</strong>  </li>
-<li>Explicitly set <code>DECODING_METHOD</code> when you want control.  </li>
-<li>If you don’t set it, the system defaults to sampling (since you provided <code>temperature &gt; 0</code>).  </li>
-</ul>
-<hr />
+<p>This summary covers every major technical detail and communication point from our preparation.</p>
 
 
 

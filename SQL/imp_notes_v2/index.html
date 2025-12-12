@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../FAISS_ChromaDB/">
+        <link rel="prev" href="../imp_notes/">
       
       
-        <link rel="next" href="../RAG_Retrievers_LlamaIndex_Notes/">
+        <link rel="next" href="../groupby_monthly_customer/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>LLM decoding strategy - Data Science Essential Notes</title>
+        <title>Important Notes 2 - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflow" class="md-skip">
+        <a href="#advanced-sql-reference-guide-core-concepts" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM decoding strategy
+              Important Notes 2
             
           </span>
         </div>
@@ -186,13 +186,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basicQA_llm_transformer/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-tabs__link">
           
   
   
@@ -288,11 +286,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../SQL/imp_notes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../imp_notes/" class="md-tabs__link">
           
   
   
@@ -383,31 +383,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -420,7 +417,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -434,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basicQA_llm_transformer/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-nav__link">
         
   
   
@@ -457,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -480,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -500,30 +497,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    LLM decoding strategy
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -534,162 +511,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -702,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -725,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -1259,28 +1080,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1293,7 +1117,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             SQL
@@ -1307,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/imp_notes/" class="md-nav__link">
+      <a href="../imp_notes/" class="md-nav__link">
         
   
   
@@ -1327,10 +1151,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../SQL/imp_notes_v2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Important Notes 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1341,6 +1187,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-pattern-streak-finding-row_number" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 🗓️ Pattern: Streak Finding (ROW_NUMBER())
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pattern-time-series-comparison-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 📈 Pattern: Time Series Comparison (LAG())
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-sql-execution-order-and-filtering-clauses" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ⚙️ SQL Execution Order and Filtering Clauses
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-postgresql-date-function-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📅 PostgreSQL Date Function Comparison
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1353,7 +1264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/groupby_monthly_customer/" class="md-nav__link">
+      <a href="../groupby_monthly_customer/" class="md-nav__link">
         
   
   
@@ -1376,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/first_name/" class="md-nav__link">
+      <a href="../first_name/" class="md-nav__link">
         
   
   
@@ -1399,7 +1310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/best_paid_title/" class="md-nav__link">
+      <a href="../best_paid_title/" class="md-nav__link">
         
   
   
@@ -1422,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/total_duration/" class="md-nav__link">
+      <a href="../total_duration/" class="md-nav__link">
         
   
   
@@ -1445,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/most_popular_product/" class="md-nav__link">
+      <a href="../most_popular_product/" class="md-nav__link">
         
   
   
@@ -1468,7 +1379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/listening_habit/" class="md-nav__link">
+      <a href="../listening_habit/" class="md-nav__link">
         
   
   
@@ -1491,7 +1402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/consecutive_login_days/" class="md-nav__link">
+      <a href="../consecutive_login_days/" class="md-nav__link">
         
   
   
@@ -1606,6 +1517,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1614,138 +1527,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
+  <a href="#2-pattern-streak-finding-row_number" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Quick Takeaway
+      2. 🗓️ Pattern: Streak Finding (ROW_NUMBER())
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
+  <a href="#3-pattern-time-series-comparison-lag" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
+      3. 📈 Pattern: Time Series Comparison (LAG())
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
+  <a href="#4-sql-execution-order-and-filtering-clauses" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Rule of Thumb
+      4. ⚙️ SQL Execution Order and Filtering Clauses
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
+  <a href="#5-postgresql-date-function-comparison" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
+      5. 📅 PostgreSQL Date Function Comparison
     </span>
   </a>
   
@@ -1767,170 +1587,155 @@
 
 
 
-  <h1>LLM decoding strategy</h1>
-
-<h2 id="workflow">🏗️ Workflow</h2>
-<h3 id="select-a-foundation-model"><strong>Select a Foundation Model</strong></h3>
+<h1 id="advanced-sql-reference-guide-core-concepts">📚 Advanced SQL Reference Guide: Core Concepts</h1>
+<h2 id="1-pattern-self-join-for-unique-pair-counting">1. 🤝 Pattern: Self-Join for Unique Pair Counting</h2>
+<p><strong>🎯 Goal:</strong> Find and count unique relationships between entities in the same table (e.g., lawyers sharing a trial).</p>
+<p><strong>🔑 Key Logic: Eliminating Duplicate Pairs</strong>
+Joining a table to itself (<code>T1</code> to <code>T2</code>) requires a condition to prevent double-counting of pairs (e.g., counting A/B and B/A).</p>
 <ul>
-<li>Examples: <code>mistralai/mistral-small</code>, <code>meta-llama/Llama-3</code>, <code>gpt-j</code>, etc.</li>
-<li>Consider:</li>
-<li><strong>Size vs. latency</strong> (small models for speed, large for accuracy).</li>
-<li><strong>Domain fit</strong> (general-purpose vs. fine-tuned).</li>
-<li><strong>Hosting</strong> (IBM Watsonx, Hugging Face, Azure, local inference).</li>
+<li><strong><code>T1.id &lt; T2.id</code></strong>: The most common and effective way to ensure only one order is counted.</li>
 </ul>
-<hr />
-<h3 id="configure-model-parameters"><strong>Configure Model Parameters</strong></h3>
-<ul>
-<li>Common parameters:</li>
-<li><code>MAX_NEW_TOKENS</code>: controls output length.</li>
-<li><code>TEMPERATURE</code>: randomness/creativity.</li>
-<li><code>TOP_K</code> / <code>TOP_P</code>: sampling constraints.</li>
-<li><code>DECODING_METHOD</code>: greedy, sample, beam search.</li>
-<li>Credentials &amp; project setup (e.g., Watsonx API keys, project IDs).</li>
-</ul>
-<hr />
-<h3 id="wrap-with-langchain-or-orchestration-layer"><strong>Wrap with LangChain (or Orchestration Layer)</strong></h3>
-<ul>
-<li>Purpose: abstract the raw model into a <strong>LangChain LLM interface</strong>.</li>
-<li>Benefits:</li>
-<li>Unified API across different providers.</li>
-<li>Easy chaining with tools (retrievers, agents, memory).</li>
-<li>Plug-and-play with pipelines (QA bots, RAG, structured workflows).</li>
-<li>Example:</li>
-</ul>
-<pre><code class="language-python">from langchain_ibm import WatsonxLLM
-from ibm_watsonx_ai.foundation_models import ModelInference, GenParams
-
-model = ModelInference(
-    model_id=&quot;mistralai/mistral-small&quot;,
-    params={
-        GenParams.MAX_NEW_TOKENS: 256,
-        GenParams.TEMPERATURE: 0.5,
-    },
-    credentials={&quot;url&quot;: &quot;https://us-south.ml.cloud.ibm.com&quot;},
-    project_id=&quot;skills-network&quot;
-)
-
-llm = WatsonxLLM(model=model)
+<p><strong>💻 SQL Code Template:</strong></p>
+<pre><code class="language-sql">SELECT
+    T1.lawyer_id AS Lawyer_A,
+    T2.lawyer_id AS Lawyer_B,
+    COUNT(T1.trial_id) AS Shared_Count
+FROM
+    TrialParticipation AS T1
+JOIN
+    TrialParticipation AS T2
+    ON T1.trial_id = T2.trial_id   
+    AND T1.lawyer_id &lt; T2.lawyer_id -- CRITICAL: Eliminate duplicates
+GROUP BY
+    Lawyer_A, Lawyer_B;
 </code></pre>
 <hr />
-<h3 id="integrate-into-workflow"><strong>Integrate into Workflow</strong></h3>
-<ul>
-<li><strong>Prompt engineering</strong>: design input prompts.</li>
-<li><strong>Chains/Agents</strong>: combine LLM with retrievers, tools, memory.</li>
-<li><strong>Evaluation</strong>: test determinism vs. creativity depending on decoding.</li>
-</ul>
+<h2 id="2-pattern-streak-finding-row_number">2. 🗓️ Pattern: Streak Finding (<code>ROW_NUMBER()</code>)</h2>
+<p><strong>🎯 Goal:</strong> Find the longest continuous sequence (streak) of dates or events.</p>
+<p><strong>🔑 Key Logic: The Group ID Trick</strong>
+Use <code>ROW_NUMBER()</code> to assign a sequential integer to every successful row. Subtracting this integer from the date creates a <code>Group ID</code> that stays constant only during a continuous streak.</p>
+<p><strong>💻 SQL Code Template (PostgreSQL):</strong></p>
+<pre><code class="language-sql">WITH tbl_high_sales AS (
+    SELECT sale_date FROM DailySales WHERE sales_amount &gt; 1000
+),
+tbl_streaks_grouped AS (
+    SELECT 
+        sale_date, 
+        -- Creates a unique ID for each continuous streak
+        sale_date - (ROW_NUMBER() OVER (ORDER BY sale_date) * INTERVAL '1 day') AS streak_group_id
+    FROM tbl_high_sales
+)
+SELECT 
+    MIN(sale_date) AS Start_Date,
+    MAX(sale_date) AS End_Date,
+    COUNT(sale_date) AS Streak_Length 
+FROM tbl_streaks_grouped
+GROUP BY streak_group_id;
+</code></pre>
 <hr />
-<h3 id="decoding-strategies-after-wrapping">🔑 Decoding Strategies (After Wrapping)</h3>
-<p><em>(same section as before, now positioned after the setup)</em></p>
+<h2 id="3-pattern-time-series-comparison-lag">3. 📈 Pattern: Time Series Comparison (<code>LAG()</code>)</h2>
+<p><strong>🎯 Goal:</strong> Calculate Month-Over-Month (MOM) percentage change.</p>
+<p><strong>🔑 Key Logic: <code>LAG()</code> and Safe Casting</strong></p>
+<ul>
+<li><code>LAG()</code> brings a value from a previous row into the current row for easy comparison.</li>
+<li><strong><code>CAST(... AS NUMERIC)</code></strong>: Essential to prevent <strong>integer division</strong> (which truncates the result to 0) when calculating percentages.</li>
+</ul>
+<p><strong>💻 SQL Code Template:</strong></p>
+<pre><code class="language-sql">WITH tbl_monthly_sales AS (
+    SELECT DATE_TRUNC('month', sale_date) AS sale_month, SUM(sales_amount) AS total_sales
+    FROM DailySales GROUP BY sale_month
+),
+tbl_lagged_sales AS (
+    SELECT 
+        total_sales,
+        LAG(total_sales, 1) OVER(ORDER BY sale_month ASC) AS prev_month_sales 
+    FROM tbl_monthly_sales
+)
+SELECT 
+    CAST((total_sales - prev_month_sales) AS NUMERIC) / prev_month_sales AS mom_percent_change
+FROM tbl_lagged_sales;
+</code></pre>
+<hr />
+<h2 id="4-sql-execution-order-and-filtering-clauses">4. ⚙️ SQL Execution Order and Filtering Clauses</h2>
+<p>The order in which these clauses are written determines when the filtering happens.</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>How it Works</th>
-<th>Pros</th>
-<th>Cons</th>
-<th>Best Use Cases</th>
+<th style="text-align: center;">Clause</th>
+<th style="text-align: center;">Purpose</th>
+<th style="text-align: center;">Execution Order</th>
+<th style="text-align: center;">Can use Aggregation?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Greedy</strong></td>
-<td>Always picks highest-probability token</td>
-<td>Deterministic, reproducible</td>
-<td>Bland, repetitive</td>
-<td>Structured extraction, factual QA</td>
+<td style="text-align: center;"><strong><code>WHERE</code></strong></td>
+<td style="text-align: center;">Filters <strong>Individual Rows</strong>.</td>
+<td style="text-align: center;">2nd (Before Grouping)</td>
+<td style="text-align: center;">🚫 <strong>No.</strong> Filters raw data.</td>
 </tr>
 <tr>
-<td><strong>Sampling</strong></td>
-<td>Randomly samples with temperature</td>
-<td>Creative, diverse</td>
-<td>Non-deterministic</td>
-<td>Brainstorming, storytelling</td>
+<td style="text-align: center;"><code>GROUP BY</code></td>
+<td style="text-align: center;">Aggregates remaining rows.</td>
+<td style="text-align: center;">3rd</td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td><strong>Top-k</strong></td>
-<td>Samples from top <em>k</em> tokens</td>
-<td>Balance diversity/coherence</td>
-<td>Needs tuning</td>
-<td>Creative writing</td>
+<td style="text-align: center;"><strong><code>HAVING</code></strong></td>
+<td style="text-align: center;">Filters <strong>Groups/Totals</strong>.</td>
+<td style="text-align: center;">4th (After Grouping)</td>
+<td style="text-align: center;">✅ <strong>Yes.</strong> Filters based on <code>SUM()</code>, <code>COUNT()</code>, etc.</td>
 </tr>
 <tr>
-<td><strong>Top-p</strong></td>
-<td>Samples from cumulative probability mass</td>
-<td>Adaptive diversity</td>
-<td>Needs tuning</td>
-<td>Dialogue, open-ended tasks</td>
+<td style="text-align: center;"><code>ORDER BY</code></td>
+<td style="text-align: center;">Sorts final results.</td>
+<td style="text-align: center;">6th (Last)</td>
+<td style="text-align: center;">✅ <strong>Yes.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Practical Example:</strong></p>
+<pre><code class="language-sql">SELECT product_category, SUM(amount) AS total_sales
+FROM SalesTransactions
+WHERE EXTRACT(YEAR FROM transaction_date) = 2025 -- 1. WHERE: Filter sales in 2025
+  AND amount &gt; 100                               -- 1. WHERE: Filter individual transactions &gt; 100
+GROUP BY product_category
+HAVING SUM(amount) &gt; 50000;                      -- 2. HAVING: Filter categories with total sales &gt; 50k
+</code></pre>
+<hr />
+<h2 id="5-postgresql-date-function-comparison">5. 📅 PostgreSQL Date Function Comparison</h2>
+<p>Both functions are used to filter dates, but they return different data types, which affects how you write your comparisons.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Function</th>
+<th style="text-align: center;">Output Data Type</th>
+<th style="text-align: center;">Comparison Example</th>
+<th style="text-align: center;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong><code>EXTRACT(YEAR FROM date)</code></strong></td>
+<td style="text-align: center;"><strong>Integer</strong> (e.g., 2025)</td>
+<td style="text-align: center;"><code>WHERE EXTRACT(YEAR FROM date) = 2025</code></td>
+<td style="text-align: center;">Simple comparison against a specific numerical part of the date (year, month, day).</td>
 </tr>
 <tr>
-<td><strong>Beam Search</strong></td>
-<td>Explores multiple sequences</td>
-<td>Higher-quality</td>
-<td>Expensive, less diverse</td>
-<td>Translation, summarization</td>
+<td style="text-align: center;"><strong><code>DATE_TRUNC('unit', date)</code></strong></td>
+<td style="text-align: center;"><strong>Timestamp</strong> (e.g., <code>2025-01-01 00:00:00</code>)</td>
+<td style="text-align: center;"><code>WHERE DATE_TRUNC('year', date) = '2025-01-01'</code></td>
+<td style="text-align: center;">Used for grouping time periods (like <code>GROUP BY DATE_TRUNC('month', date)</code>) or filtering ranges.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="rule-of-thumb">📌 Rule of Thumb</h2>
-<ul>
-<li><strong>Foundation model choice</strong> → determines baseline capability.</li>
-<li><strong>LangChain wrapping</strong> → enables orchestration and workflow hygiene.</li>
-<li><strong>Decoding strategy</strong> → tailors output style (deterministic vs. creative).</li>
-</ul>
-<hr />
-<h2 id="quick-takeaway">🎯 Quick Takeaway</h2>
-<p>Think of it as a <strong>three-layer stack</strong>:
-1. <strong>Foundation model</strong> (raw capability).<br />
-2. <strong>Wrapper (LangChain LLM)</strong> (workflow orchestration).<br />
-3. <strong>Decoding strategy</strong> (output style).  </p>
-<hr />
-<h2 id="parameter-interactions">⚙️ Parameter Interactions</h2>
-<ul>
-<li><strong>Temperature</strong></li>
-<li><code>0</code> → collapses sampling into greedy decoding.</li>
-<li><code>&gt;0</code> → introduces randomness.</li>
-<li><strong>DECODING_METHOD</strong></li>
-<li><code>"greedy"</code> → forces deterministic decoding.</li>
-<li><code>"sample"</code> → uses temperature/top-k/top-p.</li>
-<li><strong>Max Tokens</strong></li>
-<li>Controls length, independent of decoding method.</li>
-</ul>
-<hr />
-<h2 id="rule-of-thumb_1">📌 Rule of Thumb</h2>
-<ul>
-<li>Use <strong>Greedy</strong> when:</li>
-<li>You need <strong>deterministic, reproducible outputs</strong>.</li>
-<li>Tasks are <strong>factual, structured, or extractive</strong>.</li>
-<li>Use <strong>Sampling</strong> when:</li>
-<li>You want <strong>creative, varied outputs</strong>.</li>
-<li>Tasks are <strong>open-ended, conversational, or generative</strong>.</li>
-</ul>
-<hr />
-<h2 id="example-configurations">🛠️ Example Configurations</h2>
-<h3 id="greedy-decoding">Greedy Decoding</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0,
-    GenParams.DECODING_METHOD: &quot;greedy&quot;
-}
-</code></pre>
-<h3 id="sampling-with-temperature">Sampling with Temperature</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0.7,
-    GenParams.DECODING_METHOD: &quot;sample&quot;
-}
-</code></pre>
-<hr />
-<h2 id="quick-takeaway_1">🎯 Quick Takeaway</h2>
-<ul>
-<li><strong>Greedy = reproducibility</strong>  </li>
-<li><strong>Sampling = creativity</strong>  </li>
-<li>Explicitly set <code>DECODING_METHOD</code> when you want control.  </li>
-<li>If you don’t set it, the system defaults to sampling (since you provided <code>temperature &gt; 0</code>).  </li>
-</ul>
-<hr />
+<p>You've built a strong knowledge base! Since you've mastered filtering, aggregation, and time series, what would you like to explore next?</p>
+<ol>
+<li><strong>🌲 Recursive CTEs:</strong> Learning to query hierarchical data (like finding all managers in a management chain).</li>
+<li><strong>🔍 SQL Performance Tuning:</strong> Discussion of indexing and optimization for queries.</li>
+<li><strong>🪟 Other Window Functions:</strong> Exploring <code>LEAD()</code> and using partitions (<code>PARTITION BY</code>).</li>
+</ol>
 
 
 

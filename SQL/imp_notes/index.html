@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../FAISS_ChromaDB/">
+        <link rel="prev" href="../../python/square_root/">
       
       
-        <link rel="next" href="../RAG_Retrievers_LlamaIndex_Notes/">
+        <link rel="next" href="../imp_notes_v2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>LLM decoding strategy - Data Science Essential Notes</title>
+        <title>Important Notes 1 - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflow" class="md-skip">
+        <a href="#advanced-sql-patterns-comprehensive-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM decoding strategy
+              Important Notes 1
             
           </span>
         </div>
@@ -186,13 +186,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basicQA_llm_transformer/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-tabs__link">
           
   
   
@@ -288,11 +286,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../SQL/imp_notes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -383,31 +383,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -420,7 +417,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -434,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basicQA_llm_transformer/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/basicQA_llm_transformer/" class="md-nav__link">
         
   
   
@@ -457,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -480,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -500,30 +497,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    LLM decoding strategy
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -534,162 +511,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -702,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -725,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -1259,28 +1080,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1293,7 +1117,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             SQL
@@ -1304,10 +1128,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../SQL/imp_notes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Important Notes 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1318,6 +1164,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pattern-time-series-comparison-lag" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 📈 Pattern: Time Series Comparison (LAG())
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-window-function-ranking-rank-vs-dense_rank" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🔢 Window Function: Ranking (RANK vs. DENSE_RANK)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1330,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/imp_notes_v2/" class="md-nav__link">
+      <a href="../imp_notes_v2/" class="md-nav__link">
         
   
   
@@ -1353,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/groupby_monthly_customer/" class="md-nav__link">
+      <a href="../groupby_monthly_customer/" class="md-nav__link">
         
   
   
@@ -1376,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/first_name/" class="md-nav__link">
+      <a href="../first_name/" class="md-nav__link">
         
   
   
@@ -1399,7 +1292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/best_paid_title/" class="md-nav__link">
+      <a href="../best_paid_title/" class="md-nav__link">
         
   
   
@@ -1422,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/total_duration/" class="md-nav__link">
+      <a href="../total_duration/" class="md-nav__link">
         
   
   
@@ -1445,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/most_popular_product/" class="md-nav__link">
+      <a href="../most_popular_product/" class="md-nav__link">
         
   
   
@@ -1468,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/listening_habit/" class="md-nav__link">
+      <a href="../listening_habit/" class="md-nav__link">
         
   
   
@@ -1491,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SQL/consecutive_login_days/" class="md-nav__link">
+      <a href="../consecutive_login_days/" class="md-nav__link">
         
   
   
@@ -1606,6 +1499,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1614,138 +1509,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
+  <a href="#3-pattern-time-series-comparison-lag" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 Quick Takeaway
+      3. 📈 Pattern: Time Series Comparison (LAG())
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
+  <a href="#4-window-function-ranking-rank-vs-dense_rank" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
+      4. 🔢 Window Function: Ranking (RANK vs. DENSE_RANK)
     </span>
   </a>
   
@@ -1767,170 +1551,145 @@
 
 
 
-  <h1>LLM decoding strategy</h1>
+<h1 id="advanced-sql-patterns-comprehensive-reference">💾 Advanced SQL Patterns: Comprehensive Reference</h1>
+<p>This guide summarizes four advanced SQL techniques: Self-Joins for pairing, Window Functions for streak analysis (<code>ROW_NUMBER()</code>), time-series comparison (<code>LAG()</code>), and the difference between ranking functions.</p>
+<h2 id="1-pattern-self-join-for-unique-pair-counting">1. 🤝 Pattern: Self-Join for Unique Pair Counting</h2>
+<p><strong>🎯 Goal:</strong> Find and count unique relationships between entities in the same table (e.g., lawyers sharing a trial).</p>
+<p><strong>🏷️ Table Schema:</strong>
+| Table | Column | Type |
+| :---: | :---: | :---: |
+| <code>TrialParticipation</code> | <code>trial_id</code> | INT |
+| | <code>lawyer_id</code> | INT |</p>
+<p><strong>🔑 Key Logic: Eliminating Duplicate Pairs</strong>
+Joining a table to itself creates redundant pairs (A, B and B, A). The condition below ensures only one is counted:
+- <strong><code>T1.lawyer_id &lt; T2.lawyer_id</code></strong>: Forces the lawyer with the lower ID to always be listed first.</p>
+<p><strong>💻 SQL Code Template:</strong></p>
+<pre><code class="language-sql">SELECT
+    T1.lawyer_id AS Lawyer_A,
+    T2.lawyer_id AS Lawyer_B,
+    COUNT(T1.trial_id) AS Shared_Count
+FROM
+    TrialParticipation AS T1
+JOIN
+    TrialParticipation AS T2
+    ON T1.trial_id = T2.trial_id
+    AND T1.lawyer_id &lt; T2.lawyer_id -- CRITICAL: Eliminates duplicates
+GROUP BY
+    Lawyer_A, Lawyer_B
+ORDER BY
+    Shared_Count DESC;
+````
 
-<h2 id="workflow">🏗️ Workflow</h2>
-<h3 id="select-a-foundation-model"><strong>Select a Foundation Model</strong></h3>
-<ul>
-<li>Examples: <code>mistralai/mistral-small</code>, <code>meta-llama/Llama-3</code>, <code>gpt-j</code>, etc.</li>
-<li>Consider:</li>
-<li><strong>Size vs. latency</strong> (small models for speed, large for accuracy).</li>
-<li><strong>Domain fit</strong> (general-purpose vs. fine-tuned).</li>
-<li><strong>Hosting</strong> (IBM Watsonx, Hugging Face, Azure, local inference).</li>
-</ul>
-<hr />
-<h3 id="configure-model-parameters"><strong>Configure Model Parameters</strong></h3>
-<ul>
-<li>Common parameters:</li>
-<li><code>MAX_NEW_TOKENS</code>: controls output length.</li>
-<li><code>TEMPERATURE</code>: randomness/creativity.</li>
-<li><code>TOP_K</code> / <code>TOP_P</code>: sampling constraints.</li>
-<li><code>DECODING_METHOD</code>: greedy, sample, beam search.</li>
-<li>Credentials &amp; project setup (e.g., Watsonx API keys, project IDs).</li>
-</ul>
-<hr />
-<h3 id="wrap-with-langchain-or-orchestration-layer"><strong>Wrap with LangChain (or Orchestration Layer)</strong></h3>
-<ul>
-<li>Purpose: abstract the raw model into a <strong>LangChain LLM interface</strong>.</li>
-<li>Benefits:</li>
-<li>Unified API across different providers.</li>
-<li>Easy chaining with tools (retrievers, agents, memory).</li>
-<li>Plug-and-play with pipelines (QA bots, RAG, structured workflows).</li>
-<li>Example:</li>
-</ul>
-<pre><code class="language-python">from langchain_ibm import WatsonxLLM
-from ibm_watsonx_ai.foundation_models import ModelInference, GenParams
+-----
 
-model = ModelInference(
-    model_id=&quot;mistralai/mistral-small&quot;,
-    params={
-        GenParams.MAX_NEW_TOKENS: 256,
-        GenParams.TEMPERATURE: 0.5,
-    },
-    credentials={&quot;url&quot;: &quot;https://us-south.ml.cloud.ibm.com&quot;},
-    project_id=&quot;skills-network&quot;
+## 2\. 🗓️ Pattern: Streak Finding (`ROW_NUMBER()`)
+
+**🎯 Goal:** Find the longest continuous sequence of successful days (sales \&gt; $1000).
+
+**🏷️ Table Schema:**
+| Table | Column | Type |
+| :---: | :---: | :---: |
+| `DailySales` | `sale_date` | DATE |
+| | `sales_amount` | INT |
+
+**🔑 Key Logic: The Group ID Trick**
+The difference between the date and the row number is **constant** during a streak but **changes** when a date gap occurs.
+$$\text{Group ID} = \text{Sale Date} - \text{ROW\_NUMBER}()$$
+
+**💻 SQL Code Template (PostgreSQL):**
+
+```sql
+WITH tbl_high_sales AS (
+    SELECT sale_date FROM DailySales WHERE sales_amount &gt; 1000
+),
+tbl_streaks_grouped AS (
+    SELECT 
+        sale_date, 
+        -- Creates a unique ID for each continuous streak
+        sale_date - (ROW_NUMBER() OVER (ORDER BY sale_date) * INTERVAL '1 day') AS streak_group_id
+    FROM tbl_high_sales
 )
-
-llm = WatsonxLLM(model=model)
+SELECT 
+    MIN(sale_date) AS Start_Date,
+    MAX(sale_date) AS End_Date,
+    COUNT(sale_date) AS Streak_Length 
+FROM 
+    tbl_streaks_grouped
+GROUP BY 
+    streak_group_id
+ORDER BY 
+    Streak_Length DESC
+LIMIT 1;
 </code></pre>
 <hr />
-<h3 id="integrate-into-workflow"><strong>Integrate into Workflow</strong></h3>
+<h2 id="3-pattern-time-series-comparison-lag">3. 📈 Pattern: Time Series Comparison (<code>LAG()</code>)</h2>
+<p><strong>🎯 Goal:</strong> Calculate the Month-Over-Month (MOM) percentage change in sales.</p>
+<p><strong>🔑 Key Logic: The <code>LAG()</code> Function &amp; Type Casting</strong></p>
 <ul>
-<li><strong>Prompt engineering</strong>: design input prompts.</li>
-<li><strong>Chains/Agents</strong>: combine LLM with retrievers, tools, memory.</li>
-<li><strong>Evaluation</strong>: test determinism vs. creativity depending on decoding.</li>
+<li><code>LAG(value, 1) OVER (ORDER BY time)</code>: Efficiently brings the previous row's value into the current row.</li>
+<li><strong><code>CAST</code> to NUMERIC</strong>: Required to prevent <strong>integer division</strong> (which truncates decimals) when calculating the percentage change.</li>
 </ul>
+<p><strong>💻 SQL Code Template (PostgreSQL):</strong></p>
+<pre><code class="language-sql">WITH tbl_monthly_sales AS (
+    SELECT  
+        DATE_TRUNC('month', sale_date) AS sale_month,
+        SUM(sales_amount) AS total_sales
+    FROM DailySales
+    GROUP BY sale_month
+),
+tbl_lagged_sales AS (
+    SELECT 
+        sale_month, 
+        total_sales,
+        LAG(total_sales, 1) OVER(ORDER BY sale_month ASC) AS prev_month_sales 
+    FROM tbl_monthly_sales
+)
+SELECT 
+    sale_month, 
+    total_sales, 
+    prev_month_sales,
+    -- Forces floating-point division for accurate percentage
+    CAST((total_sales - prev_month_sales) AS NUMERIC) / prev_month_sales AS mom_percent_change
+FROM tbl_lagged_sales;
+</code></pre>
 <hr />
-<h3 id="decoding-strategies-after-wrapping">🔑 Decoding Strategies (After Wrapping)</h3>
-<p><em>(same section as before, now positioned after the setup)</em></p>
+<h2 id="4-window-function-ranking-rank-vs-dense_rank">4. 🔢 Window Function: Ranking (<code>RANK</code> vs. <code>DENSE_RANK</code>)</h2>
+<p><strong>🎯 Goal:</strong> Assign ranks based on value, differentiating how ties are handled.</p>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>How it Works</th>
-<th>Pros</th>
-<th>Cons</th>
-<th>Best Use Cases</th>
+<th style="text-align: left;">Function</th>
+<th style="text-align: left;">Tie Handling</th>
+<th style="text-align: left;">Rank Jumps?</th>
+<th style="text-align: left;">Example (100, 100, 90, 80)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Greedy</strong></td>
-<td>Always picks highest-probability token</td>
-<td>Deterministic, reproducible</td>
-<td>Bland, repetitive</td>
-<td>Structured extraction, factual QA</td>
+<td style="text-align: left;"><strong><code>RANK()</code></strong></td>
+<td style="text-align: left;">Same rank for ties.</td>
+<td style="text-align: left;"><strong>Yes.</strong></td>
+<td style="text-align: left;">1, 1, <strong>3</strong>, 4</td>
 </tr>
 <tr>
-<td><strong>Sampling</strong></td>
-<td>Randomly samples with temperature</td>
-<td>Creative, diverse</td>
-<td>Non-deterministic</td>
-<td>Brainstorming, storytelling</td>
-</tr>
-<tr>
-<td><strong>Top-k</strong></td>
-<td>Samples from top <em>k</em> tokens</td>
-<td>Balance diversity/coherence</td>
-<td>Needs tuning</td>
-<td>Creative writing</td>
-</tr>
-<tr>
-<td><strong>Top-p</strong></td>
-<td>Samples from cumulative probability mass</td>
-<td>Adaptive diversity</td>
-<td>Needs tuning</td>
-<td>Dialogue, open-ended tasks</td>
-</tr>
-<tr>
-<td><strong>Beam Search</strong></td>
-<td>Explores multiple sequences</td>
-<td>Higher-quality</td>
-<td>Expensive, less diverse</td>
-<td>Translation, summarization</td>
+<td style="text-align: left;"><strong><code>DENSE_RANK()</code></strong></td>
+<td style="text-align: left;">Same rank for ties.</td>
+<td style="text-align: left;"><strong>No.</strong></td>
+<td style="text-align: left;">1, 1, <strong>2</strong>, 3</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="rule-of-thumb">📌 Rule of Thumb</h2>
-<ul>
-<li><strong>Foundation model choice</strong> → determines baseline capability.</li>
-<li><strong>LangChain wrapping</strong> → enables orchestration and workflow hygiene.</li>
-<li><strong>Decoding strategy</strong> → tailors output style (deterministic vs. creative).</li>
-</ul>
-<hr />
-<h2 id="quick-takeaway">🎯 Quick Takeaway</h2>
-<p>Think of it as a <strong>three-layer stack</strong>:
-1. <strong>Foundation model</strong> (raw capability).<br />
-2. <strong>Wrapper (LangChain LLM)</strong> (workflow orchestration).<br />
-3. <strong>Decoding strategy</strong> (output style).  </p>
-<hr />
-<h2 id="parameter-interactions">⚙️ Parameter Interactions</h2>
-<ul>
-<li><strong>Temperature</strong></li>
-<li><code>0</code> → collapses sampling into greedy decoding.</li>
-<li><code>&gt;0</code> → introduces randomness.</li>
-<li><strong>DECODING_METHOD</strong></li>
-<li><code>"greedy"</code> → forces deterministic decoding.</li>
-<li><code>"sample"</code> → uses temperature/top-k/top-p.</li>
-<li><strong>Max Tokens</strong></li>
-<li>Controls length, independent of decoding method.</li>
-</ul>
-<hr />
-<h2 id="rule-of-thumb_1">📌 Rule of Thumb</h2>
-<ul>
-<li>Use <strong>Greedy</strong> when:</li>
-<li>You need <strong>deterministic, reproducible outputs</strong>.</li>
-<li>Tasks are <strong>factual, structured, or extractive</strong>.</li>
-<li>Use <strong>Sampling</strong> when:</li>
-<li>You want <strong>creative, varied outputs</strong>.</li>
-<li>Tasks are <strong>open-ended, conversational, or generative</strong>.</li>
-</ul>
-<hr />
-<h2 id="example-configurations">🛠️ Example Configurations</h2>
-<h3 id="greedy-decoding">Greedy Decoding</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0,
-    GenParams.DECODING_METHOD: &quot;greedy&quot;
-}
+<p><strong>💻 SQL Code Template (<code>DENSE_RANK</code> Example):</strong></p>
+<pre><code class="language-sql">SELECT 
+    student_name,
+    exam_score,
+    -- Used to find the 'top N distinct score tiers'
+    DENSE_RANK() OVER (ORDER BY exam_score DESC) AS score_rank
+FROM 
+    StudentScores
+WHERE
+    DENSE_RANK() OVER (ORDER BY exam_score DESC) &lt;= 2;
 </code></pre>
-<h3 id="sampling-with-temperature">Sampling with Temperature</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0.7,
-    GenParams.DECODING_METHOD: &quot;sample&quot;
-}
-</code></pre>
-<hr />
-<h2 id="quick-takeaway_1">🎯 Quick Takeaway</h2>
-<ul>
-<li><strong>Greedy = reproducibility</strong>  </li>
-<li><strong>Sampling = creativity</strong>  </li>
-<li>Explicitly set <code>DECODING_METHOD</code> when you want control.  </li>
-<li>If you don’t set it, the system defaults to sampling (since you provided <code>temperature &gt; 0</code>).  </li>
-</ul>
-<hr />
 
 
 

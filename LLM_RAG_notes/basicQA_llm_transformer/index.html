@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../FAISS_ChromaDB/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../RAG_Retrievers_LlamaIndex_Notes/">
+        <link rel="next" href="../RAG_workflow_cheatsheet/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>LLM decoding strategy - Data Science Essential Notes</title>
+        <title>Basics of LLM - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workflow" class="md-skip">
+        <a href="#machine-learning-llm-fundamentals-quiz" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LLM decoding strategy
+              Basics of LLM
             
           </span>
         </div>
@@ -192,7 +192,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../basicQA_llm_transformer/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -431,10 +431,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../basicQA_llm_transformer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Basics of LLM
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -445,6 +465,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-llm-fundamentals-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Machine Learning + LLM Fundamentals Quiz
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Machine Learning + LLM Fundamentals Quiz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i-machine-learning-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Machine Learning Fundamentals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii-transformer-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Transformer Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iii-llm-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. LLM Fundamentals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -500,30 +580,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    LLM decoding strategy
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -534,162 +594,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      🏗️ Workflow
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ Workflow">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Select a Foundation Model
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Model Parameters
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1614,55 +1518,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#machine-learning-llm-fundamentals-quiz" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗️ Workflow
+      🤖 Machine Learning + LLM Fundamentals Quiz
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏗️ Workflow">
+    <nav class="md-nav" aria-label="🤖 Machine Learning + LLM Fundamentals Quiz">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#select-a-foundation-model" class="md-nav__link">
+  <a href="#i-machine-learning-fundamentals" class="md-nav__link">
     <span class="md-ellipsis">
-      Select a Foundation Model
+      I. Machine Learning Fundamentals
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-model-parameters" class="md-nav__link">
+  <a href="#ii-transformer-architecture" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Model Parameters
+      II. Transformer Architecture
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
+  <a href="#iii-llm-fundamentals" class="md-nav__link">
     <span class="md-ellipsis">
-      Wrap with LangChain (or Orchestration Layer)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integrate-into-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      Integrate into Workflow
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔑 Decoding Strategies (After Wrapping)
+      III. LLM Fundamentals
     </span>
   </a>
   
@@ -1670,84 +1556,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#parameter-interactions" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚙️ Parameter Interactions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rule-of-thumb_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Rule of Thumb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-configurations" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ Example Configurations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Example Configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#greedy-decoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      Greedy Decoding
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sampling-with-temperature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sampling with Temperature
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-takeaway_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 Quick Takeaway
-    </span>
-  </a>
   
 </li>
       
@@ -1767,169 +1575,87 @@
 
 
 
-  <h1>LLM decoding strategy</h1>
+  <h1>Basics of LLM</h1>
 
-<h2 id="workflow">🏗️ Workflow</h2>
-<h3 id="select-a-foundation-model"><strong>Select a Foundation Model</strong></h3>
+<h2 id="machine-learning-llm-fundamentals-quiz">🤖 Machine Learning + LLM Fundamentals Quiz</h2>
+<h3 id="i-machine-learning-fundamentals">I. Machine Learning Fundamentals</h3>
+<ol>
+<li>
+<p><strong>What is the primary difference between supervised learning and unsupervised learning?</strong></p>
 <ul>
-<li>Examples: <code>mistralai/mistral-small</code>, <code>meta-llama/Llama-3</code>, <code>gpt-j</code>, etc.</li>
-<li>Consider:</li>
-<li><strong>Size vs. latency</strong> (small models for speed, large for accuracy).</li>
-<li><strong>Domain fit</strong> (general-purpose vs. fine-tuned).</li>
-<li><strong>Hosting</strong> (IBM Watsonx, Hugging Face, Azure, local inference).</li>
+<li><strong>Answer:</strong> <strong>Supervised learning</strong> uses <strong>labeled data</strong> (input-output pairs) to train a model to predict the output for new inputs. <strong>Unsupervised learning</strong> uses <strong>unlabeled data</strong> to find patterns, structures, or relationships within the data, such as clustering or dimensionality reduction.</li>
 </ul>
-<hr />
-<h3 id="configure-model-parameters"><strong>Configure Model Parameters</strong></h3>
+</li>
+<li>
+<p><strong>Define the term "overfitting" and state one common technique used to mitigate it.</strong></p>
 <ul>
-<li>Common parameters:</li>
-<li><code>MAX_NEW_TOKENS</code>: controls output length.</li>
-<li><code>TEMPERATURE</code>: randomness/creativity.</li>
-<li><code>TOP_K</code> / <code>TOP_P</code>: sampling constraints.</li>
-<li><code>DECODING_METHOD</code>: greedy, sample, beam search.</li>
-<li>Credentials &amp; project setup (e.g., Watsonx API keys, project IDs).</li>
+<li><strong>Answer:</strong> <strong>Overfitting</strong> occurs when a model learns the training data and noise too well, resulting in high accuracy on the training set but poor generalization (low accuracy) on unseen data (test set).</li>
+<li><strong>Mitigation Technique:</strong> Regularization (L1 or L2), Dropout, Early Stopping, or Cross-Validation. </li>
 </ul>
-<hr />
-<h3 id="wrap-with-langchain-or-orchestration-layer"><strong>Wrap with LangChain (or Orchestration Layer)</strong></h3>
+</li>
+</ol>
+<p>[Image of overfitting and underfitting in machine learning]</p>
+<ol>
+<li><strong>In the context of classification, what do the terms Precision and Recall measure?</strong><ul>
+<li><strong>Answer:</strong><ul>
+<li><strong>Precision</strong> measures the proportion of <strong>positive predictions that were actually correct</strong> (out of all positive predictions made by the model).</li>
+<li><strong>Recall</strong> measures the proportion of <strong>actual positive cases that were correctly identified</strong> (out of all actual positive cases).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="ii-transformer-architecture">II. Transformer Architecture</h3>
+<ol>
+<li>
+<p><strong>What is the core, groundbreaking mechanism that allows the Transformer model to process sequences without relying on recurrence (like RNNs or LSTMs)?</strong></p>
 <ul>
-<li>Purpose: abstract the raw model into a <strong>LangChain LLM interface</strong>.</li>
-<li>Benefits:</li>
-<li>Unified API across different providers.</li>
-<li>Easy chaining with tools (retrievers, agents, memory).</li>
-<li>Plug-and-play with pipelines (QA bots, RAG, structured workflows).</li>
-<li>Example:</li>
+<li><strong>Answer:</strong> The <strong>Self-Attention mechanism</strong> (specifically, Scaled Dot-Product Attention). </li>
 </ul>
-<pre><code class="language-python">from langchain_ibm import WatsonxLLM
-from ibm_watsonx_ai.foundation_models import ModelInference, GenParams
-
-model = ModelInference(
-    model_id=&quot;mistralai/mistral-small&quot;,
-    params={
-        GenParams.MAX_NEW_TOKENS: 256,
-        GenParams.TEMPERATURE: 0.5,
-    },
-    credentials={&quot;url&quot;: &quot;https://us-south.ml.cloud.ibm.com&quot;},
-    project_id=&quot;skills-network&quot;
-)
-
-llm = WatsonxLLM(model=model)
-</code></pre>
-<hr />
-<h3 id="integrate-into-workflow"><strong>Integrate into Workflow</strong></h3>
+</li>
+<li>
+<p><strong>Explain the purpose of Positional Encoding in the Transformer architecture.</strong></p>
 <ul>
-<li><strong>Prompt engineering</strong>: design input prompts.</li>
-<li><strong>Chains/Agents</strong>: combine LLM with retrievers, tools, memory.</li>
-<li><strong>Evaluation</strong>: test determinism vs. creativity depending on decoding.</li>
+<li><strong>Answer:</strong> Since the self-attention mechanism processes all tokens simultaneously without an inherent order, <strong>Positional Encoding</strong> is added to the input embeddings to inject <strong>information about the position (or order) of each token</strong> in the sequence.</li>
 </ul>
-<hr />
-<h3 id="decoding-strategies-after-wrapping">🔑 Decoding Strategies (After Wrapping)</h3>
-<p><em>(same section as before, now positioned after the setup)</em></p>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>How it Works</th>
-<th>Pros</th>
-<th>Cons</th>
-<th>Best Use Cases</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Greedy</strong></td>
-<td>Always picks highest-probability token</td>
-<td>Deterministic, reproducible</td>
-<td>Bland, repetitive</td>
-<td>Structured extraction, factual QA</td>
-</tr>
-<tr>
-<td><strong>Sampling</strong></td>
-<td>Randomly samples with temperature</td>
-<td>Creative, diverse</td>
-<td>Non-deterministic</td>
-<td>Brainstorming, storytelling</td>
-</tr>
-<tr>
-<td><strong>Top-k</strong></td>
-<td>Samples from top <em>k</em> tokens</td>
-<td>Balance diversity/coherence</td>
-<td>Needs tuning</td>
-<td>Creative writing</td>
-</tr>
-<tr>
-<td><strong>Top-p</strong></td>
-<td>Samples from cumulative probability mass</td>
-<td>Adaptive diversity</td>
-<td>Needs tuning</td>
-<td>Dialogue, open-ended tasks</td>
-</tr>
-<tr>
-<td><strong>Beam Search</strong></td>
-<td>Explores multiple sequences</td>
-<td>Higher-quality</td>
-<td>Expensive, less diverse</td>
-<td>Translation, summarization</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="rule-of-thumb">📌 Rule of Thumb</h2>
+</li>
+<li>
+<p><strong>A single Transformer block consists of two main sub-layers. What are they?</strong></p>
 <ul>
-<li><strong>Foundation model choice</strong> → determines baseline capability.</li>
-<li><strong>LangChain wrapping</strong> → enables orchestration and workflow hygiene.</li>
-<li><strong>Decoding strategy</strong> → tailors output style (deterministic vs. creative).</li>
+<li><strong>Answer:</strong><ol>
+<li>A <strong>Multi-Head Self-Attention</strong> mechanism.</li>
+<li>A simple, position-wise <strong>Feed-Forward Network (FFN)</strong>. (Note: Each sub-layer is typically followed by a Residual Connection and Layer Normalization).</li>
+</ol>
+</li>
 </ul>
-<hr />
-<h2 id="quick-takeaway">🎯 Quick Takeaway</h2>
-<p>Think of it as a <strong>three-layer stack</strong>:
-1. <strong>Foundation model</strong> (raw capability).<br />
-2. <strong>Wrapper (LangChain LLM)</strong> (workflow orchestration).<br />
-3. <strong>Decoding strategy</strong> (output style).  </p>
-<hr />
-<h2 id="parameter-interactions">⚙️ Parameter Interactions</h2>
+</li>
+</ol>
+<h3 id="iii-llm-fundamentals">III. LLM Fundamentals</h3>
+<ol>
+<li>
+<p><strong>What does the acronym LLM stand for, and what is the primary learning paradigm used to train these models?</strong></p>
 <ul>
-<li><strong>Temperature</strong></li>
-<li><code>0</code> → collapses sampling into greedy decoding.</li>
-<li><code>&gt;0</code> → introduces randomness.</li>
-<li><strong>DECODING_METHOD</strong></li>
-<li><code>"greedy"</code> → forces deterministic decoding.</li>
-<li><code>"sample"</code> → uses temperature/top-k/top-p.</li>
-<li><strong>Max Tokens</strong></li>
-<li>Controls length, independent of decoding method.</li>
+<li><strong>Answer:</strong> <strong>LLM</strong> stands for <strong>Large Language Model</strong>. The primary learning paradigm is <strong>Self-Supervised Learning</strong> on massive amounts of text data, usually through a <strong>next-word prediction</strong> (causal language modeling) or <strong>masked language modeling</strong> objective.</li>
 </ul>
-<hr />
-<h2 id="rule-of-thumb_1">📌 Rule of Thumb</h2>
+</li>
+<li>
+<p><strong>In an LLM, what is "In-Context Learning" (ICL), and how is it achieved?</strong></p>
 <ul>
-<li>Use <strong>Greedy</strong> when:</li>
-<li>You need <strong>deterministic, reproducible outputs</strong>.</li>
-<li>Tasks are <strong>factual, structured, or extractive</strong>.</li>
-<li>Use <strong>Sampling</strong> when:</li>
-<li>You want <strong>creative, varied outputs</strong>.</li>
-<li>Tasks are <strong>open-ended, conversational, or generative</strong>.</li>
+<li><strong>Answer:</strong> <strong>In-Context Learning (ICL)</strong> is the ability of a pre-trained LLM (like GPT-3 or Gemini) to learn a new task and generate desired output simply by being provided with a few examples or instructions within the <strong>prompt itself</strong>, without requiring a formal weight update (fine-tuning). It is a property that emerges from the scale of the model and data.</li>
 </ul>
-<hr />
-<h2 id="example-configurations">🛠️ Example Configurations</h2>
-<h3 id="greedy-decoding">Greedy Decoding</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0,
-    GenParams.DECODING_METHOD: &quot;greedy&quot;
-}
-</code></pre>
-<h3 id="sampling-with-temperature">Sampling with Temperature</h3>
-<pre><code class="language-python">parameters = {
-    GenParams.MAX_NEW_TOKENS: 256,
-    GenParams.TEMPERATURE: 0.7,
-    GenParams.DECODING_METHOD: &quot;sample&quot;
-}
-</code></pre>
-<hr />
-<h2 id="quick-takeaway_1">🎯 Quick Takeaway</h2>
+</li>
+<li>
+<p><strong>What are the three common modes or forms of attention masks used in different LLM training or use cases (e.g., in a decoder, encoder, or encoder-decoder setup)?</strong></p>
 <ul>
-<li><strong>Greedy = reproducibility</strong>  </li>
-<li><strong>Sampling = creativity</strong>  </li>
-<li>Explicitly set <code>DECODING_METHOD</code> when you want control.  </li>
-<li>If you don’t set it, the system defaults to sampling (since you provided <code>temperature &gt; 0</code>).  </li>
+<li><strong>Answer:</strong><ol>
+<li><strong>Full/Bidirectional Mask (Encoder):</strong> Allows a token to attend to all other tokens (before and after it) in the sequence.</li>
+<li><strong>Causal/Look-ahead Mask (Decoder/Generative LLMs):</strong> Prevents a token from attending to any subsequent tokens, ensuring that the prediction of a word is only based on the words that came before it.</li>
+<li><strong>Cross-Attention (Encoder-Decoder):</strong> Allows the tokens in the decoder to attend to <em>all</em> tokens in the encoder's output.</li>
+</ol>
+</li>
 </ul>
+</li>
+</ol>
 <hr />
 
 
