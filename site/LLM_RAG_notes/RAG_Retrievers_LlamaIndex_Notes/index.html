@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../llm_decoding_strategy_notes/">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../tf-idf_score_why_how/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>Retriever in RAG - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#rag-llamaindex-retrievers-notes-part-1-part-2" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              Retriever in RAG
             
           </span>
         </div>
@@ -186,11 +186,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../RAG_workflow_cheatsheet/" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -442,28 +442,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -490,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -513,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -536,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
+      <a href="../llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -556,10 +559,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Retriever in RAG
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -570,6 +595,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#beginner-friendly-notes-novice-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌱 Beginner-Friendly Notes (Novice Level)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-practitioner-notes-expert-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Advanced Practitioner Notes (Expert Level)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-cheat-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Quick Reference Cheat Sheet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -582,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -805,31 +877,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +911,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +968,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +982,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1670,72 +1625,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#beginner-friendly-notes-novice-level" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      🌱 Beginner-Friendly Notes (Novice Level)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#advanced-practitioner-notes-expert-level" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      ⚙️ Advanced Practitioner Notes (Expert Level)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#quick-reference-cheat-sheet" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
+      📌 Quick Reference Cheat Sheet
     </span>
   </a>
   
@@ -1757,346 +1667,174 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
+<p>Perfect — now that we have <strong>Part 1 and Part 2</strong>, let’s stitch them into a <strong>layered set of notes</strong>. I’ll structure this so that both a <strong>novice learner</strong> and an <strong>advanced practitioner</strong> can benefit.  </p>
 <hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h1 id="rag-llamaindex-retrievers-notes-part-1-part-2">🧾 RAG &amp; LlamaIndex Retrievers — Notes (Part 1 + Part 2)</h1>
+<h2 id="beginner-friendly-notes-novice-level">🌱 Beginner-Friendly Notes (Novice Level)</h2>
+<p>Think of retrievers as <strong>search helpers</strong> inside a Retrieval-Augmented Generation (RAG) pipeline. Each retriever has a different way of finding the right information:  </p>
 <ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+<li><strong>VectorStoreIndex</strong> → Stores “meaning” of text chunks as numbers (embeddings). Best for finding semantically similar content (like Google’s “Did you mean…”).  </li>
+<li><strong>DocumentSummaryIndex</strong> → Creates short summaries of documents. Helps filter large sets quickly before diving into details.  </li>
+<li><strong>KeywordTableIndex</strong> → Extracts keywords and maps them to chunks. Good for exact keyword searches or rule-based lookups.  </li>
+<li><strong>VectorIndexRetriever</strong> → Uses embeddings to find related content. General-purpose retriever for RAG.  </li>
+<li><strong>BM25 Retriever</strong> → Classic keyword-based search. Matches exact words, not meanings.  </li>
+<li><strong>Document Summary Index Retriever</strong> → Uses summaries instead of full docs. Two versions:  </li>
+<li>LLM-based (uses language model to interpret summaries).  </li>
+<li>Semantic similarity-based (uses embeddings).  </li>
+<li><strong>Auto Merging Retriever</strong> → Handles long documents by breaking them into parent-child chunks, keeping context intact.  </li>
+<li><strong>Recursive Retriever</strong> → Follows links between nodes (like citations or metadata). Useful for connected documents.  </li>
+<li><strong>Query Fusion Retriever</strong> → Combines results from multiple retrievers. Uses fusion strategies:  </li>
+<li>Reciprocal Rank Fusion (balances rankings).  </li>
+<li>Relative Score Fusion (weights scores).  </li>
+<li>Distribution-Based Fusion (probability-based merging).  </li>
+</ul>
+<p>👉 Analogy: Imagine retrievers as <strong>different librarians</strong>. Some look for meaning (VectorStore), some skim summaries (DocumentSummary), some check exact words (BM25), and some combine multiple librarians’ answers (Query Fusion).  </p>
+<hr />
+<h2 id="advanced-practitioner-notes-expert-level">⚙️ Advanced Practitioner Notes (Expert Level)</h2>
+<p>For those building <strong>modular RAG pipelines</strong>, here’s how these retrievers fit strategically:  </p>
+<ul>
+<li><strong>VectorStoreIndex</strong>  </li>
+<li>Strength: Semantic retrieval at scale.  </li>
+<li>Weakness: Embedding drift if documents are updated often.  </li>
+<li>
+<p>Best use: General-purpose RAG pipelines with LLMs.  </p>
+</li>
+<li>
+<p><strong>DocumentSummaryIndex</strong>  </p>
+</li>
+<li>Strength: Efficient filtering for large heterogeneous corpora.  </li>
+<li>Weakness: Summaries may lose nuance.  </li>
+<li>
+<p>Best use: Pre-filtering before deep semantic search.  </p>
+</li>
+<li>
+<p><strong>KeywordTableIndex / BM25 Retriever</strong>  </p>
+</li>
+<li>Strength: Deterministic, rule-based retrieval.  </li>
+<li>Weakness: No semantic flexibility.  </li>
+<li>
+<p>Best use: Compliance-heavy or keyword-sensitive domains.  </p>
+</li>
+<li>
+<p><strong>Document Summary Index Retriever (LLM vs Semantic)</strong>  </p>
+</li>
+<li>LLM-based: Better contextual reasoning, but higher cost/latency.  </li>
+<li>Semantic similarity-based: Faster, cheaper, but less nuanced.  </li>
+<li>
+<p>Best use: Choose based on budget vs accuracy trade-off.  </p>
+</li>
+<li>
+<p><strong>Auto Merging Retriever</strong>  </p>
+</li>
+<li>Strength: Preserves hierarchical context in long docs.  </li>
+<li>Weakness: Complexity in chunking strategy.  </li>
+<li>
+<p>Best use: Legal, technical, or hierarchical documents (contracts, manuals).  </p>
+</li>
+<li>
+<p><strong>Recursive Retriever</strong>  </p>
+</li>
+<li>Strength: Exploits graph-like relationships (citations, metadata).  </li>
+<li>Weakness: Requires well-structured references.  </li>
+<li>
+<p>Best use: Academic papers, linked datasets.  </p>
+</li>
+<li>
+<p><strong>Query Fusion Retriever</strong>  </p>
+</li>
+<li>Strength: Hybrid retrieval combining multiple signals.  </li>
+<li>Weakness: Fusion tuning required.  </li>
+<li>Best use: Multi-retriever pipelines where semantic + keyword + summary retrieval all matter.  </li>
 </ul>
 <hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
+<h2 id="quick-reference-cheat-sheet">📌 Quick Reference Cheat Sheet</h2>
 <table>
 <thead>
 <tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
+<th>Retriever Type</th>
+<th>Core Mechanism</th>
+<th>Best Use Case</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
+<td>VectorStoreIndex</td>
+<td>Embeddings (semantic similarity)</td>
+<td>General RAG pipelines</td>
 </tr>
 <tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
+<td>DocumentSummaryIndex</td>
+<td>Summaries for filtering</td>
+<td>Large diverse corpora</td>
 </tr>
 <tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
+<td>KeywordTableIndex</td>
+<td>Keyword mapping</td>
+<td>Rule-based search</td>
+</tr>
+<tr>
+<td>VectorIndexRetriever</td>
+<td>Embedding-based retrieval</td>
+<td>Semantic search</td>
+</tr>
+<tr>
+<td>BM25 Retriever</td>
+<td>Keyword ranking</td>
+<td>Exact keyword match</td>
+</tr>
+<tr>
+<td>Doc Summary Retriever</td>
+<td>Summaries (LLM or semantic)</td>
+<td>Fast filtering</td>
+</tr>
+<tr>
+<td>Auto Merging Retriever</td>
+<td>Hierarchical chunking</td>
+<td>Long structured docs</td>
+</tr>
+<tr>
+<td>Recursive Retriever</td>
+<td>Node relationships</td>
+<td>Academic/linked data</td>
+</tr>
+<tr>
+<td>Query Fusion Retriever</td>
+<td>Fusion strategies</td>
+<td>Hybrid retrieval</td>
 </tr>
 </tbody>
 </table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
 <hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
+<p>✨ With this layered view:<br />
+- A <strong>newbie</strong> gets the librarian analogy and simple definitions.<br />
+- An <strong>advanced practitioner</strong> gets trade-offs, workflow hygiene, and integration strategies.  </p>
+<pre><code>RAG &amp; LlamaIndex Retrievers
+│
+├── Vector-based
+│   ├── VectorStoreIndex              # Stores embeddings of documents for similarity search
+│   └── VectorIndexRetriever          # Retrieves docs by nearest-neighbor search in embedding space
+│
+├── Keyword-based
+│   ├── KeywordTableIndex             # Indexes docs by keyword occurrences (like inverted index)
+│   └── BM25 Retriever                # Classic IR algorithm scoring keyword relevance with term frequency &amp; doc length
+│
+├── Summary-based
+│   ├── DocumentSummaryIndex          # Stores LLM-generated summaries of docs for lightweight retrieval
+│   └── Document Summary Index Retriever
+│       ├── LLM-based                 # Uses LLM reasoning over summaries to pick relevant docs
+│       └── Semantic similarity-based # Compares query vs summaries using embeddings for match
+│
+├── Hierarchical / Graph-based
+│   ├── Auto Merging Retriever        # Dynamically merges smaller chunks into larger ones for context-aware retrieval
+│   └── Recursive Retriever           # Traverses hierarchical graph (e.g., section → chapter → doc) to refine results
+│
+└── Fusion-based
+    └── Query Fusion Retriever
+        ├── Reciprocal Rank Fusion    # Combines ranked lists from multiple retrievers by reciprocal rank weighting
+        ├── Relative Score Fusion     # Normalizes scores across retrievers and merges based on relative strength
+        └── Distribution-Based Fusion # Uses statistical distribution of scores to balance multiple retrievers
 
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
 </code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
-</ul>
-<hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
-</ul>
-<hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
-</ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
-
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
-print(result)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16.67</td>
-<td>810</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
 
 
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../../LLM_RAG_notes/tf-idf_score_why_how/">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../../Applied_statistics/Explanation_pvalue/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>ROC vs PR curve - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#annotated-confusion-matrix-roc-plot" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              ROC vs PR curve
             
           </span>
         </div>
@@ -206,11 +206,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Confusion_matrix/ROC_PR_curve/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -609,28 +609,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -643,7 +646,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Confusion Matrix
@@ -654,10 +657,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Confusion_matrix/ROC_PR_curve/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ROC vs PR curve
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -668,6 +691,159 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#annotated-confusion-matrix-roc-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Annotated Confusion Matrix (ROC plot)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Annotated Confusion Matrix (ROC plot)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-tpr-vs-fpr-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Why TPR vs FPR Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analogy" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚖️ Analogy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-insight" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Key Insight
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Worked Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Worked Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-medical-diagnosis-disease-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Medical Diagnosis (Disease Test)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-customer-churn-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Customer Churn Prediction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-loan-default-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Loan Default Prediction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cheat-sheet-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Cheat Sheet Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Cheat Sheet Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roc-curve-receiver-operating-characteristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 ROC Curve (Receiver Operating Characteristic)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Precision-Recall Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Key Differences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -805,31 +981,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +1015,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +1072,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +1086,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1660,8 +1719,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1670,74 +1727,137 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#annotated-confusion-matrix-roc-plot" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      📊 Annotated Confusion Matrix (ROC plot)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Annotated Confusion Matrix (ROC plot)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Metrics
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#why-tpr-vs-fpr-matters" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      🔍 Why TPR vs FPR Matters
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#analogy" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      ⚖️ Analogy
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#key-insight" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
+      📊 Key Insight
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+  <a href="#worked-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
+      🧪 Worked Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Worked Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-medical-diagnosis-disease-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Medical Diagnosis (Disease Test)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-customer-churn-prediction" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      2. Customer Churn Prediction
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-loan-default-prediction" class="md-nav__link">
     <span class="md-ellipsis">
-      Renaming columns after aggregation
+      3. Loan Default Prediction
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cheat-sheet-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Cheat Sheet Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Cheat Sheet Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roc-curve-receiver-operating-characteristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 ROC Curve (Receiver Operating Characteristic)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Precision-Recall Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Key Differences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1757,346 +1877,186 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
-<hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
-</ul>
-<hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
+  <h1>ROC vs PR curve</h1>
 
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="annotated-confusion-matrix-roc-plot">📊 Annotated Confusion Matrix (ROC plot)</h2>
 <ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
+<li>The x-axis is the False Positive Rate (FPR), also known as 1 - Specificity.</li>
+<li>The y-axis is the True Positive Rate (TPR), also known as Sensitivity or Recall</li>
 </ul>
-<hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
-</ul>
-<hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
-</ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
+<pre><code>                Predicted Positive   Predicted Negative
+Actual Positive    TP                  FN
+                  ↑                   ↑
+                  |                   |
+                  |                   └── Missed positives → lowers Recall (TPR)
+                  └── True Positives → boosts Recall (TPR)
 
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
-print(result)
+Actual Negative    FP                  TN
+                  ↑                   ↑
+                  |                   |
+                  |                   └── True Negatives → boosts Specificity
+                  └── False Positives → raises False Positive Rate (FPR)
 </code></pre>
+<h3 id="key-metrics">Key Metrics</h3>
+<ul>
+<li>
+<p><strong>TPR (Recall, Sensitivity)</strong> = $$\frac{TP}{TP + FN}$$<br />
+  → Fraction of actual positives correctly identified. </p>
+</li>
+<li>
+<p><strong>FPR (False Positive Rate)</strong> = $$\frac{FP}{FP + TN}$$<br />
+  → Fraction of actual negatives wrongly flagged as positive.  </p>
+</li>
+<li><strong>ROC Curve</strong> = Plot of TPR vs FPR across thresholds.  </li>
+<li><strong>AUC (Area Under Curve)</strong> = Single number summarizing ROC; closer to 1 = better classifier.  </li>
+</ul>
+<hr />
+<h3 id="why-tpr-vs-fpr-matters">🔍 Why TPR vs FPR Matters</h3>
+<ul>
+<li>
+<p><strong>Trade‑off visualization:</strong><br />
+  Every threshold you set for a classifier changes both <strong>TPR (sensitivity)</strong> and <strong>FPR (false alarm rate)</strong>. Plotting them against each other shows the <em>trade‑off</em> — you can’t usually maximize both at the same time.</p>
+</li>
+<li>
+<p><strong>Threshold independence:</strong><br />
+  Accuracy at a single threshold can be misleading. By plotting TPR vs FPR across <em>all thresholds</em>, you see the classifier’s overall behavior, not just one arbitrary cutoff.</p>
+</li>
+<li>
+<p><strong>Comparing models:</strong><br />
+  ROC curves let you compare different classifiers. A curve closer to the top‑left corner (high TPR, low FPR) indicates a better model. The <strong>Area Under the Curve (AUC)</strong> is a single summary metric of this performance.</p>
+</li>
+<li>
+<p><strong>Application sensitivity:</strong>  </p>
+</li>
+<li>In <strong>medical diagnosis</strong>, you want high TPR (catch all true cases), even if FPR rises.  </li>
+<li>In <strong>fraud detection</strong>, you want low FPR (avoid false alarms), even if TPR drops.<br />
+  The ROC curve helps you <em>choose the right threshold</em> depending on the domain’s tolerance for false positives vs false negatives.</li>
+</ul>
+<hr />
+<h3 id="analogy">⚖️ Analogy</h3>
+<p>Think of it like a <strong>security checkpoint</strong>:
+- <strong>TPR</strong> = how many actual threats you catch.<br />
+- <strong>FPR</strong> = how many innocent travelers you wrongly flag.<br />
+Plotting TPR vs FPR shows whether your scanner is <em>too strict</em> (flags everyone) or <em>too lenient</em> (misses threats). The ROC curve helps balance these extremes.</p>
+<hr />
+<h3 id="key-insight">📊 Key Insight</h3>
+<p>The importance lies in <strong>understanding the balance between sensitivity and specificity</strong>. Without this curve, you’d only see performance at one threshold, missing the bigger picture of how the model behaves across all possible decision boundaries.</p>
+<hr />
+<h2 id="worked-examples">🧪 Worked Examples</h2>
+<h3 id="1-medical-diagnosis-disease-test">1. <strong>Medical Diagnosis (Disease Test)</strong></h3>
+<ul>
+<li>Suppose 100 patients: 40 sick, 60 healthy.  </li>
+<li>Test results: TP=35, FN=5, FP=10, TN=50.  </li>
+</ul>
+<p>Metrics:
+- TPR (Recall) = 35 / (35+5) = <strong>87.5%</strong><br />
+- FPR = 10 / (10+50) = <strong>16.7%</strong><br />
+- ROC Curve: If threshold is lowered, TPR ↑ but FPR ↑ too.<br />
+- AUC: If classifier is strong, curve hugs top-left; here maybe ~0.9.  </p>
+<p>Interpretation: Good recall (few sick missed), but some false alarms.</p>
+<hr />
+<h3 id="2-customer-churn-prediction">2. <strong>Customer Churn Prediction</strong></h3>
+<ul>
+<li>Dataset: 200 customers, 50 churned, 150 stayed.  </li>
+<li>Model predicts: TP=40 churners correctly, FN=10 missed churners, FP=30 wrongly flagged, TN=120 correctly retained.  </li>
+</ul>
+<p>Metrics:
+- TPR = 40 / (40+10) = <strong>80%</strong><br />
+- FPR = 30 / (30+120) = <strong>20%</strong><br />
+- ROC: Adjusting threshold changes balance between catching churners vs wrongly alarming loyal customers.<br />
+- AUC: ~0.85 indicates decent discrimination.  </p>
+<p>Interpretation: Model is good at catching churn, but 20% of loyal customers wrongly flagged could waste retention budget.</p>
+<hr />
+<h3 id="3-loan-default-prediction">3. <strong>Loan Default Prediction</strong></h3>
+<ul>
+<li>Dataset: 500 applicants, 100 defaulters, 400 non-defaulters.  </li>
+<li>Model predicts: TP=70 defaulters correctly, FN=30 missed, FP=40 wrongly flagged, TN=360 correctly cleared.  </li>
+</ul>
+<p>Metrics:
+- TPR = 70 / (70+30) = <strong>70%</strong><br />
+- FPR = 40 / (40+360) = <strong>10%</strong><br />
+- ROC: Lower threshold → more defaults caught but more false alarms.<br />
+- AUC: ~0.88 shows strong separation.  </p>
+<p>Interpretation: Bank balances risk: catching most defaulters while keeping false alarms low.</p>
+<hr />
+<h2 id="cheat-sheet-summary">📝 Cheat Sheet Summary</h2>
+<ul>
+<li><strong>TPR (Recall)</strong> → “How many actual positives did we catch?”  </li>
+<li><strong>FPR</strong> → “How many actual negatives did we wrongly flag?”  </li>
+<li><strong>ROC Curve</strong> → Trade-off between TPR and FPR at different thresholds.  </li>
+<li><strong>AUC</strong> → Overall classifier quality (closer to 1 = better).  </li>
+</ul>
+<hr />
+<p><strong>QUESTION</strong>: <strong>Difference between ROC and Precision-Rcall curves</strong></p>
+<p><strong>Quick Answer:</strong><br />
+The <strong>ROC curve</strong> plots <em>True Positive Rate (Recall)</em> vs <em>False Positive Rate</em>, while the <strong>Precision-Recall (PR) curve</strong> plots <em>Precision</em> vs <em>Recall</em>. ROC is more informative when classes are balanced, whereas PR curves are more useful for <strong>imbalanced datasets</strong>, since they highlight how well a model identifies the minority (positive) class.</p>
+<hr />
+<h3 id="roc-curve-receiver-operating-characteristic">📊 ROC Curve (Receiver Operating Characteristic)</h3>
+<ul>
+<li><strong>Axes:</strong>  </li>
+<li>X-axis → False Positive Rate (FPR = FP / (FP + TN))  </li>
+<li>Y-axis → True Positive Rate (TPR = Recall = TP / (TP + FN))  </li>
+<li><strong>Interpretation:</strong>  </li>
+<li>Shows trade-off between sensitivity (recall) and specificity (1 − FPR).  </li>
+<li>A diagonal line represents random guessing; curves above it indicate better performance.  </li>
+<li><strong>Best Use Case:</strong>  </li>
+<li>Balanced datasets where both positive and negative classes are equally important.  </li>
+<li>Good for evaluating overall discrimination ability across thresholds.</li>
+</ul>
+<hr />
+<h3 id="precision-recall-curve">🎯 Precision-Recall Curve</h3>
+<ul>
+<li><strong>Axes:</strong>  </li>
+<li>X-axis → Recall (TP / (TP + FN))  </li>
+<li>Y-axis → Precision (TP / (TP + FP))  </li>
+<li><strong>Interpretation:</strong>  </li>
+<li>Focuses on the trade-off between precision (how many predicted positives are correct) and recall (how many actual positives are captured).  </li>
+<li>High precision with high recall indicates strong performance.  </li>
+<li><strong>Best Use Case:</strong>  </li>
+<li>Imbalanced datasets (e.g., fraud detection, rare disease diagnosis).  </li>
+<li>More sensitive to performance on the minority class, unlike ROC which can be overly optimistic when negatives dominate.</li>
+</ul>
+<hr />
+<h3 id="key-differences">🔑 Key Differences</h3>
 <table>
 <thead>
 <tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
+<th>Aspect</th>
+<th>ROC Curve</th>
+<th>Precision-Recall Curve</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>16.67</td>
-<td>810</td>
+<td>X-axis</td>
+<td>False Positive Rate</td>
+<td>Recall</td>
+</tr>
+<tr>
+<td>Y-axis</td>
+<td>True Positive Rate (Recall)</td>
+<td>Precision</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>Overall discrimination ability</td>
+<td>Positive class performance</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Balanced datasets</td>
+<td>Imbalanced datasets</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>Can look good even if positives are poorly predicted</td>
+<td>Highlights poor precision/recall clearly</td>
 </tr>
 </tbody>
 </table>
+<p>Sources: </p>
 <hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
+<p>👉 Think of it this way: <strong>ROC tells you how well your model separates classes overall</strong>, while <strong>PR tells you how well your model finds the rare positives without drowning in false alarms</strong>.  </p>
 
 
 

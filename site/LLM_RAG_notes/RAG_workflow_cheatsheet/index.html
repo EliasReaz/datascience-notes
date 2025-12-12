@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../FAISS_ChromaDB/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>RGA workflow - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#rag-workflow-cheat-sheet" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              RGA workflow
             
           </span>
         </div>
@@ -186,11 +186,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -442,28 +442,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -487,10 +490,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    RGA workflow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -501,6 +526,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-loading-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 📄 Loading Documents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-chunking" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ✂️ Chunking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🔢 Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-vector-databases" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🗄️ Vector Databases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-retrievers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 🔍 Retrievers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-retrievalqa" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 🤖 RetrievalQA
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -513,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -536,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
+      <a href="../llm_decoding_strategy_notes/" class="md-nav__link">
         
   
   
@@ -559,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -582,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -805,31 +904,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +938,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +995,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +1009,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1670,72 +1652,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#1-loading-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      1. 📄 Loading Documents
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#2-chunking" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      2. ✂️ Chunking
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#3-embeddings" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      3. 🔢 Embeddings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+  <a href="#4-vector-databases" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
+      4. 🗄️ Vector Databases
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+  <a href="#5-retrievers" class="md-nav__link">
     <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
+      5. 🔍 Retrievers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+  <a href="#6-retrievalqa" class="md-nav__link">
     <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
+      6. 🤖 RetrievalQA
     </span>
   </a>
   
@@ -1757,346 +1721,319 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
+<h1 id="rag-workflow-cheat-sheet">🧩 RAG Workflow Cheat Sheet</h1>
 <hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="1-loading-documents">1. 📄 Loading Documents</h2>
 <ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+<li>
+<p><strong>What it is:</strong> Ingesting raw data (PDFs, text files, web pages, etc.) into your pipeline.</p>
+</li>
+<li>
+<p><strong>Tools:</strong> PyPDFLoader, TextLoader, UnstructuredLoader, etc.</p>
+</li>
+<li>
+<p><strong>Use-case:</strong> Load a company’s policy PDF so the LLM can answer HR-related queries.</p>
+</li>
 </ul>
-<hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
+<p><strong>Code Example:</strong></p>
+<pre><code class="language-python">from langchain.document_loaders import PyPDFLoader
 
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
+loader = PyPDFLoader(&quot;company_handbook.pdf&quot;)
+documents = loader.load()
 </code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
+<p><strong>Parameters to tune:</strong>
+- <strong>File type loader</strong> (<code>PyPDFLoader</code>, <code>TextLoader</code>, <code>UnstructuredLoader</code>) → depends on source format.
+- <strong>Pre-cleaning options</strong> (remove headers, normalize whitespace) → improves chunk quality.</p>
+<p><strong>Notes:</strong><br />
+Choose loaders that preserve structure. For PDFs, some loaders extract text line-by-line, others preserve layout.</p>
 <hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="2-chunking">2. ✂️ Chunking</h2>
 <ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
-</ul>
-<hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<li>
+<p><strong>What it is:</strong> Splitting documents into smaller pieces for embedding.</p>
+</li>
+<li>
+<p><strong>Parameters:</strong></p>
 <ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
+<li>chunk_size: Number of characters/tokens per chunk (e.g., 500–1000).</li>
+<li>chunk_overlap: Overlap between chunks (e.g., 50–100) to preserve context.</li>
 </ul>
-<hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
+</li>
+<li>
+<p><strong>Why:</strong> Embedding models have input size limits; smaller chunks improve retrieval accuracy.</p>
+</li>
+<li>
+<p><strong>Use-case:</strong> Split a 50-page research paper into 500-character chunks with 50 overlap so queries don’t miss context across page breaks.
+<strong>Code Example:</strong></p>
+</li>
 </ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
+<pre><code class="language-python">from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
-print(result)
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=800,      # size of each chunk
+    chunk_overlap=100,   # overlap between chunks
+    length_function=len  # how length is measured
+)
+chunks = text_splitter.split_documents(documents)
 </code></pre>
+<p><strong>Parameters to tune:</strong>
+- <strong><code>chunk_size</code></strong> → Larger chunks = more context, but risk exceeding embedding limits.<br />
+- <strong><code>chunk_overlap</code></strong> → Prevents context loss across boundaries.<br />
+- <strong><code>length_function</code></strong> → Can be <code>len</code> (characters) or token-based (using tokenizer).<br />
+- <strong>Granularity strategy</strong> → Sentence-based vs character-based splitting.</p>
+<p><strong>Notes:</strong><br />
+Balance between retrieval precision and context completeness. For legal docs, use smaller chunks with overlap; for FAQs, larger chunks may suffice.</p>
+<hr />
+<h2 id="3-embeddings">3. 🔢 Embeddings</h2>
+<ul>
+<li>
+<p><strong>What it is:</strong> Converting text chunks into numerical vectors that capture semantic meaning.</p>
+</li>
+<li>
+<p><strong>Models:</strong></p>
+</li>
+<li>
+<p>OpenAI (text-embedding-ada-002)</p>
+</li>
+<li>
+<p>HuggingFace (sentence-transformers)</p>
+</li>
+<li>
+<p>IBM watsonx embeddings</p>
+</li>
+<li>
+<p><strong>Parameters</strong>:</p>
+</li>
+<li>
+<p>dimension (size of vector, e.g., 768 or 1536)</p>
+</li>
+<li>
+<p>model choice (trade-off: speed vs accuracy)</p>
+</li>
+<li>
+<p><strong>Use-case:</strong> Represent customer support FAQs as embeddings so queries like “How do I reset my password?” match semantically similar answers.
+<strong>Code Example:</strong></p>
+</li>
+</ul>
+<pre><code class="language-python">from langchain.embeddings import OpenAIEmbeddings
+
+embedding_model = OpenAIEmbeddings(model=&quot;text-embedding-ada-002&quot;)
+vector = embedding_model.embed_query(&quot;reset password instructions&quot;)
+</code></pre>
+<p><strong>Parameters to tune:</strong>
+- <strong>Model choice</strong> → <code>ada-002</code> (fast, cheap), <code>text-embedding-3-large</code> (higher accuracy).<br />
+- <strong>Embedding dimension</strong> → 512, 768, 1536 depending on model.<br />
+- <strong>Batch size</strong> → Controls throughput when embedding many chunks.<br />
+- <strong>Normalization</strong> → Some DBs require normalized vectors (unit length).</p>
+<p><strong>Notes:</strong><br />
+Higher dimension = richer representation but heavier storage. Always align DB dimension with embedding model output.</p>
+<hr />
+<h2 id="4-vector-databases">4. 🗄️ Vector Databases</h2>
+<ul>
+<li>
+<p><strong>What it is:</strong> Specialized DBs for storing and searching embeddings.</p>
+</li>
+<li>
+<p><strong>How different from traditional DBs:</strong></p>
+</li>
+<li>
+<p>Traditional DB → exact match (SQL queries).</p>
+</li>
+<li>
+<p>Vector DB → similarity search (nearest neighbors in vector space).</p>
+</li>
+<li>
+<p><strong>Types / Examples:</strong></p>
+</li>
+<li>
+<p>Local: FAISS, Annoy, Milvus</p>
+</li>
+<li>
+<p>Cloud: Pinecone, Weaviate, ChromaDB</p>
+</li>
+<li>
+<p><strong>Use-case:</strong> Store embeddings of product manuals in Pinecone so engineers can query “error code 404” and retrieve relevant troubleshooting steps.
+<strong>Code Example (ChromaDB):</strong></p>
+</li>
+</ul>
+<pre><code class="language-python">from langchain.vectorstores import Chroma
+
+vectordb = Chroma.from_documents(documents=chunks, embedding=embedding_model)
+</code></pre>
+<p><strong>Parameters to tune:</strong>
+- <strong>Distance metric</strong> → cosine, dot product, Euclidean.<br />
+- <strong>Persistence</strong> → in-memory vs disk-backed.<br />
+- <strong>Index type</strong> (FAISS: Flat, IVF, HNSW) → trade-off between speed and accuracy.<br />
+- <strong>Replication / sharding</strong> (cloud DBs like Pinecone) → scale for large datasets.</p>
+<p><strong>Notes:</strong><br />
+Cosine similarity is common for text embeddings. IVF/HNSW indexes accelerate search but may approximate results.</p>
+<hr />
+<h2 id="5-retrievers">5. 🔍 Retrievers</h2>
+<ul>
+<li>
+<p><strong>What it is:</strong> A wrapper around the vector DB that defines how to fetch relevant chunks.</p>
+</li>
+<li>
+<p><strong>Types:</strong></p>
+</li>
+<li>
+<p><strong>Single-query retriever:</strong> Basic similarity search.</p>
+<ul>
+<li><strong>Use-case:</strong> Simple Q&amp;A over one document.</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-query retriever:</strong> Expands query into multiple variations.</p>
+<ul>
+<li><strong>Use-case:</strong> User asks “AI courses” → expands to “machine learning courses,” “deep learning classes.”</li>
+</ul>
+</li>
+<li>
+<p><strong>MMR (Maximal Marginal Relevance):</strong> Balances relevance + diversity.</p>
+<ul>
+<li><strong>Use-case:</strong> Avoids retrieving 5 nearly identical chunks, ensures broader coverage.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parent-document retriever:</strong> Retrieves the parent doc when a chunk is matched.</p>
+<ul>
+<li><strong>Use-case:</strong> Legal contracts or Research papers where context across clauses matters.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Code Example:</strong></p>
+<pre><code class="language-python">retriever = vectordb.as_retriever(
+    search_type=&quot;mmr&quot;,   # retrieval strategy
+    search_kwargs={&quot;k&quot;: 5, &quot;lambda_mult&quot;: 0.5}
+)
+</code></pre>
+<p><strong>Parameters to tune:</strong>
+- <strong><code>k</code></strong> → Number of chunks retrieved. Larger <code>k</code> = more coverage, but risk of noise.<br />
+- <strong>MMR diversity (<code>lambda_mult</code>)</strong> → Controls balance between relevance and diversity.<br />
+- <strong>Multi-query expansion size</strong> → Number of query variations generated.<br />
+- <strong>Parent-document retriever window size</strong> → How much of parent doc is returned.</p>
+<p><strong>Notes:</strong><br />
+- Use <strong>MMR</strong> when you want diverse evidence (research, multi-topic queries).<br />
+- Use <strong>multi-query retriever</strong> when queries are ambiguous.<br />
+- Use <strong>parent-doc retriever</strong> for structured docs (contracts, manuals).</p>
+<hr />
+<h2 id="6-retrievalqa">6. 🤖 RetrievalQA</h2>
+<ul>
+<li>
+<p><strong>What it is:</strong> Combines retriever + LLM to answer queries with external knowledge.</p>
+</li>
+<li>
+<p><strong>Components:</strong></p>
+</li>
+<li>
+<p>Retriever: Supplies relevant chunks.</p>
+</li>
+<li>
+<p>LLM: Generates final answer.</p>
+</li>
+<li>
+<p>Memory (optional): Keeps track of conversation history.</p>
+</li>
+<li>
+<p><strong>Use-case:</strong></p>
+</li>
+<li>
+<p>Customer support chatbot → retrieves product manual chunks, LLM answers naturally.</p>
+</li>
+<li>
+<p>Research assistant → retrieves academic papers, LLM summarizes findings.</p>
+</li>
+</ul>
+<p><strong>Code Example:</strong></p>
+<pre><code class="language-python">from langchain.chains import RetrievalQA
+from langchain.llms import OpenAI
+
+qa_chain = RetrievalQA.from_chain_type(
+    llm=OpenAI(model=&quot;gpt-4&quot;),
+    retriever=retriever,
+    return_source_documents=True
+)
+
+response = qa_chain.run(&quot;What is the parental leave policy?&quot;)
+</code></pre>
+<p><strong>Parameters to tune:</strong>
+- <strong>LLM choice</strong> → GPT-4 (accuracy), GPT-3.5 (speed/cost).<br />
+- <strong>Return source docs</strong> → Useful for transparency.<br />
+- <strong>Memory type</strong> → ConversationBufferMemory, SummaryMemory.<br />
+- <strong>Temperature</strong> → Controls creativity vs factuality.<br />
+- <strong>Max tokens</strong> → Controls length of generated answer.</p>
+<p><strong>Notes:</strong><br />
+For factual Q&amp;A, keep temperature low (0–0.3). For brainstorming, increase it. Always return sources for trustworthiness.</p>
+<hr />
+<h1 id="practical-parameters-cheat-sheet">⚙️ Practical Parameters Cheat Sheet</h1>
 <table>
 <thead>
 <tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
+<th>Step</th>
+<th>Key Parameters</th>
+<th>Why They Matter</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>16.67</td>
-<td>810</td>
+<td>Chunking</td>
+<td><code>chunk_size</code>, <code>chunk_overlap</code>, <code>length_function</code></td>
+<td>Balance context vs precision</td>
+</tr>
+<tr>
+<td>Embeddings</td>
+<td><code>model</code>, <code>dimension</code>, <code>batch_size</code>, <code>normalize</code></td>
+<td>Accuracy vs cost/storage</td>
+</tr>
+<tr>
+<td>Vector DB</td>
+<td><code>distance_metric</code>, <code>index_type</code>, <code>persistence</code></td>
+<td>Search speed vs accuracy</td>
+</tr>
+<tr>
+<td>Retriever</td>
+<td><code>k</code>, <code>lambda_mult</code>, <code>multi-query size</code>, <code>parent window</code></td>
+<td>Relevance vs diversity</td>
+</tr>
+<tr>
+<td>RetrievalQA</td>
+<td><code>llm</code>, <code>temperature</code>, <code>max_tokens</code>, <code>memory</code></td>
+<td>Answer quality, transparency</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
+<h1 id="end-to-end-example-with-tuned-parameters">🛠️ End-to-End Example (with tuned parameters)</h1>
+<pre><code class="language-python"># Load
+loader = PyPDFLoader(&quot;handbook.pdf&quot;)
+docs = loader.load()
+
+# Chunk
+splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
+chunks = splitter.split_documents(docs)
+
+# Embed
+embedding_model = OpenAIEmbeddings(model=&quot;text-embedding-ada-002&quot;)
+
+# Vector DB
+vectordb = Chroma.from_documents(chunks, embedding_model)
+
+# Retriever (MMR with diversity)
+retriever = vectordb.as_retriever(
+    search_type=&quot;mmr&quot;,
+    search_kwargs={&quot;k&quot;: 8, &quot;lambda_mult&quot;: 0.7}
+)
+
+# RetrievalQA
+qa_chain = RetrievalQA.from_chain_type(
+    llm=OpenAI(model=&quot;gpt-4&quot;, temperature=0.2),
+    retriever=retriever,
+    return_source_documents=True
+)
+
+answer = qa_chain.run(&quot;Explain parental leave policy&quot;)
+</code></pre>
+<hr />
 
 
 

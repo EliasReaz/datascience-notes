@@ -1,7 +1,7 @@
 
 ---
 
-# Pandas Reference: `map()`, `apply()`, `transform()` — with Business Use Cases
+# Pandas Reference: `map()`, `apply()`, `transform()` - with Business Use Cases
 
 ## 🗃 Sample Business Dataset
 

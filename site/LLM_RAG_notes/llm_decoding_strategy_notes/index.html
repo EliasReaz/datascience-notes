@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
+        <link rel="prev" href="../FAISS_ChromaDB/">
       
       
-        <link rel="next" href="../notes_on_melt/">
+        <link rel="next" href="../RAG_Retrievers_LlamaIndex_Notes/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>LLM decoding strategy - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              LLM decoding strategy
             
           </span>
         </div>
@@ -186,11 +186,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../RAG_workflow_cheatsheet/" class="md-tabs__link">
           
   
   
@@ -246,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -442,28 +442,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -476,7 +479,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             LLM RAG
@@ -490,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_workflow_cheatsheet/" class="md-nav__link">
+      <a href="../RAG_workflow_cheatsheet/" class="md-nav__link">
         
   
   
@@ -513,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/FAISS_ChromaDB/" class="md-nav__link">
+      <a href="../FAISS_ChromaDB/" class="md-nav__link">
         
   
   
@@ -533,10 +536,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/llm_decoding_strategy_notes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    LLM decoding strategy
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -547,6 +570,162 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-a-foundation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select a Foundation Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Model Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrap with LangChain (or Orchestration Layer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrate-into-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrate into Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Decoding Strategies (After Wrapping)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rule-of-thumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Rule of Thumb
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-takeaway" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Quick Takeaway
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parameter-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Parameter Interactions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rule-of-thumb_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Rule of Thumb
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Example Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Example Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greedy-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Decoding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sampling-with-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sampling with Temperature
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-takeaway_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Quick Takeaway
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -559,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
+      <a href="../RAG_Retrievers_LlamaIndex_Notes/" class="md-nav__link">
         
   
   
@@ -582,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../LLM_RAG_notes/tf-idf_score_why_how/" class="md-nav__link">
+      <a href="../tf-idf_score_why_how/" class="md-nav__link">
         
   
   
@@ -805,31 +984,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +1018,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +1075,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +1089,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +1101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1660,8 +1722,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1670,72 +1730,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      🏗️ Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-a-foundation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Select a Foundation Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-model-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Model Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wrap-with-langchain-or-orchestration-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wrap with LangChain (or Orchestration Layer)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrate-into-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integrate into Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoding-strategies-after-wrapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔑 Decoding Strategies (After Wrapping)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rule-of-thumb" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Rule of Thumb
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#quick-takeaway" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      🎯 Quick Takeaway
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#parameter-interactions" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      ⚙️ Parameter Interactions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+  <a href="#rule-of-thumb_1" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
+      📌 Rule of Thumb
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+  <a href="#example-configurations" class="md-nav__link">
     <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
+      🛠️ Example Configurations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Example Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#greedy-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Greedy Decoding
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#sampling-with-temperature" class="md-nav__link">
     <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
+      Sampling with Temperature
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
+  <a href="#quick-takeaway_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Renaming columns after aggregation
+      🎯 Quick Takeaway
     </span>
   </a>
   
@@ -1757,346 +1883,170 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
-<hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
-</ul>
-<hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
+  <h1>LLM decoding strategy</h1>
 
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="workflow">🏗️ Workflow</h2>
+<h3 id="select-a-foundation-model"><strong>Select a Foundation Model</strong></h3>
 <ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
+<li>Examples: <code>mistralai/mistral-small</code>, <code>meta-llama/Llama-3</code>, <code>gpt-j</code>, etc.</li>
+<li>Consider:</li>
+<li><strong>Size vs. latency</strong> (small models for speed, large for accuracy).</li>
+<li><strong>Domain fit</strong> (general-purpose vs. fine-tuned).</li>
+<li><strong>Hosting</strong> (IBM Watsonx, Hugging Face, Azure, local inference).</li>
 </ul>
 <hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h3 id="configure-model-parameters"><strong>Configure Model Parameters</strong></h3>
 <ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
+<li>Common parameters:</li>
+<li><code>MAX_NEW_TOKENS</code>: controls output length.</li>
+<li><code>TEMPERATURE</code>: randomness/creativity.</li>
+<li><code>TOP_K</code> / <code>TOP_P</code>: sampling constraints.</li>
+<li><code>DECODING_METHOD</code>: greedy, sample, beam search.</li>
+<li>Credentials &amp; project setup (e.g., Watsonx API keys, project IDs).</li>
 </ul>
 <hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
+<h3 id="wrap-with-langchain-or-orchestration-layer"><strong>Wrap with LangChain (or Orchestration Layer)</strong></h3>
 <ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
+<li>Purpose: abstract the raw model into a <strong>LangChain LLM interface</strong>.</li>
+<li>Benefits:</li>
+<li>Unified API across different providers.</li>
+<li>Easy chaining with tools (retrievers, agents, memory).</li>
+<li>Plug-and-play with pipelines (QA bots, RAG, structured workflows).</li>
+<li>Example:</li>
 </ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
+<pre><code class="language-python">from langchain_ibm import WatsonxLLM
+from ibm_watsonx_ai.foundation_models import ModelInference, GenParams
 
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
+model = ModelInference(
+    model_id=&quot;mistralai/mistral-small&quot;,
+    params={
+        GenParams.MAX_NEW_TOKENS: 256,
+        GenParams.TEMPERATURE: 0.5,
+    },
+    credentials={&quot;url&quot;: &quot;https://us-south.ml.cloud.ibm.com&quot;},
+    project_id=&quot;skills-network&quot;
+)
 
-print(result)
+llm = WatsonxLLM(model=model)
 </code></pre>
+<hr />
+<h3 id="integrate-into-workflow"><strong>Integrate into Workflow</strong></h3>
+<ul>
+<li><strong>Prompt engineering</strong>: design input prompts.</li>
+<li><strong>Chains/Agents</strong>: combine LLM with retrievers, tools, memory.</li>
+<li><strong>Evaluation</strong>: test determinism vs. creativity depending on decoding.</li>
+</ul>
+<hr />
+<h3 id="decoding-strategies-after-wrapping">🔑 Decoding Strategies (After Wrapping)</h3>
+<p><em>(same section as before, now positioned after the setup)</em></p>
 <table>
 <thead>
 <tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
+<th>Method</th>
+<th>How it Works</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Best Use Cases</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>16.67</td>
-<td>810</td>
+<td><strong>Greedy</strong></td>
+<td>Always picks highest-probability token</td>
+<td>Deterministic, reproducible</td>
+<td>Bland, repetitive</td>
+<td>Structured extraction, factual QA</td>
+</tr>
+<tr>
+<td><strong>Sampling</strong></td>
+<td>Randomly samples with temperature</td>
+<td>Creative, diverse</td>
+<td>Non-deterministic</td>
+<td>Brainstorming, storytelling</td>
+</tr>
+<tr>
+<td><strong>Top-k</strong></td>
+<td>Samples from top <em>k</em> tokens</td>
+<td>Balance diversity/coherence</td>
+<td>Needs tuning</td>
+<td>Creative writing</td>
+</tr>
+<tr>
+<td><strong>Top-p</strong></td>
+<td>Samples from cumulative probability mass</td>
+<td>Adaptive diversity</td>
+<td>Needs tuning</td>
+<td>Dialogue, open-ended tasks</td>
+</tr>
+<tr>
+<td><strong>Beam Search</strong></td>
+<td>Explores multiple sequences</td>
+<td>Higher-quality</td>
+<td>Expensive, less diverse</td>
+<td>Translation, summarization</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
+<h2 id="rule-of-thumb">📌 Rule of Thumb</h2>
+<ul>
+<li><strong>Foundation model choice</strong> → determines baseline capability.</li>
+<li><strong>LangChain wrapping</strong> → enables orchestration and workflow hygiene.</li>
+<li><strong>Decoding strategy</strong> → tailors output style (deterministic vs. creative).</li>
+</ul>
+<hr />
+<h2 id="quick-takeaway">🎯 Quick Takeaway</h2>
+<p>Think of it as a <strong>three-layer stack</strong>:
+1. <strong>Foundation model</strong> (raw capability).<br />
+2. <strong>Wrapper (LangChain LLM)</strong> (workflow orchestration).<br />
+3. <strong>Decoding strategy</strong> (output style).  </p>
+<hr />
+<h2 id="parameter-interactions">⚙️ Parameter Interactions</h2>
+<ul>
+<li><strong>Temperature</strong></li>
+<li><code>0</code> → collapses sampling into greedy decoding.</li>
+<li><code>&gt;0</code> → introduces randomness.</li>
+<li><strong>DECODING_METHOD</strong></li>
+<li><code>"greedy"</code> → forces deterministic decoding.</li>
+<li><code>"sample"</code> → uses temperature/top-k/top-p.</li>
+<li><strong>Max Tokens</strong></li>
+<li>Controls length, independent of decoding method.</li>
+</ul>
+<hr />
+<h2 id="rule-of-thumb_1">📌 Rule of Thumb</h2>
+<ul>
+<li>Use <strong>Greedy</strong> when:</li>
+<li>You need <strong>deterministic, reproducible outputs</strong>.</li>
+<li>Tasks are <strong>factual, structured, or extractive</strong>.</li>
+<li>Use <strong>Sampling</strong> when:</li>
+<li>You want <strong>creative, varied outputs</strong>.</li>
+<li>Tasks are <strong>open-ended, conversational, or generative</strong>.</li>
+</ul>
+<hr />
+<h2 id="example-configurations">🛠️ Example Configurations</h2>
+<h3 id="greedy-decoding">Greedy Decoding</h3>
+<pre><code class="language-python">parameters = {
+    GenParams.MAX_NEW_TOKENS: 256,
+    GenParams.TEMPERATURE: 0,
+    GenParams.DECODING_METHOD: &quot;greedy&quot;
+}
+</code></pre>
+<h3 id="sampling-with-temperature">Sampling with Temperature</h3>
+<pre><code class="language-python">parameters = {
+    GenParams.MAX_NEW_TOKENS: 256,
+    GenParams.TEMPERATURE: 0.7,
+    GenParams.DECODING_METHOD: &quot;sample&quot;
+}
+</code></pre>
+<hr />
+<h2 id="quick-takeaway_1">🎯 Quick Takeaway</h2>
+<ul>
+<li><strong>Greedy = reproducibility</strong>  </li>
+<li><strong>Sampling = creativity</strong>  </li>
+<li>Explicitly set <code>DECODING_METHOD</code> when you want control.  </li>
+<li>If you don’t set it, the system defaults to sampling (since you provided <code>temperature &gt; 0</code>).  </li>
+</ul>
+<hr />
 
 
 

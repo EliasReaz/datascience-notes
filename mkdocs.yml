@@ -21,6 +21,7 @@ nav:
   - Home: index.md
 
   - LLM RAG:
+      - Basics of LLM: LLM_RAG_notes/basicQA_llm_transformer.
       - RGA workflow: LLM_RAG_notes/RAG_workflow_cheatsheet.md
       - FAISS library and ChromaDB: LLM_RAG_notes/FAISS_ChromaDB.md
       - LLM decoding strategy: LLM_RAG_notes/llm_decoding_strategy_notes.md
@@ -36,6 +37,7 @@ nav:
       - Confidence interval for median: Applied_statistics/ci_median.md
 
   - Pandas Notes: 
+      - DS workflow: pandas_manipulation/DS_major_tools.md 
       - pivot-table-stack-unstack: pandas_manipulation/pandas_pivot_reshape.md
       - groupby and aggregation: pandas_manipulation/top_3genre_avg_rating.md
       - aggregation functions agg, transform, apply: pandas_manipulation/types_of_aggregation.md
@@ -46,6 +48,8 @@ nav:
       - Count coin combinations to reach target amount: python/coin_combinations.md
       - Integer square root: python/square_root.md
   - SQL:
+      - Important Notes 1: SQL/imp_notes.md
+      - Important Notes 2: SQL/imp_notes_v2.md
       - Total number of monthly customer and average monthly sales: SQL/groupby_monthly_customer.md
       - Concat name counts and names: SQL/first_name.md
       - Highest paid job title: SQL/best_paid_title.md

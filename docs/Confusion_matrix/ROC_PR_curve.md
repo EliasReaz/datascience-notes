@@ -89,7 +89,7 @@ Interpretation: Model is good at catching churn, but 20% of loyal customers wron
 ---
 
 ### 3. **Loan Default Prediction**
-- Dataset: 500 applicants, 100 defaulters, 400 non-defaulters.  
+- Dataset: 500 applicants, 100 defaulters, 400 non-defaulters.
 - Model predicts: TP=70 defaulters correctly, FN=30 missed, FP=40 wrongly flagged, TN=360 correctly cleared.  
 
 Metrics:
@@ -111,12 +111,10 @@ Interpretation: Bank balances risk: catching most defaulters while keeping false
 
 ---
 
-
 **QUESTION**: **Difference between ROC and Precision-Rcall curves**
 
 **Quick Answer:**  
 The **ROC curve** plots *True Positive Rate (Recall)* vs *False Positive Rate*, while the **Precision-Recall (PR) curve** plots *Precision* vs *Recall*. ROC is more informative when classes are balanced, whereas PR curves are more useful for **imbalanced datasets**, since they highlight how well a model identifies the minority (positive) class.
-
 
 
 ---

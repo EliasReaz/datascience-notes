@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../top_3genre_avg_rating/">
-      
-      
-        <link rel="next" href="../notes_on_melt/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>aggregation functions agg, transform, apply - Data Science Essential Notes</title>
+        <title>📘 Notes on SDK, API, REST API, HTTP Calls, and Endpoints - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-aggregation-transformation-functions-cheat-sheet" class="md-skip">
+        <a href="#notes-on-sdk-api-rest-api-http-calls-and-endpoints" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              aggregation functions agg, transform, apply
+              📘 Notes on SDK, API, REST API, HTTP Calls, and Endpoints
             
           </span>
         </div>
@@ -246,13 +242,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../pandas_pivot_reshape/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-tabs__link">
           
   
   
@@ -805,31 +799,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -842,7 +833,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -856,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pandas_pivot_reshape/" class="md-nav__link">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -879,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -899,32 +890,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    aggregation functions agg, transform, apply
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -935,98 +904,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      📥 Sample DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
-    <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
-    <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Renaming columns after aggregation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1039,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1670,72 +1547,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-dataframe" class="md-nav__link">
+  <a href="#1-environment-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      📥 Sample DataFrame
+      1. Environment Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-agg-aggregate-with-built-in-and-custom-functions" class="md-nav__link">
+  <a href="#2-api-application-programming-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      1️⃣ agg() - Aggregate with built-in and custom functions
+      2. API (Application Programming Interface)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-groupbyagg-group-wise-aggregation" class="md-nav__link">
+  <a href="#3-sdk-software-development-kit" class="md-nav__link">
     <span class="md-ellipsis">
-      2️⃣ groupby().agg() - Group-wise aggregation
+      3. SDK (Software Development Kit)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-apply-apply-any-function-across-dataframe-or-group" class="md-nav__link">
+  <a href="#4-rest-api" class="md-nav__link">
     <span class="md-ellipsis">
-      3️⃣ apply() - Apply any function across DataFrame or group
+      4. REST API
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-transform-returns-same-shape-as-input-good-for-feature-engineering" class="md-nav__link">
+  <a href="#5-http-call" class="md-nav__link">
     <span class="md-ellipsis">
-      4️⃣ transform() - Returns same shape as input, good for feature engineering
+      5. HTTP Call
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-difference-between-agg-apply-and-transform" class="md-nav__link">
+  <a href="#6-endpoint" class="md-nav__link">
     <span class="md-ellipsis">
-      5️⃣ Difference between agg(), apply(), and transform()
+      6. Endpoint
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#7-putting-it-all-together-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      7. Putting It All Together (Flow)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#renaming-columns-after-aggregation" class="md-nav__link">
+  <a href="#8-sidebyside-example" class="md-nav__link">
     <span class="md-ellipsis">
-      Renaming columns after aggregation
+      8. Side‑by‑Side Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Key Takeaways
     </span>
   </a>
   
@@ -1757,346 +1643,144 @@
 
 
 
-<h1 id="pandas-aggregation-transformation-functions-cheat-sheet">🧮 pandas Aggregation &amp; Transformation Functions Cheat Sheet</h1>
-<p>This note covers different pandas aggregation functions (<code>agg()</code>, <code>apply()</code>, <code>transform()</code>) with examples, outputs, and explanations for your MkDocs.</p>
+<h1 id="notes-on-sdk-api-rest-api-http-calls-and-endpoints">📘 Notes on SDK, API, REST API, HTTP Calls, and Endpoints</h1>
 <hr />
-<h2 id="sample-dataframe">📥 Sample DataFrame</h2>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="1-agg-aggregate-with-built-in-and-custom-functions">1️⃣ <code>agg()</code> - Aggregate with built-in and custom functions</h2>
-<pre><code class="language-python">df.agg({
-    'value1': ['min', 'max', 'mean'],
-    'value2': ['mean', 'std'],
-    'value3': lambda x: (x &gt; 4).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>min</td>
-<td>10</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>max</td>
-<td>30</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td>16.67</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>mean</td>
-<td></td>
-<td>105.83</td>
-<td></td>
-</tr>
-<tr>
-<td><lambda></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
+<h2 id="1-environment-variables">1. Environment Variables</h2>
 <ul>
-<li>Multiple built-in functions per column.</li>
-<li>Custom lambda counts values &gt; 4 in <code>value3</code>.</li>
+<li><strong>Definition</strong>: Key-value pairs stored in the OS (Operating System) environment.  </li>
+<li><strong>Purpose</strong>: Programs and SDKs read them at runtime to decide behavior.  </li>
+<li><strong>Example</strong>:<br />
+<code>python
+  os.environ['ANONYMIZED_TELEMETRY'] = 'False'</code></li>
+<li>Tells IBM watsonx SDK whether telemetry data should be anonymized.  </li>
+<li><strong>General use cases</strong>: API keys, config paths, tracking URIs, device settings.</li>
 </ul>
-<hr />
-<h2 id="2-groupbyagg-group-wise-aggregation">2️⃣ <code>groupby().agg()</code> - Group-wise aggregation</h2>
-<pre><code class="language-python">df.groupby('group').agg({
-    'value1': ['mean', 'sum'],
-    'value3': lambda x: (x &gt; 5).sum()
-})
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1 mean</th>
-<th>value1 sum</th>
-<th>value3 (count &gt;5)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>12.5</td>
-<td>25</td>
-<td>0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>15.0</td>
-<td>30</td>
-<td>1</td>
-</tr>
-<tr>
-<td>C</td>
-<td>22.5</td>
-<td>45</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em>
-Aggregation by group with mixed functions.</p>
-<hr />
-<h2 id="3-apply-apply-any-function-across-dataframe-or-group">3️⃣ <code>apply()</code> - Apply any function across DataFrame or group</h2>
-<pre><code class="language-python">def range_func(x):
-    return x.max() - x.min()
+<p>ANOTHER EXAMPLE:</p>
+<pre><code class="language-python">import os
 
-# Apply to entire DataFrame numeric columns
-df[['value1', 'value2']].apply(range_func)
-</code></pre>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>20</td>
-<td>200</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<pre><code class="language-python"># Apply custom function on groupby object (sum of range per group)
-df.groupby('group').apply(lambda g: g[['value1', 'value2']].apply(range_func))
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>5</td>
-<td>50</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>10</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>apply()</code> can run any function, returning scalar or DataFrame.</li>
-<li>More flexible but sometimes slower than <code>agg()</code>.</li>
-</ul>
-<hr />
-<h2 id="4-transform-returns-same-shape-as-input-good-for-feature-engineering">4️⃣ <code>transform()</code> - Returns same shape as input, good for feature engineering</h2>
-<pre><code class="language-python"># Normalize value1 within each group (subtract mean)
-df['value1_norm'] = df.groupby('group')['value1'].transform(lambda x: x - x.mean())
-df
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>group</th>
-<th>value1</th>
-<th>value2</th>
-<th>value3</th>
-<th>value1_norm</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>10</td>
-<td>100</td>
-<td>5</td>
-<td>-2.5</td>
-</tr>
-<tr>
-<td>A</td>
-<td>15</td>
-<td>150</td>
-<td>3</td>
-<td>2.5</td>
-</tr>
-<tr>
-<td>B</td>
-<td>10</td>
-<td>50</td>
-<td>6</td>
-<td>-5.0</td>
-</tr>
-<tr>
-<td>B</td>
-<td>20</td>
-<td>60</td>
-<td>2</td>
-<td>5.0</td>
-</tr>
-<tr>
-<td>C</td>
-<td>15</td>
-<td>200</td>
-<td>7</td>
-<td>-7.5</td>
-</tr>
-<tr>
-<td>C</td>
-<td>30</td>
-<td>250</td>
-<td>8</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-<p><em>Explanation:</em></p>
-<ul>
-<li><code>transform()</code> outputs a result with the same index and shape as original.</li>
-<li>Useful for adding normalized or scaled features.</li>
-</ul>
-<hr />
-<h2 id="5-difference-between-agg-apply-and-transform">5️⃣ Difference between <code>agg()</code>, <code>apply()</code>, and <code>transform()</code></h2>
-<table>
-<thead>
-<tr>
-<th>Function</th>
-<th>Input Type</th>
-<th>Output Shape</th>
-<th>Use Case</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>agg()</code></td>
-<td>Series or DataFrame</td>
-<td>Aggregated scalar(s) or DataFrame</td>
-<td>Summary statistics or aggregation</td>
-</tr>
-<tr>
-<td><code>apply()</code></td>
-<td>Series or DataFrame</td>
-<td>Can be scalar, Series, or DataFrame</td>
-<td>Flexible function application, complex ops</td>
-</tr>
-<tr>
-<td><code>transform()</code></td>
-<td>Series or DataFrame</td>
-<td>Same shape as input</td>
-<td>Element-wise transformations preserving index</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="summary">Summary</h2>
-<ul>
-<li>Use <strong><code>agg()</code></strong> for aggregations that reduce data size (e.g., sum, mean).</li>
-<li>Use <strong><code>apply()</code></strong> for custom, flexible functions that may change shape.</li>
-<li>Use <strong><code>transform()</code></strong> when you want to return transformed data matching input shape (e.g., normalization).</li>
-</ul>
-<hr />
-<h2 id="renaming-columns-after-aggregation">Renaming columns after aggregation</h2>
-<pre><code class="language-python">result = df.agg({
-    'value1': 'mean',
-    'value2': 'sum'
-})
+# Set environment variable
+os.environ['DB_CONNECTION'] = 'postgresql://user:password@localhost:5432/mydatabase'
 
-result.rename({
-    'value1': 'Avg Value1',
-    'value2': 'Total Value2'
-}, inplace=True)
-
+# Later in your code, retrieve it
+db_url = os.environ['DB_CONNECTION']
+print(&quot;Connecting to:&quot;, db_url)
+</code></pre>
+<ul>
+<li>
+<p>Key: DB_CONNECTION</p>
+</li>
+<li>
+<p>Value: the database connection string.</p>
+</li>
+<li>
+<p>Usage: Your script or SDK can read this variable to know how to connect to the database, without hard‑coding sensitive info in the code.</p>
+</li>
+</ul>
+<hr />
+<h2 id="2-api-application-programming-interface">2. API (Application Programming Interface)</h2>
+<ul>
+<li><strong>Definition</strong>: A set of rules/contracts for communication between software components.  </li>
+<li><strong>Form</strong>: Functions, methods, or endpoints.  </li>
+<li><strong>Example</strong>: IBM Cloud API endpoint <code>POST /generate_text</code>.  </li>
+<li><strong>Key idea</strong>: API = <em>the interface</em> (the “doorway” to a system).</li>
+</ul>
+<hr />
+<h2 id="3-sdk-software-development-kit">3. SDK (Software Development Kit)</h2>
+<ul>
+<li><strong>Definition</strong>: A <strong>toolbox/package</strong> that wraps APIs and provides developer‑friendly tools.  </li>
+<li><strong>Contents</strong>: Libraries, classes, utilities, documentation.  </li>
+<li><strong>Example</strong>: IBM watsonx SDK (<code>ibm_watsonx_ai</code>) provides <code>ModelInference</code>.  </li>
+<li><strong>Role</strong>: SDK uses APIs internally, but exposes clean Python methods.  </li>
+<li><strong>Analogy</strong>: SDK = dashboard + controls to drive the API easily.</li>
+</ul>
+<hr />
+<h2 id="4-rest-api">4. REST API</h2>
+<ul>
+<li><strong>Definition</strong>: A <em>design style for building APIs using HTTP</em>.  </li>
+<li><strong>Principles</strong>:</li>
+<li>Resources (users, orders, models) exposed via URLs.  </li>
+<li>Standard HTTP methods (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>).  </li>
+<li>Stateless (each request is independent, can not recall/remember earlier request).  </li>
+<li>JSON/XML for resource representation.  </li>
+<li><strong>Example</strong>:  </li>
+<li><code>GET /users/123</code> → fetch user info  </li>
+<li><code>POST /orders</code> → make/genrate order  </li>
+</ul>
+<hr />
+<h2 id="5-http-call">5. HTTP Call</h2>
+<ul>
+<li><strong>Definition</strong>: The raw request sent using the HTTP protocol.  </li>
+<li><strong>Components</strong>: Method (GET/POST), URL, headers, body.  </li>
+<li><strong>Example</strong> (Python <code>requests</code>):
+  <code>python
+  response = requests.post("https://api.example.com/generate",
+                           headers={"Authorization": "Bearer token"},
+                           json={"input": "Hello"})</code></li>
+<li><strong>Key idea</strong>: REST APIs are <em>built on top of</em> HTTP calls.</li>
+</ul>
+<hr />
+<h2 id="6-endpoint">6. Endpoint</h2>
+<ul>
+<li><strong>Definition</strong>: A specific URL where an API action happens.  </li>
+<li><strong>Base URL vs Endpoint</strong>:</li>
+<li>Base: <code>https://api.example.com/</code>  </li>
+<li>Endpoint: <code>https://api.example.com/users/123</code>  </li>
+<li><strong>Role</strong>: Endpoint = the “address” of the resource/action.  </li>
+<li><strong>In SDKs</strong>: You don’t see endpoints directly; the SDK calls them internally.</li>
+</ul>
+<hr />
+<h2 id="7-putting-it-all-together-flow">7. Putting It All Together (Flow)</h2>
+<pre><code>Your Python Code
+   |
+   v
+SDK (ibm_watsonx_ai)
+   - Classes like ModelInference
+   - Wraps API calls
+   |
+   v
+REST API Endpoint (URL)
+   - e.g. https://api.watsonx.ibm.com/v1/generate
+   |
+   v
+HTTP Call
+   - POST request with headers + JSON
+   |
+   v
+IBM Cloud Service
+   - Processes request, returns response
+   |
+   v
+Your Python Code (receives result)
+</code></pre>
+<hr />
+<h2 id="8-sidebyside-example">8. Side‑by‑Side Example</h2>
+<p><strong>Raw HTTP (manual):</strong></p>
+<pre><code class="language-python">import requests
+url = &quot;https://api.watsonx.ibm.com/v1/generate&quot;
+headers = {&quot;Authorization&quot;: &quot;Bearer &lt;api_key&gt;&quot;, &quot;Content-Type&quot;: &quot;application/json&quot;}
+payload = {&quot;model_id&quot;: &quot;some-model-id&quot;, &quot;input&quot;: &quot;Hello world&quot;}
+response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+</code></pre>
+<p><strong>SDK (simplified):</strong></p>
+<pre><code class="language-python">from ibm_watsonx_ai.foundation_models import ModelInference
+model = ModelInference(model_id=&quot;some-model-id&quot;)
+result = model.generate_text(prompt=&quot;Hello world&quot;)
 print(result)
 </code></pre>
-<table>
-<thead>
-<tr>
-<th>Avg Value1</th>
-<th>Total Value2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>16.67</td>
-<td>810</td>
-</tr>
-</tbody>
-</table>
 <hr />
-<p><em>Happy coding with pandas!</em> 🚀</p>
+<h2 id="key-takeaways">✅ Key Takeaways</h2>
+<ul>
+<li><strong>Environment variable</strong> = global config knob.  </li>
+<li><strong>API</strong> = communication rules/contracts.  </li>
+<li><strong>SDK</strong> = toolbox wrapping APIs for easier use.  </li>
+<li><strong>REST API</strong> = structured style of using HTTP for resources.  </li>
+<li><strong>HTTP call</strong> = the raw request/response transport.  </li>
+<li><strong>Endpoint</strong> = the specific URL where the API action happens.  </li>
+<li><strong>SDK vs API</strong>: SDK simplifies API usage; API is the underlying contract.  </li>
+<li><strong>REST vs HTTP</strong>: REST is a design style; HTTP is the protocol it uses.</li>
+</ul>
+<hr />
 
 
 
