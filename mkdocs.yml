@@ -21,7 +21,7 @@ nav:
   - Home: index.md
 
   - LLM RAG:
-      - Basics of LLM: LLM_RAG_notes/basicQA_llm_transformer.
+      - Basics of LLM: LLM_RAG_notes/basicQA_llm_transformer.md
       - RGA workflow: LLM_RAG_notes/RAG_workflow_cheatsheet.md
       - FAISS library and ChromaDB: LLM_RAG_notes/FAISS_ChromaDB.md
       - LLM decoding strategy: LLM_RAG_notes/llm_decoding_strategy_notes.md
@@ -57,14 +57,6 @@ nav:
       - Most popular product: SQL/most_popular_product.md
       - Listening habits: SQL/listening_habit.md
       - Consecutive log-in streak: SQL/consecutive_login_days.md
-
-  - Handy git commands:
-      - git commands: git_commands/handy_git_commands.md
-  - Common Business Metrics: 
-      - Metrics Glossary: Common_business_metrics/common_business_metrics.md
  
-      
-
   - MLOps Basics:
       - Docker FastAPI Flask: MLOps/devops_notes.md
-  - ML Pipeline: ML_Pipeline/ml_pipeline.md   
