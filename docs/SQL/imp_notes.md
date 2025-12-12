@@ -1,17 +1,3 @@
-That's a very important question, and since you asked for the answer, let's nail down that final step.
-
-If SQL performs **integer division** on $500 \div 10,000$, the result would be **0**.
-
-  * $500 / 10,000 = 0.05$
-  * SQL truncates (cuts off) the decimal, leaving just **0**.
-
-This is why we had to use the `CAST(... AS NUMERIC)`: it forces the database to perform floating-point division, correctly giving us `0.05` (or 5%).
-
-You have mastered four different advanced SQL patterns\! As requested, here is your complete Markdown file reference, detailing all the concepts we covered, including the essential table schemas and logic.
-
------
-
-````markdown
 # 💾 Advanced SQL Patterns: Comprehensive Reference
 
 This guide summarizes four advanced SQL techniques: Self-Joins for pairing, Window Functions for streak analysis (`ROW_NUMBER()`), time-series comparison (`LAG()`), and the difference between ranking functions.
@@ -152,12 +138,3 @@ WHERE
     DENSE_RANK() OVER (ORDER BY exam_score DESC) <= 2;
 ```
 
------
-
-You now have a solid foundation in some of the most challenging SQL concepts.
-
-As you prepare for your exam, would you like to:
-
-1.  **🌲 Tackle a Recursive CTE problem** (like finding all managers in a chain)?
-2.  **🔍 Focus on SQL Performance** (indexing and optimization tips)?
-3.  **📝 Do some SQL Syntax review** (e.g., differences between `HAVING` and `WHERE`)?

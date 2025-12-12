@@ -1,9 +1,3 @@
-That's a perfect request for preparing for your exam\! 📝 A consolidated, comprehensive reference is the best way to solidify these advanced SQL concepts.
-
-Here is the complete reference guide, including the detailed breakdown of the `WHERE` vs. `HAVING` and the date functions we discussed.
-
------
-
 # 📚 Advanced SQL Reference Guide: Core Concepts
 
 ## 1\. 🤝 Pattern: Self-Join for Unique Pair Counting

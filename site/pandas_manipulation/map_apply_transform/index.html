@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../notes_on_melt/">
+      
+      
+        <link rel="next" href="../../python/find_unique_element/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Map apply transform - Data Science Essential Notes</title>
+        <title>map, apply, transfer - Data Science Essential Notes</title>
       
     
     
@@ -92,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Map apply transform
+              map, apply, transfer
             
           </span>
         </div>
@@ -242,10 +246,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../DS_major_tools/" class="md-tabs__link">
           
   
@@ -763,28 +769,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -797,7 +806,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -914,6 +923,197 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    map, apply, transfer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    map, apply, transfer
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sample-business-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗃 Sample Business Dataset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-map-use-for-element-wise-transformation-on-a-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ map() - Use for Element-wise Transformation on a Series
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1️⃣ map() - Use for Element-wise Transformation on a Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal-map-loyalty-level-to-discount-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal: Map loyalty level to discount rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#another-example-format-customerid-with-prefix" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Another Example: Format CustomerID with prefix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-apply-use-for-rowcolumn-wise-custom-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ apply() - Use for Row/Column-wise Custom Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2️⃣ apply() - Use for Row/Column-wise Custom Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal-compute-final-price-after-discount-row-wise" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal: Compute final price after discount (row-wise)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#another-example-tag-high-value-customers" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Another Example: Tag high-value customers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-transform-use-for-group-wise-computation-shape-preservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ transform() — Use for Group-wise Computation &amp; Shape Preservation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3️⃣ transform() — Use for Group-wise Computation &amp; Shape Preservation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#goal-normalize-purchase-amount-within-each-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Goal: Normalize purchase amount within each region
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#another-example-z-score-of-purchases-within-each-region" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Another Example: Z-score of purchases within each region
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚖️ Comparison Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-chain-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Bonus: Chain all together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
