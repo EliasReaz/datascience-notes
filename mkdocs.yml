@@ -42,7 +42,8 @@ nav:
       - groupby and aggregation: pandas_manipulation/top_3genre_avg_rating.md
       - aggregation functions agg, transform, apply: pandas_manipulation/types_of_aggregation.md
       - Notes on melt: pandas_manipulation/notes_on_melt.md
-
+      - map, apply, transfer: pandas_manipulation/map_apply_transform.md
+ 
   - Python:
       - Find unique numbers - Two-pointer search: python/find_unique_element.md
       - Count coin combinations to reach target amount: python/coin_combinations.md
