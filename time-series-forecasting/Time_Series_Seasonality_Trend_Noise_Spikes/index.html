@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../DS_major_tools/">
+        <link rel="prev" href="../Time_Series_Analysis_With_Plots/">
       
       
-        <link rel="next" href="../top_3genre_avg_rating/">
+        <link rel="next" href="../../Applied_statistics/Explanation_pvalue/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>pivot-table-stack-unstack - Data Science Essential Notes</title>
+        <title>Error, Trend, Seasonality - Data Science Essential Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pandas-data-transformation-cheat-sheet" class="md-skip">
+        <a href="#time-series-analysis-reference-redemption-count-20222024" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              pivot-table-stack-unstack
+              Error, Trend, Seasonality
             
           </span>
         </div>
@@ -226,11 +226,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../time-series-forecasting/SARIMA_notes/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../SARIMA_notes/" class="md-tabs__link">
           
   
   
@@ -266,13 +268,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../DS_major_tools/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../pandas_manipulation/DS_major_tools/" class="md-tabs__link">
           
   
   
@@ -668,28 +668,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -702,7 +705,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Time Series Forecasting
@@ -716,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../time-series-forecasting/SARIMA_notes/" class="md-nav__link">
+      <a href="../SARIMA_notes/" class="md-nav__link">
         
   
   
@@ -739,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../time-series-forecasting/Time_Series_Analysis_With_Plots/" class="md-nav__link">
+      <a href="../Time_Series_Analysis_With_Plots/" class="md-nav__link">
         
   
   
@@ -759,10 +762,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../time-series-forecasting/Time_Series_Seasonality_Trend_Noise_Spikes/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Error, Trend, Seasonality
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -773,6 +798,176 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seasonality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 Seasonality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 Seasonality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yearly-seasonality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Yearly Seasonality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly-seasonality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Monthly Seasonality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-seasonality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Weekly Seasonality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trend" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Trend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Trend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rolling-average-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Rolling Average (Visual)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stl-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 STL Decomposition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noise" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔀 Noise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔀 Noise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#view-residuals-stl" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 View residuals (STL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-if-noise-is-normal-3-std-dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Check if noise is normal (±3 std dev)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spikes-outliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Spikes (Outliers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Spikes (Outliers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detect-using-iqr-on-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Detect using IQR on residuals:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plot-on-time-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Plot on time series:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Summary Table
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -910,31 +1105,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -947,7 +1139,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Pandas Notes
@@ -961,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../DS_major_tools/" class="md-nav__link">
+      <a href="../../pandas_manipulation/DS_major_tools/" class="md-nav__link">
         
   
   
@@ -981,32 +1173,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    pivot-table-stack-unstack
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../pandas_manipulation/pandas_pivot_reshape/" class="md-nav__link">
         
   
   
@@ -1017,251 +1187,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-dataset" class="md-nav__link">
-    <span class="md-ellipsis">
-      📘 Example Dataset
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-pivot_table" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. pivot_table()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. pivot_table()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-aggregating-reshaping-data-by-indexcolumn" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Aggregating + reshaping data by index/column
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-what-is-the-average-temperature-and-humidity-for-each-city" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "What is the average Temperature and Humidity for each City?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-pivot" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. pivot()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. pivot()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-reshaping-without-aggregation-must-be-unique-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Reshaping without aggregation (must be unique combinations)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-see-temperature-values-by-date-and-city-in-a-matrix" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I see Temperature values by Date and City in a matrix?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-groupby" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. groupby()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. groupby()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-grouping-aggregation-without-reshaping" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Grouping + aggregation without reshaping
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-what-is-the-average-temperature-for-each-city" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "What is the average Temperature for each City?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-melt" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. melt()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. melt()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-unpivot-a-wide-table-into-long-format" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Unpivot a wide table into long format
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-convert-columns-like-temperature-humidity-into-rows-for-easier-plotting-or-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I convert columns (like Temperature, Humidity) into rows for easier plotting or analysis?"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-melt-for-visualization" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 When to use melt() for visualization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. stack()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. stack()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-convert-columns-to-a-row-wise-multiindex-wide-long" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Convert columns to a row-wise MultiIndex (wide → long)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-convert-the-columns-of-a-pivoted-table-into-row-level-entries" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I convert the columns of a pivoted table into row-level entries?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-unstack" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. unstack()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. unstack()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-convert-inner-level-of-row-index-to-column-level-long-wide" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Convert inner level of row index to column level (long → wide)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-reverse-the-effect-of-stack-and-get-back-the-original-column-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I reverse the effect of stack() and get back the original column layout?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔁 Summary Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1274,7 +1199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../top_3genre_avg_rating/" class="md-nav__link">
+      <a href="../../pandas_manipulation/top_3genre_avg_rating/" class="md-nav__link">
         
   
   
@@ -1297,7 +1222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../types_of_aggregation/" class="md-nav__link">
+      <a href="../../pandas_manipulation/types_of_aggregation/" class="md-nav__link">
         
   
   
@@ -1320,7 +1245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../notes_on_melt/" class="md-nav__link">
+      <a href="../../pandas_manipulation/notes_on_melt/" class="md-nav__link">
         
   
   
@@ -1343,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../map_apply_transform/" class="md-nav__link">
+      <a href="../../pandas_manipulation/map_apply_transform/" class="md-nav__link">
         
   
   
@@ -1848,37 +1773,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-dataset" class="md-nav__link">
+  <a href="#seasonality" class="md-nav__link">
     <span class="md-ellipsis">
-      📘 Example Dataset
+      🔁 Seasonality
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-pivot_table" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. pivot_table()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. pivot_table()">
+    <nav class="md-nav" aria-label="🔁 Seasonality">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-to-use-aggregating-reshaping-data-by-indexcolumn" class="md-nav__link">
+  <a href="#yearly-seasonality" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ When to use: Aggregating + reshaping data by index/column
+      🔹 Yearly Seasonality
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#question-it-solves-what-is-the-average-temperature-and-humidity-for-each-city" class="md-nav__link">
+  <a href="#monthly-seasonality" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Question it solves: "What is the average Temperature and Humidity for each City?"
+      🔹 Monthly Seasonality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weekly-seasonality" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Weekly Seasonality
     </span>
   </a>
   
@@ -1890,28 +1815,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-pivot" class="md-nav__link">
+  <a href="#trend" class="md-nav__link">
     <span class="md-ellipsis">
-      2. pivot()
+      📈 Trend
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. pivot()">
+    <nav class="md-nav" aria-label="📈 Trend">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-to-use-reshaping-without-aggregation-must-be-unique-combinations" class="md-nav__link">
+  <a href="#rolling-average-visual" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ When to use: Reshaping without aggregation (must be unique combinations)
+      🔹 Rolling Average (Visual)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-see-temperature-values-by-date-and-city-in-a-matrix" class="md-nav__link">
+  <a href="#stl-decomposition" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Question it solves: "How can I see Temperature values by Date and City in a matrix?"
+      🔹 STL Decomposition
     </span>
   </a>
   
@@ -1923,28 +1848,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-groupby" class="md-nav__link">
+  <a href="#noise" class="md-nav__link">
     <span class="md-ellipsis">
-      3. groupby()
+      🔀 Noise
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. groupby()">
+    <nav class="md-nav" aria-label="🔀 Noise">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-to-use-grouping-aggregation-without-reshaping" class="md-nav__link">
+  <a href="#view-residuals-stl" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ When to use: Grouping + aggregation without reshaping
+      🔹 View residuals (STL)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#question-it-solves-what-is-the-average-temperature-for-each-city" class="md-nav__link">
+  <a href="#check-if-noise-is-normal-3-std-dev" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Question it solves: "What is the average Temperature for each City?"
+      🔹 Check if noise is normal (±3 std dev)
     </span>
   </a>
   
@@ -1956,103 +1881,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-melt" class="md-nav__link">
+  <a href="#spikes-outliers" class="md-nav__link">
     <span class="md-ellipsis">
-      4. melt()
+      ⚡ Spikes (Outliers)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. melt()">
+    <nav class="md-nav" aria-label="⚡ Spikes (Outliers)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#when-to-use-unpivot-a-wide-table-into-long-format" class="md-nav__link">
+  <a href="#detect-using-iqr-on-residuals" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ When to use: Unpivot a wide table into long format
+      🔹 Detect using IQR on residuals:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-convert-columns-like-temperature-humidity-into-rows-for-easier-plotting-or-analysis" class="md-nav__link">
+  <a href="#plot-on-time-series" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ Question it solves: "How can I convert columns (like Temperature, Humidity) into rows for easier plotting or analysis?"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-melt-for-visualization" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 When to use melt() for visualization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-stack" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. stack()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. stack()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-convert-columns-to-a-row-wise-multiindex-wide-long" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Convert columns to a row-wise MultiIndex (wide → long)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-convert-the-columns-of-a-pivoted-table-into-row-level-entries" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I convert the columns of a pivoted table into row-level entries?"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-unstack" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. unstack()
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. unstack()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#when-to-use-convert-inner-level-of-row-index-to-column-level-long-wide" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ When to use: Convert inner level of row index to column level (long → wide)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#question-it-solves-how-can-i-reverse-the-effect-of-stack-and-get-back-the-original-column-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      ❓ Question it solves: "How can I reverse the effect of stack() and get back the original column layout?"
+      🔹 Plot on time series:
     </span>
   </a>
   
@@ -2066,7 +1916,7 @@
         <li class="md-nav__item">
   <a href="#summary-table" class="md-nav__link">
     <span class="md-ellipsis">
-      🔁 Summary Table
+      ✅ Summary Table
     </span>
   </a>
   
@@ -2088,174 +1938,116 @@
 
 
 
-<h1 id="pandas-data-transformation-cheat-sheet">🐼 Pandas Data Transformation Cheat Sheet</h1>
-<h2 id="example-dataset">📘 Example Dataset</h2>
-<pre><code class="language-python">import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-data = {
-    'Date': ['2024-01-01', '2024-01-01', '2024-01-02', '2024-01-02'],
-    'City': ['Toronto', 'Vancouver', 'Toronto', 'Vancouver'],
-    'Temperature': [5, 7, 6, 8],
-    'Humidity': [65, 70, 66, 72]
-}
-df = pd.DataFrame(data)
-</code></pre>
-<pre><code>         Date      City  Temperature  Humidity
-0  2024-01-01   Toronto            5        65
-1  2024-01-01  Vancouver           7        70
-2  2024-01-02   Toronto            6        66
-3  2024-01-02  Vancouver           8        72
+<h1 id="time-series-analysis-reference-redemption-count-20222024">📈 Time Series Analysis Reference: Redemption Count (2022–2024)</h1>
+<p>This guide summarizes the core concepts of time series decomposition and diagnostics using your Toronto Island ferry ticket data. It includes explanations, Python code (with pandas), and plot logic for:</p>
+<ul>
+<li>Seasonality (Yearly, Monthly, Weekly)</li>
+<li>Trend</li>
+<li>Noise</li>
+<li>Spikes (Outliers)</li>
+</ul>
+<hr />
+<h2 id="seasonality">🔁 Seasonality</h2>
+<p>Seasonality refers to <strong>repeating patterns</strong> at regular intervals.</p>
+<h3 id="yearly-seasonality">🔹 Yearly Seasonality</h3>
+<p><strong>Definition</strong>: Repeats annually (e.g., summer peaks).
+<strong>Detection</strong>: Use STL decomposition with <code>period=365</code>.</p>
+<pre><code class="language-python">from statsmodels.tsa.seasonal import STL
+stl = STL(df['Redemption Count'], period=365)
+res = stl.fit()
+res.seasonal.plot(title='Yearly Seasonality')
 </code></pre>
 <hr />
-<h2 id="1-pivot_table">1. <code>pivot_table()</code></h2>
-<h3 id="when-to-use-aggregating-reshaping-data-by-indexcolumn">✅ When to use: Aggregating + reshaping data by index/column</h3>
-<h3 id="question-it-solves-what-is-the-average-temperature-and-humidity-for-each-city">❓ Question it solves: "What is the average Temperature and Humidity for each City?"</h3>
-<pre><code class="language-python">pivot_df = df.pivot_table(index='City', values=['Temperature', 'Humidity'], aggfunc='mean')
-</code></pre>
-<pre><code>            Humidity  Temperature
-City                            
-Toronto          65.5         5.5
-Vancouver        71.0         7.5
+<h3 id="monthly-seasonality">🔹 Monthly Seasonality</h3>
+<p><strong>Definition</strong>: Monthly fluctuation pattern (e.g., ramp-up to summer).
+<strong>Detection</strong>: Group by month and take averages.</p>
+<pre><code class="language-python">df['month'] = df.index.month
+monthly_avg = df.groupby(df.index.to_period(&quot;M&quot;))['Redemption Count'].mean()
+monthly_avg.plot(title='Monthly Average Redemption Count')
 </code></pre>
 <hr />
-<h2 id="2-pivot">2. <code>pivot()</code></h2>
-<h3 id="when-to-use-reshaping-without-aggregation-must-be-unique-combinations">✅ When to use: Reshaping without aggregation (must be unique combinations)</h3>
-<h3 id="question-it-solves-how-can-i-see-temperature-values-by-date-and-city-in-a-matrix">❓ Question it solves: "How can I see Temperature values by Date and City in a matrix?"</h3>
-<pre><code class="language-python">pivot_df = df.pivot(index='Date', columns='City', values='Temperature')
-</code></pre>
-<pre><code>City         Toronto  Vancouver
-Date                          
-2024-01-01        5          7
-2024-01-02        6          8
+<h3 id="weekly-seasonality">🔹 Weekly Seasonality</h3>
+<p><strong>Definition</strong>: Weekly behavior, like weekend peaks.
+<strong>Detection</strong>: Group by <code>dayofweek</code> (0=Monday, 6=Sunday)</p>
+<pre><code class="language-python">df['dayofweek'] = df.index.dayofweek
+weekly_avg = df.groupby('dayofweek')['Redemption Count'].mean()
+weekly_avg.plot(kind='bar', title='Weekly Seasonality (0=Mon)')
 </code></pre>
 <hr />
-<h2 id="3-groupby">3. <code>groupby()</code></h2>
-<h3 id="when-to-use-grouping-aggregation-without-reshaping">✅ When to use: Grouping + aggregation without reshaping</h3>
-<h3 id="question-it-solves-what-is-the-average-temperature-for-each-city">❓ Question it solves: "What is the average Temperature for each City?"</h3>
-<pre><code class="language-python">city_group = df.groupby('City')['Temperature'].mean()
+<h2 id="trend">📈 Trend</h2>
+<p>Trend is the <strong>long-term direction</strong> in the data.</p>
+<h3 id="rolling-average-visual">🔹 Rolling Average (Visual)</h3>
+<pre><code class="language-python">df['Redemption Count'].rolling(window=90).mean().plot(title='90-Day Rolling Average (Trend)')
 </code></pre>
-<pre><code>City
-Toronto      5.5
-Vancouver    7.5
-Name: Temperature, dtype: float64
-</code></pre>
-<hr />
-<h2 id="4-melt">4. <code>melt()</code></h2>
-<h3 id="when-to-use-unpivot-a-wide-table-into-long-format">✅ When to use: Unpivot a wide table into long format</h3>
-<h3 id="question-it-solves-how-can-i-convert-columns-like-temperature-humidity-into-rows-for-easier-plotting-or-analysis">❓ Question it solves: "How can I convert columns (like Temperature, Humidity) into rows for easier plotting or analysis?"</h3>
-<pre><code class="language-python">melted = pd.melt(df, id_vars=['Date', 'City'], value_vars=['Temperature', 'Humidity'], 
-                 var_name='Measurement', value_name='Value')
-</code></pre>
-<pre><code>         Date      City Measurement  Value
-0  2024-01-01   Toronto  Temperature      5
-1  2024-01-01  Vancouver  Temperature      7
-2  2024-01-02   Toronto  Temperature      6
-3  2024-01-02  Vancouver  Temperature      8
-4  2024-01-01   Toronto     Humidity     65
-5  2024-01-01  Vancouver     Humidity     70
-6  2024-01-02   Toronto     Humidity     66
-7  2024-01-02  Vancouver     Humidity     72
-</code></pre>
-<h3 id="when-to-use-melt-for-visualization">📊 When to use <code>melt()</code> for visualization</h3>
-<p><code>melt()</code> is especially useful for Seaborn or Matplotlib when you want to:
-- Plot multiple measurements on the same axes
-- Use <code>hue</code> for different measurements</p>
-<pre><code class="language-python">sns.lineplot(data=melted, x='Date', y='Value', hue='Measurement')
-plt.title('Line Plot of Temperature and Humidity')
-plt.show()
+<h3 id="stl-decomposition">🔹 STL Decomposition</h3>
+<pre><code class="language-python">stl = STL(df['Redemption Count'], period=7)
+res = stl.fit()
+res.trend.plot(title='Trend Component')
 </code></pre>
 <hr />
-<h2 id="5-stack">5. <code>stack()</code></h2>
-<h3 id="when-to-use-convert-columns-to-a-row-wise-multiindex-wide-long">✅ When to use: Convert columns to a row-wise MultiIndex (wide → long)</h3>
-<h3 id="question-it-solves-how-can-i-convert-the-columns-of-a-pivoted-table-into-row-level-entries">❓ Question it solves: "How can I convert the columns of a pivoted table into row-level entries?"</h3>
-<pre><code class="language-python">pivot_df = df.pivot(index='Date', columns='City', values='Temperature')
-stacked = pivot_df.stack()  # MultiIndex: Date + City
+<h2 id="noise">🔀 Noise</h2>
+<p>Noise = <strong>random small fluctuations</strong> not explained by trend/seasonality.</p>
+<h3 id="view-residuals-stl">🔹 View residuals (STL)</h3>
+<pre><code class="language-python">residual = res.resid
+residual.plot(title='Residuals = Noise')
 </code></pre>
-<pre><code>Date        City     
-2024-01-01  Toronto      5
-            Vancouver    7
-2024-01-02  Toronto      6
-            Vancouver    8
-dtype: int64
+<h3 id="check-if-noise-is-normal-3-std-dev">🔹 Check if noise is normal (±3 std dev)</h3>
+<pre><code class="language-python">plt.axhline(residual.mean() + 3 * residual.std(), linestyle='--', color='red')
+plt.axhline(residual.mean() - 3 * residual.std(), linestyle='--', color='red')
 </code></pre>
 <hr />
-<h2 id="6-unstack">6. <code>unstack()</code></h2>
-<h3 id="when-to-use-convert-inner-level-of-row-index-to-column-level-long-wide">✅ When to use: Convert inner level of row index to column level (long → wide)</h3>
-<h3 id="question-it-solves-how-can-i-reverse-the-effect-of-stack-and-get-back-the-original-column-layout">❓ Question it solves: "How can I reverse the effect of <code>stack()</code> and get back the original column layout?"</h3>
-<pre><code class="language-python">unstacked = stacked.unstack()  # City becomes columns again
+<h2 id="spikes-outliers">⚡ Spikes (Outliers)</h2>
+<p>Spikes = <strong>large, rare deviations</strong> (special events, data errors).</p>
+<h3 id="detect-using-iqr-on-residuals">🔹 Detect using IQR on residuals:</h3>
+<pre><code class="language-python">Q1 = residual.quantile(0.25)
+Q3 = residual.quantile(0.75)
+IQR = Q3 - Q1
+spikes = residual[(residual &lt; Q1 - 1.5 * IQR) | (residual &gt; Q3 + 1.5 * IQR)]
 </code></pre>
-<pre><code>City         Toronto  Vancouver
-Date                          
-2024-01-01        5          7
-2024-01-02        6          8
+<h3 id="plot-on-time-series">🔹 Plot on time series:</h3>
+<pre><code class="language-python">plt.plot(df['Redemption Count'], label='Redemption Count')
+plt.scatter(spikes.index, df.loc[spikes.index, 'Redemption Count'], color='red', label='Spikes')
 </code></pre>
 <hr />
-<h2 id="summary-table">🔁 Summary Table</h2>
+<h2 id="summary-table">✅ Summary Table</h2>
 <table>
 <thead>
 <tr>
-<th>Function</th>
-<th>Use Case</th>
-<th>Reshape</th>
-<th>Aggregation</th>
-<th>Solves What Question?</th>
-<th>Suitable for Plotting</th>
+<th>Component</th>
+<th>Meaning</th>
+<th>How to Detect</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>pivot()</code></td>
-<td>Reshape data (must be unique keys)</td>
-<td>✅</td>
-<td>❌</td>
-<td>See data matrix across dimensions</td>
-<td>Wide format</td>
+<td>Yearly Seasonality</td>
+<td>Repeats each year</td>
+<td>STL (<code>period=365</code>)</td>
 </tr>
 <tr>
-<td><code>pivot_table()</code></td>
-<td>Reshape + aggregate</td>
-<td>✅</td>
-<td>✅</td>
-<td>Average/summarize across categories</td>
-<td>Wide format</td>
+<td>Weekly Seasonality</td>
+<td>Peaks on weekends</td>
+<td><code>groupby(dayofweek).mean()</code></td>
 </tr>
 <tr>
-<td><code>groupby()</code></td>
-<td>Group + aggregate</td>
-<td>❌</td>
-<td>✅</td>
-<td>Summary stats per group</td>
-<td>Use with aggregation</td>
+<td>Trend</td>
+<td>Long-term growth/decline</td>
+<td>STL trend or 90-day rolling average</td>
 </tr>
 <tr>
-<td><code>melt()</code></td>
-<td>Wide → long</td>
-<td>✅</td>
-<td>❌</td>
-<td>Flatten data for analysis/plotting</td>
-<td>✅ (long format)</td>
+<td>Noise</td>
+<td>Small random changes</td>
+<td>Residuals from STL</td>
 </tr>
 <tr>
-<td><code>stack()</code></td>
-<td>Columns → row MultiIndex</td>
-<td>✅</td>
-<td>❌</td>
-<td>Convert wide to nested long format</td>
-<td>Not commonly used</td>
-</tr>
-<tr>
-<td><code>unstack()</code></td>
-<td>Row MultiIndex → columns</td>
-<td>✅</td>
-<td>❌</td>
-<td>Reverse of stacking</td>
-<td>Not commonly used</td>
+<td>Spikes</td>
+<td>Big, irregular deviations</td>
+<td>Outliers from residual (IQR/z-score)</td>
 </tr>
 </tbody>
 </table>
 <hr />
+<p>This file serves as a compact revision guide and a reproducible analysis script using pandas and matplotlib.</p>
 
 
 
