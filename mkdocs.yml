@@ -30,7 +30,10 @@ nav:
 
   - Confusion Matrix:
       - ROC vs PR curve: Confusion_matrix/ROC_PR_curve.md
-
+  - Time Series Forecasting:
+      - SAMIRA: time-series-forecasting/SARIMA_notes.md
+      - Time Series Analysis with plots: time-series-forecasting/Time_Series_Analysis_With_Plots.md
+      - Error, Trend, Seasonality: time-series-forecasting/Time_Series_Seasonality_Trend_Noise_Spikes.md 
   - Applied Statistic:
       - What p-value means: Applied_statistics/Explanation_pvalue.md
       - AB testing Concepts: Applied_statistics/AB_testing.md

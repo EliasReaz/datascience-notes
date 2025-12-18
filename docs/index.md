@@ -9,7 +9,8 @@ Start exploring by clicking on the tabs above!
 
 - **LLM & RAG**
   Notes on LLM models, RAG workflow, FAISS, ChromaDB
-
+- **Time Series Forecasting**
+  Notes on SARIMA, Error, Trend, Seasonality
 - **ROC and PR curve**
   Difference between ROC and PR curve - what, why, when to use
 
