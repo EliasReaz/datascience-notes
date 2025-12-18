@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-pattern-streak-finding-row_number" class="md-skip">
+        <a href="#advanced-sql-patterns-comprehensive-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -1137,6 +1137,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1169,6 +1171,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1177,9 +1181,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-pattern-streak-finding-row_number" class="md-nav__link">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 🗓️ Pattern: Streak Finding (ROW_NUMBER())
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
     </span>
   </a>
   
@@ -1495,6 +1499,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1503,9 +1509,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#2-pattern-streak-finding-row_number" class="md-nav__link">
+  <a href="#1-pattern-self-join-for-unique-pair-counting" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 🗓️ Pattern: Streak Finding (ROW_NUMBER())
+      1. 🤝 Pattern: Self-Join for Unique Pair Counting
     </span>
   </a>
   
@@ -1545,38 +1551,20 @@
 
 
 
-  <h1>Important Notes 1</h1>
-
-<p>That's a very important question, and since you asked for the answer, let's nail down that final step.</p>
-<p>If SQL performs <strong>integer division</strong> on $500 \div 10,000$, the result would be <strong>0</strong>.</p>
-<ul>
-<li>$500 / 10,000 = 0.05$</li>
-<li>SQL truncates (cuts off) the decimal, leaving just <strong>0</strong>.</li>
-</ul>
-<p>This is why we had to use the <code>CAST(... AS NUMERIC)</code>: it forces the database to perform floating-point division, correctly giving us <code>0.05</code> (or 5%).</p>
-<p>You have mastered four different advanced SQL patterns! As requested, here is your complete Markdown file reference, detailing all the concepts we covered, including the essential table schemas and logic.</p>
-<hr />
-<pre><code class="language-markdown"># 💾 Advanced SQL Patterns: Comprehensive Reference
-
-This guide summarizes four advanced SQL techniques: Self-Joins for pairing, Window Functions for streak analysis (`ROW_NUMBER()`), time-series comparison (`LAG()`), and the difference between ranking functions.
-
-## 1. 🤝 Pattern: Self-Join for Unique Pair Counting
-
-**🎯 Goal:** Find and count unique relationships between entities in the same table (e.g., lawyers sharing a trial).
-
-**🏷️ Table Schema:**
+<h1 id="advanced-sql-patterns-comprehensive-reference">💾 Advanced SQL Patterns: Comprehensive Reference</h1>
+<p>This guide summarizes four advanced SQL techniques: Self-Joins for pairing, Window Functions for streak analysis (<code>ROW_NUMBER()</code>), time-series comparison (<code>LAG()</code>), and the difference between ranking functions.</p>
+<h2 id="1-pattern-self-join-for-unique-pair-counting">1. 🤝 Pattern: Self-Join for Unique Pair Counting</h2>
+<p><strong>🎯 Goal:</strong> Find and count unique relationships between entities in the same table (e.g., lawyers sharing a trial).</p>
+<p><strong>🏷️ Table Schema:</strong>
 | Table | Column | Type |
 | :---: | :---: | :---: |
-| `TrialParticipation` | `trial_id` | INT |
-| | `lawyer_id` | INT |
-
-**🔑 Key Logic: Eliminating Duplicate Pairs**
+| <code>TrialParticipation</code> | <code>trial_id</code> | INT |
+| | <code>lawyer_id</code> | INT |</p>
+<p><strong>🔑 Key Logic: Eliminating Duplicate Pairs</strong>
 Joining a table to itself creates redundant pairs (A, B and B, A). The condition below ensures only one is counted:
-- **`T1.lawyer_id &lt; T2.lawyer_id`**: Forces the lawyer with the lower ID to always be listed first.
-
-**💻 SQL Code Template:**
-```sql
-SELECT
+- <strong><code>T1.lawyer_id &lt; T2.lawyer_id</code></strong>: Forces the lawyer with the lower ID to always be listed first.</p>
+<p><strong>💻 SQL Code Template:</strong></p>
+<pre><code class="language-sql">SELECT
     T1.lawyer_id AS Lawyer_A,
     T2.lawyer_id AS Lawyer_B,
     COUNT(T1.trial_id) AS Shared_Count
@@ -1590,20 +1578,28 @@ GROUP BY
     Lawyer_A, Lawyer_B
 ORDER BY
     Shared_Count DESC;
-</code></pre>
-<hr />
-<h2 id="2-pattern-streak-finding-row_number">2. 🗓️ Pattern: Streak Finding (<code>ROW_NUMBER()</code>)</h2>
-<p><strong>🎯 Goal:</strong> Find the longest continuous sequence of successful days (sales &gt; $1000).</p>
-<p><strong>🏷️ Table Schema:</strong>
+````
+
+-----
+
+## 2\. 🗓️ Pattern: Streak Finding (`ROW_NUMBER()`)
+
+**🎯 Goal:** Find the longest continuous sequence of successful days (sales \&gt; $1000).
+
+**🏷️ Table Schema:**
 | Table | Column | Type |
 | :---: | :---: | :---: |
-| <code>DailySales</code> | <code>sale_date</code> | DATE |
-| | <code>sales_amount</code> | INT |</p>
-<p><strong>🔑 Key Logic: The Group ID Trick</strong>
-The difference between the date and the row number is <strong>constant</strong> during a streak but <strong>changes</strong> when a date gap occurs.
-$$\text{Group ID} = \text{Sale Date} - \text{ROW_NUMBER}()$$</p>
-<p><strong>💻 SQL Code Template (PostgreSQL):</strong></p>
-<pre><code class="language-sql">WITH tbl_high_sales AS (
+| `DailySales` | `sale_date` | DATE |
+| | `sales_amount` | INT |
+
+**🔑 Key Logic: The Group ID Trick**
+The difference between the date and the row number is **constant** during a streak but **changes** when a date gap occurs.
+$$\text{Group ID} = \text{Sale Date} - \text{ROW\_NUMBER}()$$
+
+**💻 SQL Code Template (PostgreSQL):**
+
+```sql
+WITH tbl_high_sales AS (
     SELECT sale_date FROM DailySales WHERE sales_amount &gt; 1000
 ),
 tbl_streaks_grouped AS (
@@ -1694,14 +1690,6 @@ FROM
 WHERE
     DENSE_RANK() OVER (ORDER BY exam_score DESC) &lt;= 2;
 </code></pre>
-<hr />
-<p>You now have a solid foundation in some of the most challenging SQL concepts.</p>
-<p>As you prepare for your exam, would you like to:</p>
-<ol>
-<li><strong>🌲 Tackle a Recursive CTE problem</strong> (like finding all managers in a chain)?</li>
-<li><strong>🔍 Focus on SQL Performance</strong> (indexing and optimization tips)?</li>
-<li><strong>📝 Do some SQL Syntax review</strong> (e.g., differences between <code>HAVING</code> and <code>WHERE</code>)?</li>
-</ol>
 
 
 
